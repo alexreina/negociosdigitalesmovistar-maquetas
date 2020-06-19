@@ -1,0 +1,1131 @@
+/*@import "scss/_rootp";
+@import "scss/custom";*/
+
+@font-face {
+	font-family: TelefonicaBold;
+	src: url(../webfonts/Bold/TelefonicaWeb-Bold.eot);
+	src: url(../webfonts/Bold/TelefonicaWeb-Bold.eot?#iefix) format('embedded-opentype'), url(../webfonts/Bold/TelefonicaWeb-Bold.woff2) format('woff2'), url(../webfonts/Bold/TelefonicaWeb-Bold.woff) format('woff'), url(../webfonts/Bold/Telefonica-Bold.ttf) format('truetype'), url(../webfonts/Bold/TelefonicaWeb-Bold.svg#telefonicabold) format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaExtralight;
+	src: url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.eot);
+	src: url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.eot?#iefix) format('embedded-opentype'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.woff2) format('woff2'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.woff) format('woff'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.ttf) format('truetype'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.svg#telefonicaextralight) format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaLight;
+	src: url(../webfonts/Light/TelefonicaWeb-Light.eot);
+	src: url(../webfonts/Light/TelefonicaWeb-Light.eot?#iefix) format('embedded-opentype'), url(../webfonts/Light/TelefonicaWeb-Light.woff2) format('woff2'), url(../webfonts/Light/TelefonicaWeb-Light.woff) format('woff'), url(../webfonts/Light/TelefonicaWeb-Light.ttf) format('truetype'), url(../webfonts/Light/TelefonicaWeb-Light.svg#telefonicalight) format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaText;
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot);
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot?#iefix) format('embedded-opentype'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff2) format('woff2'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff) format('woff'), url(../webfonts/Regular/TelefonicaWeb-Regular.ttf) format('truetype'), url(../webfonts/Regular/TelefonicaWeb-Regular.svg#telefonicaregular) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaHand;
+	src: url(../webfonts/Hand/TelefonicaWeb-Hand.eot);
+	src: url(../webfonts/Hand/TelefonicaWeb-Hand.eot?#iefix) format('embedded-opentype'), url(../webfonts/Hand/TelefonicaWeb-Hand.woff2) format('woff2'), url(../webfonts/Hand/TelefonicaWeb-Hand.woff) format('woff'), url(../webfonts/Hand/TelefonicaWeb-Hand.ttf) format('truetype'), url(../webfonts/Hand/TelefonicaWeb-Hand.svg#telefonicaregular) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaRegularitalic;
+	src: url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.eot);
+	src: url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.eot?#iefix) format('embedded-opentype'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.woff2) format('woff2'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.woff) format('woff'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.ttf) format('truetype'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic#telefonicaitalic) format('svg');
+	font-weight: 400;
+	font-style: italic;
+	}
+
+@font-face {
+	font-family: TelefonicaRegular;
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot);
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot?#iefix) format('embedded-opentype'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff2) format('woff2'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff) format('woff'), url(../webfonts/Regular/TelefonicaWeb-Regular.ttf) format('truetype'), url(../webfonts/RegularItalic/TelefonicaWeb-Regular#telefonica) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaCap;
+	src: url(../webfonts/Regular/TelefonicaCap-Regular.eot);
+	src: url(../webfonts/Cap/TelefonicaCap-Regular.eot?#iefix) format('embedded-opentype'), url(../webfonts/Cap/TelefonicaCapWeb-Regular.woff2) format('woff2'), url(../webfonts/Cap/TelefonicaCap-Regular.ttf) format('truetype'), url(../webfonts/Cap/TelefonicaCapWeb-Regular.svg#TelefonicaCapWeb-Regular) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+html, body{	
+	font-family:TelefonicaRegular;
+	color: #50535a;
+	font-size: 18px;
+}
+.contenidoHome {
+	background: #f9f9f9;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+button{
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 16px;
+	padding: 15px 0;
+	border: none;
+	line-height: 16px;
+	color: #fff;
+}
+select::-ms-expand {
+	display: none;
+}
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;      
+	appearance: none;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.boton {
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px 5px;
+    border: none;
+    line-height: normal;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+}
+.boton:hover {
+	text-decoration: none;
+}
+.botonAzul {
+	background: #00a9e0;
+}
+.botonAzul:not(".disabled"):hover {
+	background: #0098ca;
+	text-decoration: none;
+}
+.botonVerde {
+	background: #5cc500;
+}
+.botonVerde:hover {
+	background: #50ab00;
+	text-decoration: none;
+}
+.botonVerde.disabled, .botonVerde:disabled {
+	opacity: .3;
+}
+*.disabled, *:disabled {
+	cursor: default;
+}
+.botonMorado {
+	background: #954b97;
+}
+.botonMorado:hover {
+	background: #7f3f81;
+	text-decoration: none;
+
+}
+.botonMobile {
+	display: block;
+}
+.paddingFixed {
+	padding-top: 78px
+}
+.tituloSeccion {
+    font-size: 40px;
+    line-height: 1.2;
+    font-family: TelefonicaLight;
+    margin-bottom: 30px;
+}
+.naranja {
+	color: #f59c00 !important;
+}
+.rojo, .textoError {
+	color: #e9426d !important;
+}
+.textoCorrecto {
+	color: #5bc500;
+}
+.orden {
+	width: 20px;
+}
+strong {
+	font-family: TelefonicaBold;
+	font-weight: 400;
+}
+.mostrarBloque {
+	display: block !important;
+}
+.ocultarBloque {
+	display: none !important;
+}
+.filaSeleccionada {
+	background: rgba(211, 212, 211, 0.2);
+}
+.checkboxSeleccionado:before, input[type="radio"].custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #00a9e0 !important;
+    background-color: #00a9e0 !important;
+}
+.checkboxSeleccionado:after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.custom-control input[type="checkbox"] + label:not(.checkboxSeleccionado):before {
+   	border-color: #979797 !important;
+    background-color: transparent !important;
+}
+.custom-control input[type="checkbox"] + label:not(.checkboxSeleccionado):after {
+	background-image: none !important;
+}
+.editandoFila {
+	background: #e9eae8;
+}
+.segundaCapa {
+	display: none;
+}
+.editandoFila .segundaCapa {
+	display: block;
+}
+.editandoFila .primeraCapa {
+	display: none;
+}
+/***** Header ******/
+#navegacion {
+	height: 80px;
+	background: #fff;
+}
+#navegacion .container, #navegacion .row {
+	height: 100%;
+	flex-wrap: nowrap;
+}
+#navegacion .logo {
+	align-self: center
+}
+#navegacion .navDcha {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+#navegacion .navDcha span {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-right: 33px
+}
+#navegacion .navDcha img {
+    display: inline-block;
+    margin-left: 20px;
+}
+#navegacion .navDcha button{
+	background-color: #00a9e0;
+    padding: 0 30px;
+}
+#navegacion .navDcha button:hover {
+	background-color: #0098ca;
+}
+.select-label {
+	display: block;
+	width: 280px;
+	height: 50px;
+	border-radius: 25px;
+	border: none;
+	font-size: 14px;
+	color: #86888c;
+	padding-left: 20px;
+	background: #fff;
+	margin-bottom: 0;
+	line-height: 50px;
+}
+.select-label i {
+	color: #00a9e0 !important;
+	margin-left: 25px;
+}
+.select-wrap {
+	position: absolute;
+	width: 100%;
+	background: #fff;
+    display: none;
+    font-size: 14px;
+    top: 0;
+    z-index:9999;
+}
+.select-wrap.active{
+	display: block;
+}
+.select-checkbox:checked ~ .select-wrap {
+  	display: block;
+}
+.select {
+	list-style: none;
+	padding: 0 10px;
+	margin: 0;
+}
+.select li {
+	height: unset;
+    padding: 8px 0;
+}
+.select a {
+	display: block;
+	text-decoration: none;
+	color: #86888c !important;
+}
+/***** Header ******/
+/***** Modal: Formulario de contacto *****/
+body.modal-open, .modal.show {
+	padding-right: 0 !important;
+}
+.modal{
+	background: rgba(255, 255, 255, .3);
+	z-index: 9999;
+}
+.modal-content {
+	border: none;
+	width: 407px;
+} 
+.modal-body {
+	padding: 30px;
+}
+.modal .enlace {
+	color: #00a9e0;
+}
+.close {
+	float: none;
+	text-align: right;
+	width: 100%;
+}
+.modal button {
+	height: unset;
+}
+.modal button i {
+    font-size: 20px;
+    color: #b7b7b7;
+}
+.titformodal{
+	font-family: TelefonicaLight;
+	font-size:40px;
+	text-align:center;
+	line-height:48px;
+	color: #50535a;
+	width:100%;
+	margin-bottom: 5px;
+}
+.modal p {
+	margin-bottom: 40px;
+}
+.modal p a {
+    font-family: TelefonicaBold;
+    color: #50535a;
+    font-size: 18px;
+}
+.modal p a:hover {
+	text-decoration: underline;
+	color: #50535a; 
+}
+#nombreUsuarioCntc, #nombreUsuarioCntr {
+	margin-bottom: 10px;
+}
+#telefonoUsuarioCntc, #telefonoUsuarioCntr {
+	margin-bottom: 20px;
+}
+input#nombreCntc , input#numeroCntc, input#nombreCntr , input#numeroCntr {
+	border: none;
+    font-size: 18px;
+}
+#recibirLlamadaCntc, #recibirLlamadaCntr {
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+#recibirLlamadaCntc .btn.focus, #recibirLlamadaCntc .btn:focus, #recibirLlamadaCntr .btn.focus, #recibirLlamadaCntr .btn:focus {
+	box-shadow: unset;
+}
+#btmanianaCntc, #btardeCntc, #btmanianaCntr, #btardeCntr {
+	display: inline-block;
+}
+#btmanianaCntc input, #btardeCntc input, #btmanianaCntr input, #btardeCntr input {
+	width: 156px;
+}
+#btmanianaCntc input:hover, #btardeCntc input:hover, #btmanianaCntr input:hover, #btardeCntr input:hover {
+	text-decoration: underline;
+}
+#btmanianaCntc .activo, #btardeCntc .activo, #btmanianaCntr .activo, #btardeCntr .activo {
+	background: #00a9e0;
+	color: #fff;
+	border-radius: 20px;
+}
+#btmanianaCntc, #btmanianaCntr {
+	float: left;
+}
+#btardeCntc, #btardeCntr {
+	float: right;
+}
+#aceptarPrivacidadCntc, #aceptarPrivacidadCntr, #aceptarPrivacidadReco {
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+}
+.modal .custom-checkbox .custom-control-label::before {
+	border-radius: 50% !important;
+}
+#programarLlamadaCntc, #programarLlamadaCntr, #programarLlamadaReco {
+	margin-top: 20px;
+    width: 100%;
+    background: #5cc500;
+    font-size: 16px;
+}
+#programarLlamadaCntc:hover, #programarLlamadaCntr:hover {
+	background: #50ab00;
+	text-decoration: none;
+}
+#botonEliminarCascada, #botonEliminarUnico, #botonModificar {
+	text-decoration: none;
+	margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    height: 50px;
+    padding: 15px;
+}
+#botonEliminarCascada, #botonEliminarUnico {
+	background: #e9426d;
+
+}
+#botonModificar {
+	background: #00a9e0;
+}
+.inputformmodal{
+	background-color:#e9eae8;;
+	text-align:center;
+	font-style:italic;
+}
+.txtpiecontacta{
+	font-size:24px;
+	color:#fff;
+	font-family: TelefonicaRegular;
+}
+.teltxtpiecontacta{
+	font-size:24px;
+    font-family: TelefonicaBold;
+    color: #fff;
+}
+.teltxtpiecontacta:hover {
+	color: #fff;
+}
+/***** Modal: Formulario de contacto *****/
+/***** Modal: eliminar usuario individual *****/
+#modalEliminarUsuarioUnico .titformodal, #modalEditarCascada .titformodal, #modalEliminarCascada .titformodal {
+	margin-bottom: 15px;
+}
+#modalEliminarUsuarioUnico .modal-body p, #modalEditarCascada .modal-body p, #modalEliminarCascada .modal-body p {
+	margin-bottom: 20px;
+}
+/***** Cabecera inicio ****/
+.cabecera {
+	text-align: center;
+	color: #fff;
+	position: relative;
+	background: #f4f4f3;
+}
+.cabecera img {
+	width: 100%;
+}
+.cabecera .textoCabecera {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.cabecera.cabSector .imagenCabecera {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.cabecera.cabSector .textoCabecera {
+	position: relative;
+	top: unset;
+	left: unset;
+	transform: none;
+	padding-top: 60px;
+	margin-bottom: 20px;
+}
+.cabecera .servicios {
+	display: none;
+}
+.tituloCabecera{
+	font-size: 64px;
+	font-family: TelefonicaLight;
+	line-height: 1.33;
+	margin-bottom: 0;
+}
+.cabSector .tituloCabecera + p {
+	line-height: 2;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+/***** Caja plan ***/
+.planes {
+	margin-bottom: 40px;
+}
+.planBox {
+	border-radius: 2px;
+  	border: solid 1px #d3d4d3;
+  	padding: 15px 20px;
+  	margin-bottom: 20px;
+}
+.nombrePlan p:first-of-type {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: normal;
+    font-family: TelefonicaBold;
+    margin-bottom: 0
+}
+.nombrePlan p:last-of-type {
+    font-size: 56px;
+    text-transform: uppercase;
+    line-height: 0.83;
+    font-family: TelefonicaLight;
+    margin-bottom: 30px;
+}
+.planBox ul {
+	display: flex;
+}
+.planBox li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.planBox li:not(:last-of-type) {
+	margin-right: 20px;
+}
+.planBox li:last-of-type {
+	margin-left: auto;
+}
+.planBox li p {
+	font-size: 14px;
+	line-height: 1.21;
+	margin-bottom: 0;
+	text-transform: lowercase;
+}
+.planBox li a {
+	display: flex;
+	flex-direction: column;
+	color: #00a9e0;
+}
+.planBox .numero {
+	font-size: 24px;
+	line-height: 0.71;
+	margin-bottom: 3px;
+}
+/**** Licencias ****/
+.asignarLicencias h2 {
+	margin-bottom: 0;
+}
+.asignarLicencias > div {
+	display: none;
+}
+.inicioLicencias, .asignacionMultiple {
+	margin-top: 25px;
+	border-top: solid 1px #d3d4d3;
+	padding-top: 40px;
+	text-align: center;
+}
+.inicioLicencias > p:first-of-type, .asignacionMultiple > p:first-of-type, .infoSinUsuarios > p:first-of-type {
+	font-size: 30px;
+	font-family: TelefonicaLight;
+	line-height: normal;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+.inicioLicencias > p:not(:first-of-type), .asignacionMultiple > p:not(:first-of-type), .infoSinUsuarios > p:not(:first-of-type) {
+	font-size: 16px;
+	line-height: 1.63;
+	width: 730px;
+	margin: 0 auto 10px auto;
+}
+.enlaceAsignaciones {
+	margin-top: 30px;
+}
+.enlaceAsignaciones div.boton, .asignacionMultiple .listadoLicencias a {
+	min-width: 170px;
+}
+.enlaceAsignaciones div:first-of-type {
+	margin-right: 6px;
+}
+.enlaceAsignaciones div:last-of-type {
+	margin-left: 6px;
+}
+/******* Asignación multiple *********/
+.asignacionMultiple {
+	background: #f4f4f3;
+	position: relative;
+	padding-bottom: 120px;
+	/*display: none;*/	
+}
+.asignacionMultiple .cerrar {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+.asignacionMultiple .formMultiple  {
+	margin: 0 auto;
+	width: 800px;
+	text-align: left;
+	margin-top: 25px;
+}
+.asignacionMultiple .formMultiple > span {
+	color: #50535a;
+	font-size: 16px;
+}
+.asignacionMultiple form {
+	display: flex;
+	margin-top: 10px;
+}
+.asignacionMultiple .listadoLicencias {
+	color: #979797;
+	font-size: 16px; 
+	line-height: 1.63;
+	width: 62.5%;
+	display: flex;
+	flex-direction: column;
+}
+.asignacionMultiple .listadoLicencias .textoInformativo {
+	min-height: 15px;
+	margin-bottom: 10px;
+	display: none;
+	text-align: right;
+    font-size: 14px;
+    line-height: 1.21;
+}
+.asignacionMultiple .listadoLicencias .textoInformativo p {
+	margin-bottom: 0; 
+}
+.asignacionMultiple .listadoLicencias a, .asignacionMultiple .listadoLicencias button {
+    align-self: flex-end;
+    min-width: 170px;	
+}
+.asignacionMultiple .listadoLicencias textarea {
+    border: none;
+    height: 140px;
+    border-radius: 2px;
+    color: #86888c;
+    line-height: 1.44;
+    font-style: italic;
+    font-size: 18px;
+    padding: 5px 15px;
+    margin-bottom: 35px;
+}
+.asignacionMultiple .listadoLicencias textarea:focus {
+    outline-color: #00a9e0;
+    color: #50535a;
+    font-style: normal;
+}
+.asignacionMultiple .listadoLicencias textarea:focus::-webkit-input-placeholder { color:transparent; }
+.asignacionMultiple .listadoLicencias textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+.asignacionMultiple .listadoLicencias textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+.asignacionMultiple .listadoLicencias textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+.selectorLicencias {
+	width: 36.5%;
+	padding-left: 50px;
+}
+.selectorLicencias .custom-radio {
+	display: flex;
+	align-items: center;
+}
+.selectorLicencias .custom-radio:not(:last-of-type) {
+	margin-bottom: 20px;
+}
+.selectorLicencias .custom-control-label::after, .selectorLicencias .custom-control-label::before {
+	width: 21px;
+	height: 21px;
+	top: .12rem;
+}
+.selectorLicencias .custom-radio label {
+	text-transform: uppercase;
+	min-width: 56px;
+	margin-right: 15px;
+	line-height: normal;
+}
+.selectorLicencias .custom-radio p {
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: 12px;
+	line-height: normal;
+}
+.selectorLicencias .custom-radio p span {
+	font-size: 24px;
+	margin-right: 5px;
+}
+/******* Asignación individual *********/
+.asignacionIndividual > span {
+	font-size: 16px;
+	line-height: normal;
+	margin-bottom: 15px;
+	display: block;
+}
+.asignacionIndividual .botonVerde.multiple {
+	min-width: 170px;
+}
+.asignacionIndividual table {
+	width: 100%;
+	margin-top: 60px;
+}
+.asignacionIndividual table tbody {
+	display: none;
+}
+.asignacionIndividual table tr {
+	height: 45px;
+}
+.asignacionIndividual table tbody tr {
+	height: 60px;
+}
+.asignacionIndividual table tr.opcionesGenerales {
+	height: 70px;
+}
+.asignacionIndividual table tr.opcionesGenerales {
+	vertical-align: bottom;
+}
+.asignacionIndividual table tr.opcionesGenerales th {
+	padding-bottom: 8px;
+}
+.asignacionIndividual table tr td:first-of-type {
+	position: relative;
+}
+/********** Ancho celdas************/
+.asignacionIndividual table thead .cabeceraTabla th:first-of-type{
+	width: 4%;
+}
+.asignacionIndividual table thead .cabeceraTabla th:nth-of-type(2) {
+	width: 18%;
+	text-align: center;
+}
+.asignacionIndividual table thead .cabeceraTabla th:nth-of-type(3) {
+	width: 21%;
+	text-align: center;
+}
+.asignacionIndividual table thead .cabeceraTabla th:nth-of-type(4), .asignacionIndividual table thead .cabeceraTabla th:nth-of-type(5), .asignacionIndividual table thead .cabeceraTabla th:nth-of-type(6) {
+	width: 7%;
+	text-align: center;
+}
+.asignacionIndividual table thead .cabeceraTabla th:last-of-type {
+	width: 100%;
+}
+.asignacionIndividual table tbody tr td:nth-of-type(4), .asignacionIndividual table tbody tr td:nth-of-type(5), .asignacionIndividual table tbody tr td:nth-of-type(6) {
+	text-align: center;
+}
+.gigasActivos {
+	color: #5bc500;
+	font-size: 18px;
+	font-family: TelefonicaBold;
+	text-transform: uppercase;	
+}
+.asignacionIndividual table tbody tr td:last-of-type {
+	text-align: right;
+}
+/********** Ancho celdas************/
+.asignacionIndividual table .custom-checkbox .custom-control-label::before {
+	border-radius: 2px;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #979797;
+    margin-left: 10px;
+}
+.asignacionIndividual table .custom-checkbox .custom-control-label::after {
+	width: 21px;
+	height: 21px;
+	margin-left: 10px;
+}
+.asignacionIndividual table .activando {
+	font-size: 16px;
+	font-style: italic;
+	line-height: normal;
+	color: #954b97;
+	display: flex;
+    justify-content: flex-end;
+}
+.asignacionIndividual table .activando img {
+	margin-left: 15px;
+}
+/************** Fila de filtro de tablas ****************/
+.asignacionIndividual table .filtrarTabla {
+	border-bottom: solid 1px #d3d4d3;
+}
+.asignacionIndividual table .filtrarTabla span, .paginacion.entradasPag {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: normal;
+}
+.asignacionIndividual table select {
+	border: none;
+	color: #00a9e0;
+	font-size: 14px;
+	line-height: normal;
+	background: url('../img/dropdown.svg') no-repeat center right;
+	width: 40px;
+}
+.asignacionIndividual table select:focus {
+	outline: none;
+}
+.asignacionIndividual table .filtrarTabla .buscadorTabla {
+	width: 227px;
+    float: right;
+    position: relative;
+    padding: 0 15px;
+}
+.asignacionIndividual table .filtrarTabla .buscadorTabla input {
+	border: none;
+	font-size: 14px;
+	font-style: italic;
+	color: #86888c;
+    padding: 0 0 0 15px;
+}
+.asignacionIndividual table .buscadorTabla input::-webkit-input-placeholder { font-style: italic; color: #50535a; }
+.asignacionIndividual table .buscadorTabla input:-moz-placeholder { font-style: italic; color: #50535a;} /* FF 4-18 */
+.asignacionIndividual table .buscadorTabla input::-moz-placeholder { font-style: italic; color: #50535a;} /* FF 19+ */
+.asignacionIndividual table .buscadorTabla input:-ms-input-placeholder { font-style: italic; color: #50535a;} /* IE 10+ */
+.asignacionIndividual table .buscadorTabla input:focus::-webkit-input-placeholder { color:transparent; }
+.asignacionIndividual table .buscadorTabla input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+.asignacionIndividual table .buscadorTabla input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+.asignacionIndividual table .buscadorTabla input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+.asignacionIndividual table .buscadorTabla input:focus {
+	outline-color: transparent;
+	box-shadow: none;
+}
+.asignacionIndividual table .buscadorTabla img {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	width: 18px;
+	height: 18px;
+}
+/************** Fila opciones generales tabla ****************/
+.asignacionIndividual table .opcionesGenerales button {
+	height: auto;
+	padding: 0;
+}
+.asignacionIndividual table .opcionesGenerales button:hover {
+	text-decoration: none;
+}
+.asignacionIndividual table .opcionesGenerales span {
+	font-size: 16px;
+	font-weight: 400;
+	color: #00a9e0;
+	line-height: normal;
+	margin-right: 30px;
+	cursor: pointer;
+}
+.deshabilitado {
+	filter: grayscale(1);
+	cursor: default !important;
+}
+.opcionesGenerales button:disabled * {
+    color: #6c757d !important;
+}
+.opcionesGenerales button:disabled img {
+    filter: grayscale(1);
+}
+.asignacionIndividual table .opcionesGenerales span img {
+	margin-right: 10px;
+}
+.asignacionIndividual table .opcionesGenerales img, .asignacionIndividual table .opcionesUsuario img {
+	margin-right: 20px;
+	cursor: pointer;
+}
+.asignacionIndividual table .opcionesGenerales .libres {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.asignacionIndividual table .opcionesGenerales .libres span {
+	margin-right: 0;
+	color: #50535a;
+	cursor: default;
+}
+.asignacionIndividual table .opcionesGenerales .libres span:first-of-type {
+	font-size: 24px;
+	line-height: 0.71;
+}
+.asignacionIndividual table .opcionesGenerales .libres span:last-of-type {
+	font-size: 14px;
+	line-height: 1.21;
+}
+/************** Fila cabecera tabla ****************/
+.asignacionIndividual table .cabeceraTabla {
+	background: #e9eae8;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: TelefonicaBold;
+	line-height: 1.21;
+	visibility: hidden;
+}
+.asignacionIndividual table .cabeceraTabla th:first-of-type .custom-checkbox {
+	visibility: hidden;
+}
+/************** Fila AÑADIR usuario ****************/
+.anadirUsuario {
+	background: #e9eae8;
+	height: 60px !important;
+	/*display: none;*/
+}
+.anadirUsuario input, tbody input {
+    height: 43px;
+    border: none;
+    border-radius: 2px;
+    padding-left: 10px;
+    max-width: 185px;
+}
+.anadirUsuario input::-webkit-input-placeholder, tbody input::-webkit-input-placeholder { font-style: italic; color: #86888c; line-height: 1.44;}
+.anadirUsuario input:-moz-placeholder, tbody input:-moz-placeholder { font-style: italic; color: #86888c; line-height: 1.44;} /* FF 4-18 */
+.anadirUsuario input::-moz-placeholder, tbody input::-moz-placeholder { font-style: italic; color: #86888c; line-height: 1.44;} /* FF 19+ */
+.anadirUsuario input:-ms-input-placeholder, tbody input:-ms-input-placeholder { font-style: italic; color: #86888c; line-height: 1.44;} /* IE 10+ */
+.anadirUsuario input:focus::-webkit-input-placeholder, tbody input:focus::-webkit-input-placeholder { color:transparent; }
+.anadirUsuario input:focus:-moz-placeholder, tbody input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+.anadirUsuario input:focus::-moz-placeholder, tbody input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+.anadirUsuario input:focus:-ms-input-placeholder, tbody input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+.anadirUsuario input:focus, tbody input:focus {outline-color: #00a9e0;}
+.anadirUsuario .custom-control, .editarUsuarioCascada .custom-control{
+	text-align: center;
+}
+.anadirUsuario .custom-control-label::before, .anadirUsuario .custom-control-label::after, .editarUsuarioCascada .custom-control-label::before, .editarUsuarioCascada .custom-control-label::after, tbody .custom-control-label::before, tbody .custom-control-label::after {
+	width: 27px;
+    height: 27px;
+    top: 0;
+}
+.anadirUsuario td:last-of-type, .editarUsuarioCascada td:last-of-type, tbody tr td:last-of-type {
+	display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.anadirUsuario td:last-of-type a, .anadirUsuario td:last-of-type button,.editarUsuarioCascada td:last-of-type a, .editarUsuarioCascada td:last-of-type button, tbody td:last-of-type a, tbody td:last-of-type button {
+	min-width: 92px;
+}
+.anadirUsuario td:last-of-type img, .editarUsuarioCascada td:last-of-type img, tbody td:last-of-type img {
+	margin-left: 25px;
+}
+.editarUsuarioCascada {
+	display: none;
+}
+.editarUsuarioCascada .informativo {
+	font-size: 14px;
+	line-height: normal;
+	display: block;
+}
+.editarUsuarioCascada .infoNaranja {
+	display: block;
+	margin: 0 auto;
+}
+/********************* Cuerpo tabla ****************/
+.asignacionIndividual table tbody tr {
+	border-bottom: 1px solid #d3d4d3;
+}
+.asignacionIndividual table tbody tr:hover {
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+	/*background: #fff;*/
+}
+.asignacionIndividual table tbody tr.editandoFila:hover {
+	box-shadow: none;
+}
+.asignacionIndividual table tbody tr.editandoFila:hover .opcionesUsuario {
+	display: none;
+}
+.asignacionIndividual table tbody tr:hover .opcionesUsuario {
+	display: block;
+}
+.asignacionIndividual table tbody tr:hover .activando {
+	display: none;
+}
+.asignacionIndividual table .opcionesUsuario, .asignacionIndividual table .activando {
+	display: none;
+}
+.cerrarEdicion {
+	cursor: pointer;
+}
+.infoSinUsuarios {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 140px;
+}
+/***** Tooltips ****/
+.mostrarTooltip {
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+/*** Tooltip superior "Selecciona usuarios" ***/
+.tooltiptextSup {
+  visibility: hidden;
+  width: 130px;
+  background-color: #000;
+  color: #fff !important;
+  text-align: center;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: -35px;
+  margin-left: -70px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 14px !important;
+}
+.tooltiptextSup::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+/*** Tooltip izquierda "Editando..." ***/
+.tooltiptextIzq {
+  visibility: hidden;
+  width: 90px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  left: -100px;
+  font-size: 14px !important;
+}
+
+.tooltiptextIzq::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #000;
+}
+
+
+/***** Página recomendador ******/
+.bqRecomendador .container {
+    position: relative;
+    background-color: #fff;
+    padding: 60px 30px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+}
+.bqRecomendador .bqcentro{
+	margin-right:auto;
+	margin-left:auto;
+	max-width: 200px;
+}
+.paginacion {
+	text-align: center;
+	display: none;
+}
+table + div.paginacion {
+	margin-top: 40px;
+}
+.paginacion.entradasPag {
+	margin-bottom: 20px;
+}
+a.paginate_button {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    color: #50533c;
+    cursor: pointer;
+}
+a.paginate_button:focus {
+	outline: none;
+}
+a.paginate_button.current {
+    border-radius: 17.5px;
+    background: #00a9e0;
+    color: #fff;
+}
+/**** Página error ****/
+.paginaError{
+	background-image: url('../img/bg1-error.jpg');
+	background-position: top center;
+	background-size: cover;
+	flex-grow: 1;
+    height: 836px;
+}
+.paginaError h1{
+	text-align: center;
+	line-height: normal;
+	font-size: 56px;
+	width: 60%;
+	margin: 0 auto 25px auto;
+}
+.paginaError p {
+	text-align: center;
+	font-size: 21px;
+	margin-bottom: 80px;
+	line-height: normal;
+	font-family: TelefonicaLight;
+}
+.bloqueError{
+	width: 170px;
+	margin: 0 auto;
+}
+.bloqueError a{
+	background: #fff;
+    display: flex;
+    flex-direction: column;
+	border-radius: 4px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+	padding: 35px 20px 20px 20px;
+	color: #50535a;
+	align-items: center;
+}
+.bloqueError a img{
+	margin-bottom: 35px;
+}
+.bloqueError a span{
+	line-height: normal;
+	font-size: 21px;
+	margin-bottom: 0;
+	font-family: TelefonicaLight;
+    text-align: center;
+}
+/**** Página error ****/
+/***** Footer ******/
+footer {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	line-height: normal;
+	color: #86888c;
+}
+footer .telefonica span {
+	font-family: TelefonicaCap;
+	text-transform: uppercase;
+}
+footer .derechos {
+	margin-left: auto;
+}
+footer .derechos a {
+	color: #86888c;
+	margin-right: 30px;
+}

@@ -1,0 +1,4334 @@
+/*@import "scss/_rootp";
+@import "scss/custom";*/
+
+@font-face {
+	font-family: TelefonicaBold;
+	src: url(../webfonts/Bold/TelefonicaWeb-Bold.eot);
+	src: url(../webfonts/Bold/TelefonicaWeb-Bold.eot?#iefix) format('embedded-opentype'), url(../webfonts/Bold/TelefonicaWeb-Bold.woff2) format('woff2'), url(../webfonts/Bold/TelefonicaWeb-Bold.woff) format('woff'), url(../webfonts/Bold/Telefonica-Bold.ttf) format('truetype'), url(../webfonts/Bold/TelefonicaWeb-Bold.svg#telefonicabold) format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaExtralight;
+	src: url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.eot);
+	src: url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.eot?#iefix) format('embedded-opentype'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.woff2) format('woff2'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.woff) format('woff'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.ttf) format('truetype'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.svg#telefonicaextralight) format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaLight;
+	src: url(../webfonts/Light/TelefonicaWeb-Light.eot);
+	src: url(../webfonts/Light/TelefonicaWeb-Light.eot?#iefix) format('embedded-opentype'), url(../webfonts/Light/TelefonicaWeb-Light.woff2) format('woff2'), url(../webfonts/Light/TelefonicaWeb-Light.woff) format('woff'), url(../webfonts/Light/TelefonicaWeb-Light.ttf) format('truetype'), url(../webfonts/Light/TelefonicaWeb-Light.svg#telefonicalight) format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaText;
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot);
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot?#iefix) format('embedded-opentype'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff2) format('woff2'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff) format('woff'), url(../webfonts/Regular/TelefonicaWeb-Regular.ttf) format('truetype'), url(../webfonts/Regular/TelefonicaWeb-Regular.svg#telefonicaregular) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaHand;
+	src: url(../webfonts/Hand/TelefonicaWeb-Hand.eot);
+	src: url(../webfonts/Hand/TelefonicaWeb-Hand.eot?#iefix) format('embedded-opentype'), url(../webfonts/Hand/TelefonicaWeb-Hand.woff2) format('woff2'), url(../webfonts/Hand/TelefonicaWeb-Hand.woff) format('woff'), url(../webfonts/Hand/TelefonicaWeb-Hand.ttf) format('truetype'), url(../webfonts/Hand/TelefonicaWeb-Hand.svg#telefonicaregular) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaRegularitalic;
+	src: url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.eot);
+	src: url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.eot?#iefix) format('embedded-opentype'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.woff2) format('woff2'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.woff) format('woff'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.ttf) format('truetype'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic#telefonicaitalic) format('svg');
+	font-weight: 400;
+	font-style: italic;
+	}
+
+@font-face {
+	font-family: TelefonicaRegular;
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot);
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot?#iefix) format('embedded-opentype'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff2) format('woff2'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff) format('woff'), url(../webfonts/Regular/TelefonicaWeb-Regular.ttf) format('truetype'), url(../webfonts/RegularItalic/TelefonicaWeb-Regular#telefonica) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaCap;
+	src: url(../webfonts/Cap/TelefonicaCapWeb-Regular.eot) format('embedded-opentype'), url(../webfonts/Cap/TelefonicaCapWeb-Regular.woff) format('woff'), url(../webfonts/Cap/TelefonicaCapWeb-Regular.otf) format('opentype'), url(../webfonts/Cap/TelefonicaCapWeb-Regular.svg#TelefonicaCapWeb-Regular) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+html, body{	
+	font-family:TelefonicaRegular;
+	color: #50535a;
+	font-size: 18px;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	position: relative;
+	left: 0;
+	transition: all .5s linear;
+}
+.contenidoHome {
+	/*padding: 300px 0;*/
+	background: #f9f9f9;
+}
+br {
+	display: block;
+    content: '';
+    margin-bottom: 15px;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+button{
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 16px;
+	padding: 15px 0;
+	border: none;
+	line-height: 16px;
+	color: #fff;
+}
+select::-ms-expand {
+	display: none;
+}
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;      
+	appearance: none;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.boton {
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 15px 0;
+    border: none;
+    line-height: 16px;
+    color: #fff !important;
+    cursor: pointer;
+}
+.botonAzul {
+	background: #00a9e0;
+}
+.botonAzul:hover {
+	background: #0098ca;
+	text-decoration: none;
+}
+.botonVerde {
+	background: #5cc500;
+}
+.botonVerde:hover {
+	background: #50ab00;
+	text-decoration: none;
+
+}
+.botonMorado {
+	background: #954b97;
+}
+.botonMorado:hover {
+	background: #7f3f81;
+	text-decoration: none;
+
+}
+.botonMobile {
+	display: block;
+}
+.paddingFixed {
+	padding-top: 70px
+}
+/***** Header ******/
+header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1040;
+	width: 100%;
+	transition: all .5s linear;
+}
+#bqtopbar{
+	background-color: #f4f4f3;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	padding: 5px 0;
+	border-bottom: 1px solid #b7b7b7;
+	font-size: 16px;
+	display: none;
+	transition: 0.2s;
+}
+#bqtopbar a {
+	color: #86888c;
+}
+#bqtopbar a.active {
+	font-family: TelefonicaBold;
+}
+#bqtopbar a:last-of-type{
+	margin-left: auto !important;
+	color: #50535a;
+}
+#bqtopbar a:not(:first-of-type) {
+	margin-left: 30px;
+}
+#navegacion {
+	border-bottom: solid 1px #b6b7b7;
+	height: 70px;
+	background: #fff;
+}
+#navegacion .container, #navegacion .row {
+	height: 100%;
+	flex-wrap: nowrap;
+}
+#navegacion nav {
+	display: flex;
+	align-items: stretch;
+}
+#navegacion nav > ul {
+    display: flex;
+    align-items: center;
+}
+#navegacion nav li {
+    margin-right: 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+#navegacion nav li a {
+	font-size: 16px;
+    color: #50535a;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#navegacion nav li a:hover {
+	color: #00a9e0;
+	text-decoration: none;
+}
+#navegacion nav li a i {
+	margin-left: 5px;
+}
+#navegacion nav li a:hover i {
+	transform: rotate(180deg);
+}
+#navegacion .navDcha {
+	margin-left: auto;
+	display: flex;
+}
+#navegacion .navDcha img {
+    display: inline-block;
+    margin-left: 20px;
+}
+#navegacion .navDcha button{
+	background-color: #00a9e0;
+    padding: 0 30px;
+    align-self: center;
+}
+#navegacion .navDcha button:hover {
+	background-color: #0098ca;
+}
+div[class*="subpaginas"] {
+	padding-top: 40px;
+    min-height: 220px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background: #fff;
+    right: 0;
+    left: 0;
+    top: 124px;
+    visibility: hidden;
+    border-top: solid 1px #b6b7b7;
+    z-index: 99999;
+    padding-bottom: 15px;
+    box-shadow: rgba(0,0,0,.14) 0 2px 2px 0;
+}
+li[class*="primerNivel"] a:hover + div {
+    visibility: visible;
+}
+li[class*="primerNivel"] a + div:hover {
+	visibility: visible;
+}
+div[class*="subpaginas"] > div {
+	width: 263px;
+	display: inline-block;
+}
+div[class*="subpaginas"] > div:not(:first-of-type) {
+	margin-left: 30px;
+}
+div[class*="subpaginas"] > div span {
+	font-size: 15px;
+	font-family: TelefonicaBold;
+	text-transform: uppercase;
+}
+div[class*="subpaginas"] > div li {
+	margin-top: 20px;
+	display: block !important;
+}
+div[class*="subpaginas"] > div li a {
+	font-size: 18px;
+	color: #50535a;
+}
+#navegacionN2 {
+	background: #00a9e0;
+	width: 83.5%;
+	position: fixed;
+	height: 100%;
+	top: 0;
+	right: -83.5%;
+	z-index: 999;
+	transition: all .5s linear;
+}
+#navegacionN2 li, .paginasHijas li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+#navegacionN2 li a, #navegacionN2 li span, .paginasHijas li a  {
+	width: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: TelefonicaLight;
+}
+#navegacionN2 a, #navegacionN2 span {
+	color: #fff;
+	cursor: pointer;
+}
+#navegacionN2 a i {
+	float: right;
+}
+.contraerBody {
+	left: -83.45%;
+	transition: all .5s linear;
+}
+.expanderNav {
+	width: 83.5%;
+	right: 0 !important;
+	transition: all .5s linear;
+}
+.subNavHeader  {
+	margin: 10px;
+	position: relative;
+}
+.subNavHeader select {
+	width: 280px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-size: 14px;
+    color: #86888c;
+    padding-left: 20px;
+    background: #fff;
+}
+.select-label {
+	display: block;
+	width: 280px;
+	height: 50px;
+	border-radius: 25px;
+	border: none;
+	font-size: 14px;
+	color: #86888c;
+	padding-left: 20px;
+	background: #fff;
+	margin-bottom: 0;
+	line-height: 50px;
+}
+.select-label i {
+	color: #00a9e0 !important;
+	margin-left: 25px;
+}
+.select-wrap {
+	position: absolute;
+	width: 100%;
+	background: #fff;
+    display: none;
+    font-size: 14px;
+    top: 0;
+    z-index:9999;
+}
+.select-wrap.active{
+	display: block;
+}
+.select-checkbox:checked ~ .select-wrap {
+  	display: block;
+}
+.select {
+	list-style: none;
+	padding: 0 10px;
+	margin: 0;
+}
+.select li {
+	height: unset;
+    padding: 8px 0;
+}
+.select a {
+	display: block;
+	text-decoration: none;
+	color: #86888c !important;
+}
+#navegacionN2 nav {
+	padding: 0 10px; 
+}
+div[class*="subNivel"], .primerNivelN2.inactivo {
+	display: none;
+}
+div[class*="subNivel"].activo {
+	display: block !important;
+}
+.subNavFooter {
+	position: absolute;
+    bottom: 0;
+    background: #fff;
+    left: 0;
+    right: 0;
+    padding: 30px 10px 30px 10px;
+}
+.subNavFooter a {
+	color: #50535a !important;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.paginaPrimerN {
+	margin: 10px;
+}
+.paginaPrimerN span {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.paginasHijas {
+	padding: 0 10px;
+}
+#cerrarMenu {
+	display: none;
+	position: fixed;
+    height: 100%;
+    width: 16.5%;
+    margin-left: -16.5%;
+    top: 0;
+}
+#navegacionN2.expanderNav #cerrarMenu {
+	display: block;
+}
+/***** Header ******/
+/***** Modal: Formulario de contacto *****/
+body.modal-open, .modal.show {
+	padding-right: 0 !important;
+}
+.modal{
+	background: rgba(255, 255, 255, .3);
+	z-index: 9999;
+}
+.modal-content {
+	border: none;
+} 
+.modal .enlace {
+	color: #00a9e0;
+}
+.close {
+	float: none;
+	text-align: right;
+	width: 100%;
+}
+.modal button {
+	height: unset;
+}
+.modal button i {
+    font-size: 20px;
+    color: #b7b7b7;
+}
+.titformodal{
+	font-family: TelefonicaLight;
+	font-size:40px;
+	text-align:center;
+	line-height:48px;
+	color: #50535a;
+	width:100%;
+	margin-bottom: 5px;
+}
+.modal p {
+	margin-bottom: 40px;
+}
+.modal p a {
+    font-family: TelefonicaBold;
+    color: #50535a;
+    font-size: 18px;
+}
+.modal p a:hover {
+	text-decoration: underline;
+	color: #50535a; 
+}
+#nombreUsuarioCntc, #nombreUsuarioCntr {
+	margin-bottom: 10px;
+}
+#telefonoUsuarioCntc, #telefonoUsuarioCntr {
+	margin-bottom: 20px;
+}
+input#nombreCntc , input#numeroCntc, input#nombreCntr , input#numeroCntr {
+	border: none;
+    font-size: 18px;
+}
+#recibirLlamadaCntc, #recibirLlamadaCntr {
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+#recibirLlamadaCntc .btn.focus, #recibirLlamadaCntc .btn:focus, #recibirLlamadaCntr .btn.focus, #recibirLlamadaCntr .btn:focus {
+	box-shadow: unset;
+}
+#btmanianaCntc, #btardeCntc, #btmanianaCntr, #btardeCntr {
+	display: inline-block;
+}
+#btmanianaCntc input, #btardeCntc input, #btmanianaCntr input, #btardeCntr input {
+	width: 156px;
+}
+#btmanianaCntc input:hover, #btardeCntc input:hover, #btmanianaCntr input:hover, #btardeCntr input:hover {
+	text-decoration: underline;
+}
+#btmanianaCntc .activo, #btardeCntc .activo, #btmanianaCntr .activo, #btardeCntr .activo {
+	background: #00a9e0;
+	color: #fff;
+	border-radius: 20px;
+}
+#btmanianaCntc, #btmanianaCntr {
+	float: left;
+}
+#btardeCntc, #btardeCntr {
+	float: right;
+}
+#aceptarPrivacidadCntc, #aceptarPrivacidadCntr, #aceptarPrivacidadReco {
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+}
+.custom-checkbox .custom-control-label::before {
+	border-radius: 50% !important;
+}
+#programarLlamadaCntc, #programarLlamadaCntr, #programarLlamadaReco {
+	margin-top: 20px;
+    width: 100%;
+    background: #5cc500;
+    font-size: 16px;
+}
+#programarLlamadaCntc:hover, #programarLlamadaCntr:hover {
+	background: #50ab00;
+	text-decoration: none;
+}
+/***** Modal: Formulario de contacto *****/
+/***** Modal: Formulario de contratacion *****/
+#modalContratacion .modal-body > p {
+	margin-bottom: 10px;
+}
+.detalleModalProducto {
+	background: #f4f4f3;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+.detalleModalProducto span {
+	font-size: 18px;
+	color: #00a9e0;
+	margin-bottom: 10px;
+}
+.detalleModalProducto p {
+	margin-bottom: 0;
+	font-size: 16px;
+	width: 55%;
+}
+/***** Cabecera inicio ****/
+.cabecera {
+	text-align: center;
+	color: #fff;
+	position: relative;
+	background: #f4f4f3;
+}
+.cabecera img {
+	width: 100%;
+}
+.cabecera .textoCabecera {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.cabecera.cabSector .imagenCabecera {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.cabecera.cabSector .textoCabecera {
+	position: relative;
+	top: unset;
+	left: unset;
+	transform: none;
+	padding-top: 60px;
+	margin-bottom: 20px;
+}
+.cabecera .servicios {
+	display: none;
+}
+.servicio-item {
+	width: 190px;
+	position: relative;
+}
+.textoCabecera .servicio-item:not(:first-of-type)::before {
+    content: '+';
+    position: absolute;
+    left: -10px;
+    bottom: -21px;
+    font-size: 48px;
+}
+.servicio-item img{
+	width: 40px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+.servicio-item p {
+	font-size: 14px;
+	font-family: TelefonicaBold;
+	margin-bottom: 0;
+}
+.textoCabecera .servicio-item p {
+	text-transform: uppercase;
+}
+.tituloCabecera{
+	font-size: 48px;
+	font-family: TelefonicaLight;
+	line-height: 70px;
+	margin-bottom: 0;
+}
+.tituloCabecera span {
+	font-family: TelefonicaHand;
+}
+.cabecera .servicios + p {
+	font-size: 21px;
+	font-family: TelefonicaBold;
+	margin: 40px 0;
+}
+.cabecera .boton {
+    min-width: 189px;
+    display: inline-block;
+}
+/***** Cabecera familia *****/
+.contenidoFamilia .cabecera {
+    background: #fff;
+}
+.textoCabeceraFamilia {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+}
+.textoCabeceraFamilia .tituloCabecera {
+	line-height: 60px;
+}
+.textoCabeceraFamilia .servicios{
+	margin-top: 40px !important;
+	display: flex;
+	flex-wrap: wrap;
+}
+.textoCabeceraFamilia .servicio-item {
+	width: 50%;
+	position: relative;
+	margin-bottom: 20px;
+}
+.textoCabeceraFamilia .servicio-item img {
+	margin-bottom: 5px;
+}
+.textoCabeceraFamilia .servicio-item p {
+	width: 155px;
+	margin: 0 auto;
+}
+/***** Cabecera detalle sector *****/
+.cabSector .tituloCabecera{
+	line-height: normal;
+	margin-bottom: 20px;
+}
+.cabSector .tituloCabecera + p {
+	line-height: normal;
+}
+/***** Slider ****/
+.apps {
+	background: #f4f4f3;
+	padding-top: 60px;
+}
+.apps > p, p.tituloSeccion, .tituloSeccion {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    font-family: TelefonicaLight;
+    margin: 0 15px;
+}
+.tabsApps {
+    overflow-x: scroll;
+    display: flex;
+    margin-top: 40px;
+}
+.tabsApps ul {
+	display: flex;
+}
+.tabsApps li {
+    width: 150px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+    background: #e9eae8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #f7f7f7;
+    cursor: pointer;
+    border-top: 5px solid transparent;
+}
+.tabsApps li:hover {
+	text-decoration: underline;
+}
+.tabsApps li.active {
+    background: #fff;
+    border-top: 5px solid #00a9e0;
+    border-right: none;
+    transition: background .5s ease;
+}
+div[id*="opcionesSlider"] {
+	background: #fff;
+	display: none;
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+div[id*="opcionesSlider"].active {
+	display: block;
+}
+.apps .container {
+	position: relative;	
+}
+.apps .container > a {
+    text-align: center;
+    font-size: 16px;
+    color: #00a9e0;
+    display: block;
+    margin-top: 80px;
+}
+.owl-stage {
+	display: flex;
+}
+.owl-item {
+    display: flex;
+}
+.owl-carousel .owl-stage-outer {
+	padding-left: 1px;
+}
+.owl-carousel button.owl-prev, button.owl-next, .owl-carousel .owl-dot {
+	height: unset;
+	outline: 0;
+}
+.owl-theme .owl-nav {
+	margin-top: 0;
+}
+button.owl-prev, button.owl-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 !important;
+}
+button.owl-prev:hover, button.owl-next:hover {
+	background: none !important;
+	color: #50535a !important;
+} 
+button.owl-prev {
+    left: -30px;
+}
+button.owl-next {
+    right: -10px;
+}
+.owl-theme .owl-nav span {
+	vertical-align: text-top;
+	line-height: 0;
+	font-size: 80px;
+}
+.owl-dots {
+    position: absolute;
+    padding-top: 35px;
+    padding-right: 15px;
+    width: 100%;
+    display: flex;
+}
+button.owl-dot {
+    flex: 1;
+    margin: 0 5px;
+}
+.apps .owl-theme .owl-dots .owl-dot span {
+	width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    margin: 0;
+}
+.cards {
+	overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    padding-bottom: 5px
+}
+.cards .row {
+	flex-wrap: nowrap;
+	margin: 0;
+}
+.card-item {
+	width: 300px;
+	flex-shrink: 0;
+	border-radius: 4px;
+  	box-shadow: 0 1px 4px 0 rgba(0,0,0,.3);
+  	margin-bottom: 10px; /** originalmente 45px **/
+  	margin-right: 20px;
+  	display: flex;
+  	flex-direction: column;
+}
+.card-item:not(:last-of-type) {
+	margin-right: 20px;
+}
+.card-item > h3 {
+    background: #00a9e0;
+    color: #fff;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 0;
+    height: 138px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  	border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    line-height: normal;
+}
+.detalleCard {
+	padding: 40px 20px 20px 20px;
+	text-align: center;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: space-between;
+	background: #fff;
+}
+.detalleCard > div:first-of-type {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+p.descripcion-item {
+	padding-bottom: 30px;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.3);
+    text-align: center;
+    margin-bottom: 0;
+}
+div[id*="opcionesSlider"] p.descripcion-item {
+	text-align: center;
+	flex-grow: 1;
+}
+p.precio-item {
+	margin: 30px 0;
+    font-size: 24px;
+    line-height: normal;
+}
+.detalleCard button {
+	width: 260px;
+	border-radius: 4px;
+	background-color: #00a9e0;
+}
+.detalleCard a {
+	height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #00a9e0;
+}
+.owl-stage-outer.solitario {
+	display: flex;
+    justify-content: center;
+}
+.owl-stage-outer.solitario + .owl-nav, .owl-stage-outer.solitario + .owl-nav + .owl-dots {
+	display: none;
+}
+.owl-theme .owl-nav span {
+	color: transparent;
+}
+.owl-nav .owl-next span {
+    background: url(../imagenes/flechaSliderDcha.svg) no-repeat 0;
+}
+.owl-nav .owl-prev span {
+    background: url(../imagenes/flechaSliderIzq.svg) no-repeat 0;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+	height: 100px;
+}
+/***** Slider familia ****/
+.contenidoFamilia .apps {
+	background: #fff;
+	padding-bottom: 110px;
+}
+.sliderFamilia .tituloSeccion {
+	margin-bottom: 45px;
+}
+.detalleCard ul {
+    text-align: left;
+    margin-top: 14px;
+}
+.detalleCard ul li, .descripcionProducto ul li {
+	margin-bottom: 10px;
+    font-size: 16px;
+    position: relative;
+    margin-left: 20px;
+    line-height: normal;
+}
+#pestanaQue .descripcionProducto ul li {
+	font-size: 18px;
+}
+.detalleCard ul li::before, .descripcionProducto ul li::before {
+    content: '•';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+}
+/***** Bloque soluciones home ******/
+.soluciones {
+	padding: 60px 0;
+	background: #f4f4f3;
+}
+.soluciones > h2, .soluciones > h1 {
+	margin-bottom: 20px;
+}
+.soluciones .container > p {
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 20px;	
+}
+.fichaSector {
+	margin-top: 20px;
+}
+.fichaSector a {
+	display: block;
+	position: relative;
+}
+.fichaSector a:hover img {
+	filter: brightness(100%);
+}
+.fichaSector img {
+	filter: brightness(70%);
+	transition: all .5s linear;
+}
+.descripcionSector::before {
+    content: url('../imagenes/bullet-rigth-soluciones.svg');
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    line-height: 0;
+}
+.descripcionSector {
+	position: absolute;
+    bottom: 0;
+    padding-left: 20px;
+    padding-right: 45px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.descripcionSector p, .destacadoSector > div p {
+	margin-bottom: 0;
+}
+.descripcionSector p:first-of-type, .destacadoSector > div p:first-of-type {
+	text-transform: uppercase;
+	font-family: TelefonicaBold;
+}
+.descripcionSector h3, .contenidoSolucionesSector .descripcionSector h2 ,.destacadoSector h3{
+	font-size: 32px;
+	font-family: TelefonicaLight;
+	line-height: 40px;
+}
+/***** Bloque destacado verde home *****/
+.destacadoVerde{
+	background: #5cc500;
+	color: #fff;
+	padding: 60px 0 40px 0;
+}
+.destacadoVerde .tituloSeccion {
+	margin: 0 0 40px 0;
+}
+.destacadoVerde .bloqueDestacado {
+    display: flex;
+    margin-bottom: 20px;
+}
+.num {
+    font-size: 80px;
+    color: rgba(255, 255, 255, .2);
+    line-height: 80px;
+    margin-right: 20px;
+}
+.acciones {
+	margin-top: 20px;
+}
+.acciones p {
+	margin-bottom: 0;
+}
+.acciones p:first-of-type {
+	font-size: 20px;
+	font-family: TelefonicaBold;
+	line-height: 20px;
+}
+.acciones p:last-of-type {
+	font-size: 16px;
+	line-height: 20px;
+}
+/***** Ficha de producto *****/
+div[id*="pestana"] span[id*="ancla"]{
+	position: absolute;
+    top: -150px;
+    visibility: hidden;
+}
+#acordeonProducto .card {
+	border-top: 1px solid #b6b7b7;
+}
+#acordeonProducto > div:last-of-type {
+	border-bottom: 1px solid #b6b7b7;
+}
+#acordeonProducto div[id*="heading"] button, #acordeonProducto div[id*="faq"] button {
+	width: 100%;
+    text-align: left;
+    padding: 22px 20px;
+    height: unset;
+    border-radius: 0;
+    line-height: normal;
+    font-size: 21px;
+    color: #50535a;
+    display: flex;
+    align-items: center;
+}
+#acordeonProducto div[id*="heading"] button:focus, #acordeonProducto div[id*="faq"] button:focus {
+	box-shadow: none;
+}
+#acordeonProducto button img{
+    margin-left: auto;
+}
+#acordeonProducto button.collapsed img {
+	transform: rotate(180deg);
+}
+#acordeonProducto div.collapse > div, #acordeonProducto div.collapsing > div {
+    margin: 30px auto 65px auto;
+}
+.cabeceraProducto {
+    padding: 0 16px 0 36px;
+}
+.cabeceraProducto div {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.cabeceraProducto h1 {
+    font-size: 28px;
+    font-family: TelefonicaLight;
+    line-height: 1.14;
+    margin-bottom: 0;
+}
+.cabeceraProducto ul {
+    display: inline-block;
+    margin-left: auto;
+    height: 100%;
+}
+.cabeceraProducto ul li {
+    display: inline-block;
+    height: 100%;
+}
+.cabeceraProducto ul li a {
+    padding: 0 10px;
+    font-size: 16px;
+    color: #50535a;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.cabeceraProducto ul li.active a {
+	border-bottom: 4px solid #00a9e0;
+}
+.card {
+	border: 0;
+	border-top: 1px solid rgba(0,0,0,.125);
+    border-radius: 0;
+}
+#acordeonProducto iframe {
+	width: 100%;
+	height: 200px;
+}
+.descripcionProducto {
+	margin-bottom: 30px;
+}
+.descripcionProducto p {
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+#pestanaQue .descripcionProducto p {
+	font-size: 18px;
+	line-height: 1.33;
+}
+#pestanaQue .descripcionProducto .tituloSeccion {
+	text-align: left;
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+.descripcionProducto h3 {
+	font-size: 32px;
+	line-height: 1.25;
+	font-family: TelefonicaLight;
+}
+.descripcionProducto ul {
+	padding-left: 5px;
+}
+.caracteristicaProducto:first-of-type {
+	margin-top: 40px;
+}
+.caracteristicaProducto:not(:last-of-type) {
+    margin-bottom: 60px;
+}
+div#pestanaCaracteristicas .caracteristicaProducto:nth-of-type(odd) img {
+	float: right;
+}
+div#pestanaCaracteristicas .caracteristicaProducto:nth-of-type(even) img {
+	float: left;
+}
+#acordeonProducto #pestanaPlan div.collapse > div, #acordeonProducto #pestanaPlan div.collapsing > div {
+	margin: 0;
+}
+#pestanaPlan .apps {
+	padding-top: 30px;
+}
+#pestanaPlan .tabsApps ul {
+	padding-left: 10px;
+}
+#pestanaPlan .tabsApps li{
+	width: 160px;
+    line-height: 1.33;
+    height: 50px;
+    background: transparent;
+    border-top: none;
+}
+#pestanaPlan .tabsApps li:hover {
+	text-decoration: underline;
+}
+#pestanaPlan .tabsApps li:nth-of-type(2){
+	margin: 0 10px;
+}
+#pestanaPlan .tabsApps li.active {
+	background: #00a9e0;
+    border-right: none;
+    transition: background .5s ease;
+    border-radius: 25px;
+    color: #fff;
+}
+#pestanaPlan div[id*="opcionesSlider"] {
+	background: transparent;
+	padding-bottom: 110px;
+}
+#pestanaPlan .detalleCard {
+	padding: 0 20px 20px 20px;
+}
+#pestanaPlan .detalleCard ul{
+	margin-top: 0;
+}
+#pestanaPlan .detalleCard ul li {
+	list-style-type: none;
+	margin-left: 0;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.3);
+    padding: 10px 0;
+    line-height: 1.5;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+#pestanaPlan .detalleCard ul li::before {
+	content: none;
+}
+#pestanaPlan .card-item > h3 {
+	padding: 0 30px;
+}
+#pestanaPlan p.precio-item {
+	margin: 30px 0 20px 0;
+}
+.triggerCaract[aria-expanded="false"] > .expanded,
+.triggerCaract[aria-expanded="true"] > .collapsed {
+  display: none;
+}
+.recomendado.card-item > h3, .recomendado .detalleCard .boton {
+    background: #5cc500;
+}
+.recomendado .detalleCard .boton:hover {
+	background: #50ab00;
+}
+.recomendado.card-item > h3 {
+	flex-direction: column;
+}
+.recomendado h3 span {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: TelefonicaBold;
+}
+.recomendado p.precio-item {
+    color: #5cc500;
+}
+#pestanaCasos .collapse, #pestanaCasos .collapsing {
+	background: #5cc500;
+	color: #fff;
+	text-align: center;
+}
+#pestanaCasos .collapse img {
+	width: 80px;
+	height: 80px;
+}
+#pestanaCasos span {
+	margin-top: 20px;
+	font-size: 21px;
+	line-height: normal;
+	display: inline-block;
+}
+#pestanaCasos .bloqueCaso div{
+	margin-top: 40px;
+}
+#pestanaCasos .bloqueCaso p:first-of-type {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 21px;
+	font-family: TelefonicaBold;
+	line-height: normal;
+}
+#pestanaCasos .bloqueCaso p:last-of-type {
+	font-size: 18px;
+	line-height: normal;
+}
+#pestanaFaq .container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+#pestanaFaq .collapse, #pestanaFaq .collapsing{
+	background: #f4f4f3;
+}
+#accordionFaq .card {
+    border-top: 0;
+    border-bottom: 1px solid #d3d4d3;
+    padding-left: 15px;
+    padding-right: 10px;
+    background: #f4f4f3;
+}
+#accordionFaq .card.mostrar, #accordionFaq .collapse, #accordionFaq .collapsing {
+	background: #fff;
+}
+#accordionFaq .card .collapse div, #accordionFaq .card .collapsing div {
+    margin: 0px 0 40px 15px;
+}
+#accordionFaq button {
+    padding: 0;
+    height: 110px;
+    font-size: 24px;
+}
+#acordeonProducto button:hover{
+	text-decoration: none;
+}
+#accordionFaq .card:first-of-type{
+	margin-top: 40px;
+}
+#pestanaSectores > div:last-of-type > div {
+    margin: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+.destacadoSector > div {
+	position: absolute;
+    top: 0;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 25px;
+    padding-bottom: 0;
+    color: #fff;
+}
+.destacadoSector > div p:first-of-type {
+	font-size: 16px;
+	line-height: normal;
+	margin-bottom: 10px;
+}
+.destacadoSector h3{
+	font-size: 40px;
+	line-height: 1.2;
+}
+.bloquesSector div {
+	padding: 30px 10px;
+}
+.bloquesSector div:not(:first-of-type) {
+	border-top: 1px solid #b6b7b7;
+}
+.bloquesSector div p:first-of-type {
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 1;
+}
+.bloquesSector div p:last-of-type {
+	margin-bottom: 0;
+	font-size: 18px;
+	line-height: 1.33;
+}
+.recomendaciones {
+	padding: 60px 0;
+}
+.recomendaciones > div {
+	display: flex;
+	flex-direction: column;
+	margin-top: 35px;
+}
+.recomendaciones .card-item {
+    margin: 0 auto;
+}
+.recomendaciones .card-item:first-of-type {
+	margin-bottom: 40px;
+}
+.card-item.morado > h3 {
+	background: #954b97;
+}
+.card-item.morado .boton {
+	background: #954b97;
+}
+.card-item.morado .boton:hover {
+	background: #7f3f81;
+}
+/***** Camino de migas *****/
+.breadcrumb {
+	padding: 0;
+    margin-bottom: 40px;
+    background: #fff;
+    border-radius: 0;
+    display: none;
+}
+.breadcrumb a {
+	color: #50535a;
+}
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 5px;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+	padding-right: 5px;
+	font-family: TelefonicaRegular;
+	content: '>';
+}
+.breadcrumb-item.active {
+    color: #50535a;
+    font-family: TelefonicaBold;
+}
+/***** Páginas soluciones por sector *****/
+.contenidoSolucionesSector .soluciones {
+	background: #fff;
+}
+/****** Página detalle sector n1 *******/
+.contenidoSectorDetalle, .pestanaSector {
+	background: #f4f4f3;
+}
+.descubrirSector{
+	background: #f4f4f3;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.pestanaSector .container {
+	position: relative;
+}
+.descubrirSector > .container {
+	position: relative;
+	background: #fff;
+	border-radius: 4px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.descubrirSector > .container >.row {
+	margin-right: -20px;
+	margin-left: -20px;
+}
+.bloqueDescubre:not(:last-of-type) {
+	margin-bottom: 60px;
+}
+.imgDescubre {
+    position: relative;
+    margin-bottom: 20px;
+}
+.imgDescubre .tituloSeccion {
+    position: absolute;
+    text-align: left;
+    color: #fff;
+    margin: 20px 10px 20px 20px;
+    line-height: 1.25;
+}
+.detalleDescubre p {
+	line-height: 1.33;
+	margin-bottom: 20px;
+}
+.bloqueDescubre {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.bloqueDescubre a {
+	min-width: 188px;
+    background: #5ec501;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 15px 0;
+    border: none;
+    line-height: 16px;
+    color: #fff !important;
+    display: inline-block;
+}
+.bloqueDescubre a:hover {
+    background: #50ab00;
+    text-decoration: none;
+}
+.situacionesSector {
+	background: #f4f4f3;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.todasSoluciones {
+	background: #5ec501;
+	padding: 60px 0 40px 0;
+}
+.todasSoluciones .bloqueSolucion {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	color: #50535a;
+}
+.todasSoluciones .bloqueSolucion:hover {
+	text-decoration: none;
+}
+.todasSoluciones .bloqueSolucion:hover .solucion{
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+.todasSoluciones h2 {
+	color: #fff;
+	margin-bottom: 40px;
+}
+.todasSoluciones .solucion {
+	display: flex;
+    flex-direction: column;
+    background: #fff;
+    flex-grow: 1;
+    padding: 20px 15px;
+    border-top: 6px solid rgba(94, 197, 1, 0.5);
+}
+.todasSoluciones .solucion img {
+	align-self: flex-start;
+}
+.todasSoluciones .solucion p{
+	font-size: 16px;
+	margin-bottom: 0;
+}
+.todasSoluciones .solucion p:first-of-type {
+	font-family: TelefonicaBold;
+	line-height: normal;
+	margin-top: 10px;
+}
+.todasSoluciones .solucion p:last-of-type {
+	line-height: 1.5;
+}
+.datosSector {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.datosSector h2 {
+	margin-bottom: 40px;
+}
+.datosSector .dato {
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.datosSector .dato:not(:first-of-type) {
+	margin-top: 60px;
+}
+.dato p:first-of-type {
+	color: #5cc500;
+	font-size: 64px;
+	line-height: 1.13;
+	font-family: TelefonicaLight;
+	margin-bottom: 15px;
+}
+.dato p:not(:first-of-type) {
+	font-family: TelefonicaRegularitalic;
+	font-size: 16px;
+ 	line-height: 1.25;
+}
+.dato p:nth-of-type(2) {
+	margin-bottom: 30px;
+	flex-grow: 1;
+}
+.dato p:nth-of-type(2)::before, .dato p:nth-of-type(2)::after {
+	content: '"';
+}
+.dato p:last-of-type {
+    margin-bottom: 0;
+    padding-top: 25px;
+    position: relative;
+}
+.dato p:last-of-type::before {
+    content: '-';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+}
+.situacionesSector .descripcionProducto{
+	order: 1;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+.situacionesSector .descripcionProducto h3 {
+	font-size: 28px;
+	line-height: 1.43;
+	text-align: center;
+}
+.situacionesSector .descripcionProducto p {
+	font-size: 18px;
+	line-height: 1.33;
+	margin-bottom: 20px;
+}
+.situacionesSector .descripcionProducto p br {
+	content: '';
+    margin-bottom: 15px;
+    display: block;
+}
+.situacionesSector .descripcionProducto p a {
+	color: #00a9e0;
+}
+.situacionesSector .descripcionProducto p a:hover {
+	text-decoration: underline;
+}
+.situacionesSector .descripcionProducto > a {
+	height: 50px;
+    border-radius: 4px;
+    background-color: #954b97;
+    font-size: 16px;
+    line-height: normal;
+    padding: 15px 0;
+    color: #fff;
+    width: 300px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.situacionesSector .descripcionProducto > a:hover {
+	text-decoration: none;
+	background: #7f3f81;
+}
+.atras {
+	display: none;
+	padding-top: 30px;
+    padding-left: 20px;
+    color: #50535a;
+    line-height: 1.5;
+}
+.atras:hover {
+	color: #50535a;
+}
+.triangulo {
+	display: inline-block;
+	width: 19px;
+    height: 19px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    border-right: 1px solid #50535a;
+    border-bottom: 1px solid #50535a;
+}
+/****** Página detalle sector n2 *******/
+.pestanaSector .tabsApps li {
+	width: 190px;
+	padding: 10px 15px;
+	line-height: 1.33;
+}
+.pestanaSector .tabsApps li h2 {
+	font-size: 18px;
+}
+.pestanaSector div[id*="opcionesSlider"] {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.pestanaSector div[class*="caracteristicaSector"]:nth-of-type(even) {
+	background: #f4f4f3;
+}
+.pestanaSector div[class*="caracteristicaSector"] ul a {
+	color: #00a9e0;
+}
+.caracteristicaSectorTres, .caracteristicaSectorDos {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.pestanaSector .numero {
+	display: none;
+	font-size: 60px;
+    font-family: TelefonicaBold;
+    color: #d3d4d3;
+    height: 75px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.descripcionCaracSector h3 {
+	font-size: 32px;
+	line-height: 1.25;
+	font-family: TelefonicaLight;
+	margin-bottom: 7px;
+}
+.descripcionCaracSector p {
+	line-height: 1.33;
+	margin-bottom: 30px;
+}
+.imagenSector > div {
+	position: relative;
+}
+.imagenSector .dato {
+	position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.imagenSector .dato p:first-of-type {
+	color: #fff;
+	margin-bottom: 70px;
+}
+.imagenSector .dato p:last-of-type {
+	padding-top: 0;
+	position: unset;
+}
+.imagenSector .dato p:last-of-type::before {
+	content: '';
+}
+.listaImagen ul, .caracteristicaSectorDos ul {
+	margin-top: 30px;
+}
+.listaImagen ul li:not(:first-of-type), .caracteristicaSectorDos ul li:not(:first-of-type){
+	border-top: 1px solid #d3d4d3;
+	padding-top: 20px;
+}
+.listaImagen ul span, .listaImagen ul p, .caracteristicaSectorDos ul span, .caracteristicaSectorDos ul p {
+	font-size: 16px;
+	line-height: normal;
+}
+.listaImagen ul span, .caracteristicaSectorDos ul span {
+	font-family: TelefonicaBold;
+	text-transform: uppercase;
+}
+.listaImagen ul p, .caracteristicaSectorDos ul p {
+	margin-bottom: 20px;
+}
+.pestanaSector div[class*="caracteristicaSector"] .botonVerde {
+	margin-top: 30px;
+}
+.descripcionCaracSector a {
+    width: 180px;
+    display: none;
+}
+.caracteristicaSectorDos .bloqueCaracSector > a {
+	display: block;
+}
+/***** Página de contacto ****/
+.contenidoContacto .cabSector, .contenidoRecomendador .cabSector {
+	background: #fff;
+	color: #50535a;
+}
+.contenidoContacto .cabecera img, .contenidoRecomendador .cabecera img {
+	display: none;
+}
+.contenidoContacto .cabecera.cabSector .textoCabecera {
+	padding-top: 40px;
+}
+.bloqueContacto .container {
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.bloqueContacto .container > .row {
+	margin-right: -20px;
+	margin-left: -20px;
+}
+.bloqueContacto .formulario, .bloqueContacto .datosContacto {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.bloqueContacto form .form-group {
+	margin-bottom: 20px;
+}
+.bloqueContacto form input {
+	height: 50px;
+}
+.bloqueContacto form input, .bloqueContacto form textarea {
+	text-align: left;
+	border: none;
+	background: #f4f4f3;
+	line-height: normal;
+}
+.bloqueContacto form textarea {
+	font-style: italic;
+	line-height: normal;
+	height: 113px;
+}
+.bloqueContacto form input::placeholder, .bloqueContacto form textarea::placeholder {
+	color: #50535a;
+}
+.bloqueContacto form .custom-checkbox label {
+	color: #86888c;
+	font-size: 16px;
+	line-height: 1.13;
+}
+.bloqueContacto form .custom-checkbox label a {
+	color: #00a9e0;
+}
+.bloqueContacto form .custom-control-label::before {
+	top: 0;
+}
+.bloqueContacto form button {
+	width: 233px;
+	margin-top: 34px;
+	font-size: 18px;
+    line-height: 1;
+}
+.bloqueContacto .formulario p, .bloqueContacto .datosContacto p {
+	font-size: 32px;
+	line-height: 1.25;
+	font-family: TelefonicaLight;
+	margin-bottom: 20px;
+}
+.bloqueContacto .formulario .custom-control-label::after {
+	top: 0;
+}
+.bloqueContacto .datosContacto {
+	margin-top: 60px;
+}
+.bloqueContacto .datosContacto a.telefonoContacto {
+	padding-top: 10px;
+	display: block;
+	margin-bottom: 30px;
+	color: #50535a;
+}
+.bloqueContacto .datosContacto a.telefonoContacto span {
+	display: block;
+	font-family: TelefonicaBold;
+}
+.bloqueContacto .datosContacto > span {
+	line-height: 1.33;
+	margin-bottom: 20px;
+	display: block;
+}
+.bloqueContacto .datosContacto ul li {
+	display: inline-block;
+}
+.bloqueContacto .datosContacto ul li:not(:last-of-type) {
+	margin-right: 20px;
+}
+/***** Página recomendador ******/
+.bqRecomendador {
+	padding-bottom: 95px;
+	
+}
+.bqRecomendador .container {
+    position: relative;
+    background-color: #fff;
+    padding-right: 20px;
+    padding-left: 20px;	
+}
+.bqRecomendador .bqizda, .bqRecomendador .bqdcha, .bqRecomendador .bqcentro{
+	min-width: 100px;
+	display: block;
+}
+.bqizda {
+	margin-bottom: 20px;
+	padding-left: 0;
+}
+.bqsupcuestionario {
+    border-bottom: solid 2px #e9eae8;
+    padding-bottom: 30px;
+}
+.bqRecomendador a.enlaceatrascuestionario{
+    font-size: 16px;
+    line-height: 1.5; 
+    color: #50535a;
+    display: flex;
+}
+.bqRecomendador a.enlaceatrascuestionario img {
+	margin-right: 10px;
+}
+.bqRecomendador .bqcentro{
+	margin-right:auto;
+	margin-left:auto;
+	max-width: 200px;
+}
+.bqnumerosul {
+    position: absolute;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+	bottom:0;
+}
+.bqRecomendador .row:first-of-type {
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+}
+.bqnumerosul li{
+  margin-right: 18px;
+  display: inline-block;
+}
+.bqnumerosul li.active {
+    color: #fff;
+}
+.bqnumerosul li:first-of-type {
+	margin-left: 10px;
+}
+.titpreguncuestionario{
+  font-size: 32px;
+  line-height: 1.25;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  font-family: TelefonicaLight;
+}
+.respuestacuestionario {
+	border-radius: 2px;
+	background-color: #f4f4f3;
+	max-width: 555px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:20px;
+	font-size: 18px;
+	line-height: 1.33;
+	text-align: center;
+	padding: 12px 10px;
+}
+.respuestacuestionario:hover {
+	background: #e9eae8;
+}
+.respuestacuestionario input[type="radio"] {
+    display: none;
+}
+.respuestacuestionario label {
+	margin-bottom: 0
+}
+.indicator {
+    height: 30px;
+    border-radius: 17.5px;
+    background-color: #00a9e0;
+    z-index: 1;
+    left: 0!important;
+	position: absolute;
+    top: 0;
+	bottom:0;
+}
+.pnt-size-indicator-step-1 {
+    right: 170px;
+}
+.pnt-size-indicator-step-2 {
+    right: 140px;
+}
+.pnt-size-indicator-step-3 {
+    right: 110px;
+}
+.pnt-size-indicator-step-4 {
+    right: 80px;
+}
+.pnt-size-indicator-step-5 {
+    right: 40px;
+}
+.pnt-size-indicator-step-6 {
+    right: 10px;
+}
+/**** Formulario recomendador ****/
+.formRecomendador .titpreguncuestionario {
+	margin: 20px 0;
+}
+.subtitpreguncuestionario {
+	line-height: 1.33;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.bqrecomformulario {
+	margin-right:auto;
+	margin-left:auto;
+	width: 355px;
+}
+.bqrecomformulario input {
+	border: none;
+    padding: 12px 0;
+    line-height: 1;
+    font-size: 18px;
+    height: auto;
+    border-radius: 2px;
+}
+#nombreUsuarioReco, #telefonoUsuarioReco {
+	margin-bottom: 20px;
+}
+#aceptarPrivacidadReco a {
+	color: #00a9e0;
+}
+.bqatrasformrecomen {
+	margin-left:20px;
+}
+#programarLlamadaReco {
+	margin-top: 30px
+}
+/**** Recomendador informe ****/
+.bqRecomendador #acordeonProducto div.collapse > div, .bqRecomendador #acordeonProducto div.collapsing > div {
+	margin: 20px auto 30px auto;
+}
+.bqRecomendador #acordeonProducto #pestanaReconectar div.collapse > div, .bqRecomendador #acordeonReconectar #pestanaPlan div.collapsing > div {
+	margin: 20px auto -2px auto;
+}
+.titInformeRecomendador {
+	font-size: 32px;
+	font-family: TelefonicaLight;
+	line-height: 1.25;
+	text-align: center;
+	color: #50535a;
+	margin: 0 0 40px 0;
+}
+.parInformeRecomendador{
+	font-size: 18px;
+	line-height: 1.33;
+	color: #50535a;
+	margin-bottom:30px;
+}
+.titparInformeRecomendador{
+	font-size: 21px;
+	line-height: normal;
+	color: #50535a;
+	margin-bottom:20px;
+	display:none;
+	font-family: TelefonicaBold;
+}
+.fondatoInforme {
+    border-radius: 2px;
+    background-color: #f4f4f3;
+    margin: 0px;
+    padding: 20px 0 30px 0;
+    margin: 10px 0 30px 0;
+}
+.c100.azulmovistar .bar, .c100.azulmovistar .fill {
+  border-color: #00a9e0 !important;
+}
+.c100.azulmovistar:hover > span {
+  color: #00a9e0;
+}
+.titdato{
+  font-size: 21px;
+  font-style: italic;
+  line-height: 1.38;
+  color: #50535a;
+  margin: 20px 0 10px 0;
+}
+.pardato{
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.61;
+  color: #50535a;	
+}
+.pardato:last-of-type {
+	margin-bottom: 0;
+}
+.fonazul {
+    background-color: #00a9e0;
+    margin-bottom: 60px;
+}
+.titfonazul {
+    font-size: 32px;
+    line-height: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+	padding-top: 60px;
+	font-family: TelefonicaLight;
+}
+.txtbqFonazul{
+	font-size: 18px;
+	font-family: TelefonicaBold;
+	line-height: normal;
+	text-align: center;
+	color: #ffffff;
+	border-bottom: 1px solid #fff;
+	padding: 0 15px;
+	display: flex;
+	align-items: center;
+	height: 70px;
+}
+.txtbqFonazul img {
+    height: 36px;
+    margin-right: 20px;
+}
+.txtbqFonazul p {
+	margin-bottom: 0;
+	font-size: 21px;
+}
+.informe .container{
+	padding:0px;
+}
+.paddlateralinforme {
+    padding: 0px 20px;
+}
+.titsugerencias {
+    font-size: 40px;
+    font-family: TelefonicaLight;
+    line-height: normal;
+    text-align: center;
+    color: #50535a;
+    margin-top: 60px;
+}
+.serviSugerencias {
+    border-bottom: solid 1px #b6b7b7;
+    padding: 29px 0px;
+}
+.detalleServicio {
+	display: flex;
+	flex-direction: column;
+}
+.titsuge {
+  font-size: 28px;
+  font-family: TelefonicaLight;
+  line-height: 1.43;
+  color: #50535a;
+  margin-bottom: 6px;
+}
+.preciosuge {
+  font-size: 24px;
+  line-height: normal;
+  color: #5cc500;
+  margin-bottom: 10px;
+}
+.preciosuge span {
+	font-family: TelefonicaBold;
+}
+.descsuge {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #50535a;
+	margin-bottom: 30px;
+}
+.detalleServicio > div:last-of-type a{
+	display: block;
+}
+.btloquiero input[type=button] {
+    border-radius: 4px;
+    background-color: #5cc500;
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 14px 0px;
+	cursor: pointer;
+}
+.enlaceverdetalle{
+	font-size: 16px;
+	line-height: normal;
+	text-align: center;
+	color: #00a9e0;
+	display: block;
+	padding: 15px 0px;
+	cursor: pointer;
+}
+.enlaceverdetalle:hover {
+	color: #00a9e0;
+}
+.serviSugerencias:last-child{
+	border: none;
+}
+
+@media (max-width:767px) and (min-width:576px) {
+	.informe .container {
+		max-width: 100%;
+	}
+}
+
+/**** Estilos porcentajes ****/
+.rect-auto, .c100.p51 .slice, .c100.p52 .slice, .c100.p53 .slice, .c100.p54 .slice, .c100.p55 .slice, .c100.p56 .slice, .c100.p57 .slice, .c100.p58 .slice, .c100.p59 .slice, .c100.p60 .slice, .c100.p61 .slice, .c100.p62 .slice, .c100.p63 .slice, .c100.p64 .slice, .c100.p65 .slice, .c100.p66 .slice, .c100.p67 .slice, .c100.p68 .slice, .c100.p69 .slice, .c100.p70 .slice, .c100.p71 .slice, .c100.p72 .slice, .c100.p73 .slice, .c100.p74 .slice, .c100.p75 .slice, .c100.p76 .slice, .c100.p77 .slice, .c100.p78 .slice, .c100.p79 .slice, .c100.p80 .slice, .c100.p81 .slice, .c100.p82 .slice, .c100.p83 .slice, .c100.p84 .slice, .c100.p85 .slice, .c100.p86 .slice, .c100.p87 .slice, .c100.p88 .slice, .c100.p89 .slice, .c100.p90 .slice, .c100.p91 .slice, .c100.p92 .slice, .c100.p93 .slice, .c100.p94 .slice, .c100.p95 .slice, .c100.p96 .slice, .c100.p97 .slice, .c100.p98 .slice, .c100.p99 .slice, .c100.p100 .slice {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.pie, .c100 .bar, .c100.p51 .fill, .c100.p52 .fill, .c100.p53 .fill, .c100.p54 .fill, .c100.p55 .fill, .c100.p56 .fill, .c100.p57 .fill, .c100.p58 .fill, .c100.p59 .fill, .c100.p60 .fill, .c100.p61 .fill, .c100.p62 .fill, .c100.p63 .fill, .c100.p64 .fill, .c100.p65 .fill, .c100.p66 .fill, .c100.p67 .fill, .c100.p68 .fill, .c100.p69 .fill, .c100.p70 .fill, .c100.p71 .fill, .c100.p72 .fill, .c100.p73 .fill, .c100.p74 .fill, .c100.p75 .fill, .c100.p76 .fill, .c100.p77 .fill, .c100.p78 .fill, .c100.p79 .fill, .c100.p80 .fill, .c100.p81 .fill, .c100.p82 .fill, .c100.p83 .fill, .c100.p84 .fill, .c100.p85 .fill, .c100.p86 .fill, .c100.p87 .fill, .c100.p88 .fill, .c100.p89 .fill, .c100.p90 .fill, .c100.p91 .fill, .c100.p92 .fill, .c100.p93 .fill, .c100.p94 .fill, .c100.p95 .fill, .c100.p96 .fill, .c100.p97 .fill, .c100.p98 .fill, .c100.p99 .fill, .c100.p100 .fill {
+  position: absolute;
+  border: 0.08em solid #307bbb;
+  width: 0.84em;
+  height: 0.84em;
+  clip: rect(0em, 0.5em, 1em, 0em);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.pie-fill, .c100.p51 .bar:after, .c100.p51 .fill, .c100.p52 .bar:after, .c100.p52 .fill, .c100.p53 .bar:after, .c100.p53 .fill, .c100.p54 .bar:after, .c100.p54 .fill, .c100.p55 .bar:after, .c100.p55 .fill, .c100.p56 .bar:after, .c100.p56 .fill, .c100.p57 .bar:after, .c100.p57 .fill, .c100.p58 .bar:after, .c100.p58 .fill, .c100.p59 .bar:after, .c100.p59 .fill, .c100.p60 .bar:after, .c100.p60 .fill, .c100.p61 .bar:after, .c100.p61 .fill, .c100.p62 .bar:after, .c100.p62 .fill, .c100.p63 .bar:after, .c100.p63 .fill, .c100.p64 .bar:after, .c100.p64 .fill, .c100.p65 .bar:after, .c100.p65 .fill, .c100.p66 .bar:after, .c100.p66 .fill, .c100.p67 .bar:after, .c100.p67 .fill, .c100.p68 .bar:after, .c100.p68 .fill, .c100.p69 .bar:after, .c100.p69 .fill, .c100.p70 .bar:after, .c100.p70 .fill, .c100.p71 .bar:after, .c100.p71 .fill, .c100.p72 .bar:after, .c100.p72 .fill, .c100.p73 .bar:after, .c100.p73 .fill, .c100.p74 .bar:after, .c100.p74 .fill, .c100.p75 .bar:after, .c100.p75 .fill, .c100.p76 .bar:after, .c100.p76 .fill, .c100.p77 .bar:after, .c100.p77 .fill, .c100.p78 .bar:after, .c100.p78 .fill, .c100.p79 .bar:after, .c100.p79 .fill, .c100.p80 .bar:after, .c100.p80 .fill, .c100.p81 .bar:after, .c100.p81 .fill, .c100.p82 .bar:after, .c100.p82 .fill, .c100.p83 .bar:after, .c100.p83 .fill, .c100.p84 .bar:after, .c100.p84 .fill, .c100.p85 .bar:after, .c100.p85 .fill, .c100.p86 .bar:after, .c100.p86 .fill, .c100.p87 .bar:after, .c100.p87 .fill, .c100.p88 .bar:after, .c100.p88 .fill, .c100.p89 .bar:after, .c100.p89 .fill, .c100.p90 .bar:after, .c100.p90 .fill, .c100.p91 .bar:after, .c100.p91 .fill, .c100.p92 .bar:after, .c100.p92 .fill, .c100.p93 .bar:after, .c100.p93 .fill, .c100.p94 .bar:after, .c100.p94 .fill, .c100.p95 .bar:after, .c100.p95 .fill, .c100.p96 .bar:after, .c100.p96 .fill, .c100.p97 .bar:after, .c100.p97 .fill, .c100.p98 .bar:after, .c100.p98 .fill, .c100.p99 .bar:after, .c100.p99 .fill, .c100.p100 .bar:after, .c100.p100 .fill {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c100 {
+  position: relative;
+  font-size: 206px;
+  width: 1em;
+  height: 1em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+  margin: 0;
+  background-color: #b6b7b7;
+}
+.c100 *, .c100 *:before, .c100 *:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.c100.center {
+  float: none;
+  margin: 0 auto;
+}
+.c100 > span {
+  font-family: TelefonicaBold;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 5em;
+  line-height: 5em;
+  font-size: 0.2em;
+  color: #00a9e0;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.c100:after {
+  position: absolute;
+  top: 0.08em;
+  left: 0.08em;
+  display: block;
+  content: " ";
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  width: 0.84em;
+  height: 0.84em;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  background-color: #f4f4f3;
+}
+.c100 .slice {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  clip: rect(0em, 1em, 1em, 0.5em);
+}
+.c100.p1 .bar {
+  -webkit-transform: rotate(3.6deg);
+  -moz-transform: rotate(3.6deg);
+  -ms-transform: rotate(3.6deg);
+  -o-transform: rotate(3.6deg);
+  transform: rotate(3.6deg);
+}
+.c100.p2 .bar {
+  -webkit-transform: rotate(7.2deg);
+  -moz-transform: rotate(7.2deg);
+  -ms-transform: rotate(7.2deg);
+  -o-transform: rotate(7.2deg);
+  transform: rotate(7.2deg);
+}
+.c100.p3 .bar {
+  -webkit-transform: rotate(10.8deg);
+  -moz-transform: rotate(10.8deg);
+  -ms-transform: rotate(10.8deg);
+  -o-transform: rotate(10.8deg);
+  transform: rotate(10.8deg);
+}
+.c100.p4 .bar {
+  -webkit-transform: rotate(14.4deg);
+  -moz-transform: rotate(14.4deg);
+  -ms-transform: rotate(14.4deg);
+  -o-transform: rotate(14.4deg);
+  transform: rotate(14.4deg);
+}
+.c100.p5 .bar {
+  -webkit-transform: rotate(18deg);
+  -moz-transform: rotate(18deg);
+  -ms-transform: rotate(18deg);
+  -o-transform: rotate(18deg);
+  transform: rotate(18deg);
+}
+.c100.p6 .bar {
+  -webkit-transform: rotate(21.6deg);
+  -moz-transform: rotate(21.6deg);
+  -ms-transform: rotate(21.6deg);
+  -o-transform: rotate(21.6deg);
+  transform: rotate(21.6deg);
+}
+.c100.p7 .bar {
+  -webkit-transform: rotate(25.2deg);
+  -moz-transform: rotate(25.2deg);
+  -ms-transform: rotate(25.2deg);
+  -o-transform: rotate(25.2deg);
+  transform: rotate(25.2deg);
+}
+.c100.p8 .bar {
+  -webkit-transform: rotate(28.8deg);
+  -moz-transform: rotate(28.8deg);
+  -ms-transform: rotate(28.8deg);
+  -o-transform: rotate(28.8deg);
+  transform: rotate(28.8deg);
+}
+.c100.p9 .bar {
+  -webkit-transform: rotate(32.4deg);
+  -moz-transform: rotate(32.4deg);
+  -ms-transform: rotate(32.4deg);
+  -o-transform: rotate(32.4deg);
+  transform: rotate(32.4deg);
+}
+.c100.p10 .bar {
+  -webkit-transform: rotate(36deg);
+  -moz-transform: rotate(36deg);
+  -ms-transform: rotate(36deg);
+  -o-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+.c100.p11 .bar {
+  -webkit-transform: rotate(39.6deg);
+  -moz-transform: rotate(39.6deg);
+  -ms-transform: rotate(39.6deg);
+  -o-transform: rotate(39.6deg);
+  transform: rotate(39.6deg);
+}
+.c100.p12 .bar {
+  -webkit-transform: rotate(43.2deg);
+  -moz-transform: rotate(43.2deg);
+  -ms-transform: rotate(43.2deg);
+  -o-transform: rotate(43.2deg);
+  transform: rotate(43.2deg);
+}
+.c100.p13 .bar {
+  -webkit-transform: rotate(46.8deg);
+  -moz-transform: rotate(46.8deg);
+  -ms-transform: rotate(46.8deg);
+  -o-transform: rotate(46.8deg);
+  transform: rotate(46.8deg);
+}
+.c100.p14 .bar {
+  -webkit-transform: rotate(50.4deg);
+  -moz-transform: rotate(50.4deg);
+  -ms-transform: rotate(50.4deg);
+  -o-transform: rotate(50.4deg);
+  transform: rotate(50.4deg);
+}
+.c100.p15 .bar {
+  -webkit-transform: rotate(54deg);
+  -moz-transform: rotate(54deg);
+  -ms-transform: rotate(54deg);
+  -o-transform: rotate(54deg);
+  transform: rotate(54deg);
+}
+.c100.p16 .bar {
+  -webkit-transform: rotate(57.6deg);
+  -moz-transform: rotate(57.6deg);
+  -ms-transform: rotate(57.6deg);
+  -o-transform: rotate(57.6deg);
+  transform: rotate(57.6deg);
+}
+.c100.p17 .bar {
+  -webkit-transform: rotate(61.2deg);
+  -moz-transform: rotate(61.2deg);
+  -ms-transform: rotate(61.2deg);
+  -o-transform: rotate(61.2deg);
+  transform: rotate(61.2deg);
+}
+.c100.p18 .bar {
+  -webkit-transform: rotate(64.8deg);
+  -moz-transform: rotate(64.8deg);
+  -ms-transform: rotate(64.8deg);
+  -o-transform: rotate(64.8deg);
+  transform: rotate(64.8deg);
+}
+.c100.p19 .bar {
+  -webkit-transform: rotate(68.4deg);
+  -moz-transform: rotate(68.4deg);
+  -ms-transform: rotate(68.4deg);
+  -o-transform: rotate(68.4deg);
+  transform: rotate(68.4deg);
+}
+.c100.p20 .bar {
+  -webkit-transform: rotate(72deg);
+  -moz-transform: rotate(72deg);
+  -ms-transform: rotate(72deg);
+  -o-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+.c100.p21 .bar {
+  -webkit-transform: rotate(75.6deg);
+  -moz-transform: rotate(75.6deg);
+  -ms-transform: rotate(75.6deg);
+  -o-transform: rotate(75.6deg);
+  transform: rotate(75.6deg);
+}
+.c100.p22 .bar {
+  -webkit-transform: rotate(79.2deg);
+  -moz-transform: rotate(79.2deg);
+  -ms-transform: rotate(79.2deg);
+  -o-transform: rotate(79.2deg);
+  transform: rotate(79.2deg);
+}
+.c100.p23 .bar {
+  -webkit-transform: rotate(82.8deg);
+  -moz-transform: rotate(82.8deg);
+  -ms-transform: rotate(82.8deg);
+  -o-transform: rotate(82.8deg);
+  transform: rotate(82.8deg);
+}
+.c100.p24 .bar {
+  -webkit-transform: rotate(86.4deg);
+  -moz-transform: rotate(86.4deg);
+  -ms-transform: rotate(86.4deg);
+  -o-transform: rotate(86.4deg);
+  transform: rotate(86.4deg);
+}
+.c100.p25 .bar {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.c100.p26 .bar {
+  -webkit-transform: rotate(93.6deg);
+  -moz-transform: rotate(93.6deg);
+  -ms-transform: rotate(93.6deg);
+  -o-transform: rotate(93.6deg);
+  transform: rotate(93.6deg);
+}
+.c100.p27 .bar {
+  -webkit-transform: rotate(97.2deg);
+  -moz-transform: rotate(97.2deg);
+  -ms-transform: rotate(97.2deg);
+  -o-transform: rotate(97.2deg);
+  transform: rotate(97.2deg);
+}
+.c100.p28 .bar {
+  -webkit-transform: rotate(100.8deg);
+  -moz-transform: rotate(100.8deg);
+  -ms-transform: rotate(100.8deg);
+  -o-transform: rotate(100.8deg);
+  transform: rotate(100.8deg);
+}
+.c100.p29 .bar {
+  -webkit-transform: rotate(104.4deg);
+  -moz-transform: rotate(104.4deg);
+  -ms-transform: rotate(104.4deg);
+  -o-transform: rotate(104.4deg);
+  transform: rotate(104.4deg);
+}
+.c100.p30 .bar {
+  -webkit-transform: rotate(108deg);
+  -moz-transform: rotate(108deg);
+  -ms-transform: rotate(108deg);
+  -o-transform: rotate(108deg);
+  transform: rotate(108deg);
+}
+.c100.p31 .bar {
+  -webkit-transform: rotate(111.6deg);
+  -moz-transform: rotate(111.6deg);
+  -ms-transform: rotate(111.6deg);
+  -o-transform: rotate(111.6deg);
+  transform: rotate(111.6deg);
+}
+.c100.p32 .bar {
+  -webkit-transform: rotate(115.2deg);
+  -moz-transform: rotate(115.2deg);
+  -ms-transform: rotate(115.2deg);
+  -o-transform: rotate(115.2deg);
+  transform: rotate(115.2deg);
+}
+.c100.p33 .bar {
+  -webkit-transform: rotate(118.8deg);
+  -moz-transform: rotate(118.8deg);
+  -ms-transform: rotate(118.8deg);
+  -o-transform: rotate(118.8deg);
+  transform: rotate(118.8deg);
+}
+.c100.p34 .bar {
+  -webkit-transform: rotate(122.4deg);
+  -moz-transform: rotate(122.4deg);
+  -ms-transform: rotate(122.4deg);
+  -o-transform: rotate(122.4deg);
+  transform: rotate(122.4deg);
+}
+.c100.p35 .bar {
+  -webkit-transform: rotate(126deg);
+  -moz-transform: rotate(126deg);
+  -ms-transform: rotate(126deg);
+  -o-transform: rotate(126deg);
+  transform: rotate(126deg);
+}
+.c100.p36 .bar {
+  -webkit-transform: rotate(129.6deg);
+  -moz-transform: rotate(129.6deg);
+  -ms-transform: rotate(129.6deg);
+  -o-transform: rotate(129.6deg);
+  transform: rotate(129.6deg);
+}
+.c100.p37 .bar {
+  -webkit-transform: rotate(133.2deg);
+  -moz-transform: rotate(133.2deg);
+  -ms-transform: rotate(133.2deg);
+  -o-transform: rotate(133.2deg);
+  transform: rotate(133.2deg);
+}
+.c100.p38 .bar {
+  -webkit-transform: rotate(136.8deg);
+  -moz-transform: rotate(136.8deg);
+  -ms-transform: rotate(136.8deg);
+  -o-transform: rotate(136.8deg);
+  transform: rotate(136.8deg);
+}
+.c100.p39 .bar {
+  -webkit-transform: rotate(140.4deg);
+  -moz-transform: rotate(140.4deg);
+  -ms-transform: rotate(140.4deg);
+  -o-transform: rotate(140.4deg);
+  transform: rotate(140.4deg);
+}
+.c100.p40 .bar {
+  -webkit-transform: rotate(144deg);
+  -moz-transform: rotate(144deg);
+  -ms-transform: rotate(144deg);
+  -o-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+.c100.p41 .bar {
+  -webkit-transform: rotate(147.6deg);
+  -moz-transform: rotate(147.6deg);
+  -ms-transform: rotate(147.6deg);
+  -o-transform: rotate(147.6deg);
+  transform: rotate(147.6deg);
+}
+.c100.p42 .bar {
+  -webkit-transform: rotate(151.2deg);
+  -moz-transform: rotate(151.2deg);
+  -ms-transform: rotate(151.2deg);
+  -o-transform: rotate(151.2deg);
+  transform: rotate(151.2deg);
+}
+.c100.p43 .bar {
+  -webkit-transform: rotate(154.8deg);
+  -moz-transform: rotate(154.8deg);
+  -ms-transform: rotate(154.8deg);
+  -o-transform: rotate(154.8deg);
+  transform: rotate(154.8deg);
+}
+.c100.p44 .bar {
+  -webkit-transform: rotate(158.4deg);
+  -moz-transform: rotate(158.4deg);
+  -ms-transform: rotate(158.4deg);
+  -o-transform: rotate(158.4deg);
+  transform: rotate(158.4deg);
+}
+.c100.p45 .bar {
+  -webkit-transform: rotate(162deg);
+  -moz-transform: rotate(162deg);
+  -ms-transform: rotate(162deg);
+  -o-transform: rotate(162deg);
+  transform: rotate(162deg);
+}
+.c100.p46 .bar {
+  -webkit-transform: rotate(165.6deg);
+  -moz-transform: rotate(165.6deg);
+  -ms-transform: rotate(165.6deg);
+  -o-transform: rotate(165.6deg);
+  transform: rotate(165.6deg);
+}
+.c100.p47 .bar {
+  -webkit-transform: rotate(169.2deg);
+  -moz-transform: rotate(169.2deg);
+  -ms-transform: rotate(169.2deg);
+  -o-transform: rotate(169.2deg);
+  transform: rotate(169.2deg);
+}
+.c100.p48 .bar {
+  -webkit-transform: rotate(172.8deg);
+  -moz-transform: rotate(172.8deg);
+  -ms-transform: rotate(172.8deg);
+  -o-transform: rotate(172.8deg);
+  transform: rotate(172.8deg);
+}
+.c100.p49 .bar {
+  -webkit-transform: rotate(176.4deg);
+  -moz-transform: rotate(176.4deg);
+  -ms-transform: rotate(176.4deg);
+  -o-transform: rotate(176.4deg);
+  transform: rotate(176.4deg);
+}
+.c100.p50 .bar {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.c100.p51 .bar {
+  -webkit-transform: rotate(183.6deg);
+  -moz-transform: rotate(183.6deg);
+  -ms-transform: rotate(183.6deg);
+  -o-transform: rotate(183.6deg);
+  transform: rotate(183.6deg);
+}
+.c100.p52 .bar {
+  -webkit-transform: rotate(187.2deg);
+  -moz-transform: rotate(187.2deg);
+  -ms-transform: rotate(187.2deg);
+  -o-transform: rotate(187.2deg);
+  transform: rotate(187.2deg);
+}
+.c100.p53 .bar {
+  -webkit-transform: rotate(190.8deg);
+  -moz-transform: rotate(190.8deg);
+  -ms-transform: rotate(190.8deg);
+  -o-transform: rotate(190.8deg);
+  transform: rotate(190.8deg);
+}
+.c100.p54 .bar {
+  -webkit-transform: rotate(194.4deg);
+  -moz-transform: rotate(194.4deg);
+  -ms-transform: rotate(194.4deg);
+  -o-transform: rotate(194.4deg);
+  transform: rotate(194.4deg);
+}
+.c100.p55 .bar {
+  -webkit-transform: rotate(198deg);
+  -moz-transform: rotate(198deg);
+  -ms-transform: rotate(198deg);
+  -o-transform: rotate(198deg);
+  transform: rotate(198deg);
+}
+.c100.p56 .bar {
+  -webkit-transform: rotate(201.6deg);
+  -moz-transform: rotate(201.6deg);
+  -ms-transform: rotate(201.6deg);
+  -o-transform: rotate(201.6deg);
+  transform: rotate(201.6deg);
+}
+.c100.p57 .bar {
+  -webkit-transform: rotate(205.2deg);
+  -moz-transform: rotate(205.2deg);
+  -ms-transform: rotate(205.2deg);
+  -o-transform: rotate(205.2deg);
+  transform: rotate(205.2deg);
+}
+.c100.p58 .bar {
+  -webkit-transform: rotate(208.8deg);
+  -moz-transform: rotate(208.8deg);
+  -ms-transform: rotate(208.8deg);
+  -o-transform: rotate(208.8deg);
+  transform: rotate(208.8deg);
+}
+.c100.p59 .bar {
+  -webkit-transform: rotate(212.4deg);
+  -moz-transform: rotate(212.4deg);
+  -ms-transform: rotate(212.4deg);
+  -o-transform: rotate(212.4deg);
+  transform: rotate(212.4deg);
+}
+.c100.p60 .bar {
+  -webkit-transform: rotate(216deg);
+  -moz-transform: rotate(216deg);
+  -ms-transform: rotate(216deg);
+  -o-transform: rotate(216deg);
+  transform: rotate(216deg);
+}
+.c100.p61 .bar {
+  -webkit-transform: rotate(219.6deg);
+  -moz-transform: rotate(219.6deg);
+  -ms-transform: rotate(219.6deg);
+  -o-transform: rotate(219.6deg);
+  transform: rotate(219.6deg);
+}
+.c100.p62 .bar {
+  -webkit-transform: rotate(223.2deg);
+  -moz-transform: rotate(223.2deg);
+  -ms-transform: rotate(223.2deg);
+  -o-transform: rotate(223.2deg);
+  transform: rotate(223.2deg);
+}
+.c100.p63 .bar {
+  -webkit-transform: rotate(226.8deg);
+  -moz-transform: rotate(226.8deg);
+  -ms-transform: rotate(226.8deg);
+  -o-transform: rotate(226.8deg);
+  transform: rotate(226.8deg);
+}
+.c100.p64 .bar {
+  -webkit-transform: rotate(230.4deg);
+  -moz-transform: rotate(230.4deg);
+  -ms-transform: rotate(230.4deg);
+  -o-transform: rotate(230.4deg);
+  transform: rotate(230.4deg);
+}
+.c100.p65 .bar {
+  -webkit-transform: rotate(234deg);
+  -moz-transform: rotate(234deg);
+  -ms-transform: rotate(234deg);
+  -o-transform: rotate(234deg);
+  transform: rotate(234deg);
+}
+.c100.p66 .bar {
+  -webkit-transform: rotate(237.6deg);
+  -moz-transform: rotate(237.6deg);
+  -ms-transform: rotate(237.6deg);
+  -o-transform: rotate(237.6deg);
+  transform: rotate(237.6deg);
+}
+.c100.p67 .bar {
+  -webkit-transform: rotate(241.2deg);
+  -moz-transform: rotate(241.2deg);
+  -ms-transform: rotate(241.2deg);
+  -o-transform: rotate(241.2deg);
+  transform: rotate(241.2deg);
+}
+.c100.p68 .bar {
+  -webkit-transform: rotate(244.8deg);
+  -moz-transform: rotate(244.8deg);
+  -ms-transform: rotate(244.8deg);
+  -o-transform: rotate(244.8deg);
+  transform: rotate(244.8deg);
+}
+.c100.p69 .bar {
+  -webkit-transform: rotate(248.4deg);
+  -moz-transform: rotate(248.4deg);
+  -ms-transform: rotate(248.4deg);
+  -o-transform: rotate(248.4deg);
+  transform: rotate(248.4deg);
+}
+.c100.p70 .bar {
+  -webkit-transform: rotate(252deg);
+  -moz-transform: rotate(252deg);
+  -ms-transform: rotate(252deg);
+  -o-transform: rotate(252deg);
+  transform: rotate(252deg);
+}
+.c100.p71 .bar {
+  -webkit-transform: rotate(255.6deg);
+  -moz-transform: rotate(255.6deg);
+  -ms-transform: rotate(255.6deg);
+  -o-transform: rotate(255.6deg);
+  transform: rotate(255.6deg);
+}
+.c100.p72 .bar {
+  -webkit-transform: rotate(259.2deg);
+  -moz-transform: rotate(259.2deg);
+  -ms-transform: rotate(259.2deg);
+  -o-transform: rotate(259.2deg);
+  transform: rotate(259.2deg);
+}
+.c100.p73 .bar {
+  -webkit-transform: rotate(262.8deg);
+  -moz-transform: rotate(262.8deg);
+  -ms-transform: rotate(262.8deg);
+  -o-transform: rotate(262.8deg);
+  transform: rotate(262.8deg);
+}
+.c100.p74 .bar {
+  -webkit-transform: rotate(266.4deg);
+  -moz-transform: rotate(266.4deg);
+  -ms-transform: rotate(266.4deg);
+  -o-transform: rotate(266.4deg);
+  transform: rotate(266.4deg);
+}
+.c100.p75 .bar {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.c100.p76 .bar {
+  -webkit-transform: rotate(273.6deg);
+  -moz-transform: rotate(273.6deg);
+  -ms-transform: rotate(273.6deg);
+  -o-transform: rotate(273.6deg);
+  transform: rotate(273.6deg);
+}
+.c100.p77 .bar {
+  -webkit-transform: rotate(277.2deg);
+  -moz-transform: rotate(277.2deg);
+  -ms-transform: rotate(277.2deg);
+  -o-transform: rotate(277.2deg);
+  transform: rotate(277.2deg);
+}
+.c100.p78 .bar {
+  -webkit-transform: rotate(280.8deg);
+  -moz-transform: rotate(280.8deg);
+  -ms-transform: rotate(280.8deg);
+  -o-transform: rotate(280.8deg);
+  transform: rotate(280.8deg);
+}
+.c100.p79 .bar {
+  -webkit-transform: rotate(284.4deg);
+  -moz-transform: rotate(284.4deg);
+  -ms-transform: rotate(284.4deg);
+  -o-transform: rotate(284.4deg);
+  transform: rotate(284.4deg);
+}
+.c100.p80 .bar {
+  -webkit-transform: rotate(288deg);
+  -moz-transform: rotate(288deg);
+  -ms-transform: rotate(288deg);
+  -o-transform: rotate(288deg);
+  transform: rotate(288deg);
+}
+.c100.p81 .bar {
+  -webkit-transform: rotate(291.6deg);
+  -moz-transform: rotate(291.6deg);
+  -ms-transform: rotate(291.6deg);
+  -o-transform: rotate(291.6deg);
+  transform: rotate(291.6deg);
+}
+.c100.p82 .bar {
+  -webkit-transform: rotate(295.2deg);
+  -moz-transform: rotate(295.2deg);
+  -ms-transform: rotate(295.2deg);
+  -o-transform: rotate(295.2deg);
+  transform: rotate(295.2deg);
+}
+.c100.p83 .bar {
+  -webkit-transform: rotate(298.8deg);
+  -moz-transform: rotate(298.8deg);
+  -ms-transform: rotate(298.8deg);
+  -o-transform: rotate(298.8deg);
+  transform: rotate(298.8deg);
+}
+.c100.p84 .bar {
+  -webkit-transform: rotate(302.4deg);
+  -moz-transform: rotate(302.4deg);
+  -ms-transform: rotate(302.4deg);
+  -o-transform: rotate(302.4deg);
+  transform: rotate(302.4deg);
+}
+.c100.p85 .bar {
+  -webkit-transform: rotate(306deg);
+  -moz-transform: rotate(306deg);
+  -ms-transform: rotate(306deg);
+  -o-transform: rotate(306deg);
+  transform: rotate(306deg);
+}
+.c100.p86 .bar {
+  -webkit-transform: rotate(309.6deg);
+  -moz-transform: rotate(309.6deg);
+  -ms-transform: rotate(309.6deg);
+  -o-transform: rotate(309.6deg);
+  transform: rotate(309.6deg);
+}
+.c100.p87 .bar {
+  -webkit-transform: rotate(313.2deg);
+  -moz-transform: rotate(313.2deg);
+  -ms-transform: rotate(313.2deg);
+  -o-transform: rotate(313.2deg);
+  transform: rotate(313.2deg);
+}
+.c100.p88 .bar {
+  -webkit-transform: rotate(316.8deg);
+  -moz-transform: rotate(316.8deg);
+  -ms-transform: rotate(316.8deg);
+  -o-transform: rotate(316.8deg);
+  transform: rotate(316.8deg);
+}
+.c100.p89 .bar {
+  -webkit-transform: rotate(320.4deg);
+  -moz-transform: rotate(320.4deg);
+  -ms-transform: rotate(320.4deg);
+  -o-transform: rotate(320.4deg);
+  transform: rotate(320.4deg);
+}
+.c100.p90 .bar {
+  -webkit-transform: rotate(324deg);
+  -moz-transform: rotate(324deg);
+  -ms-transform: rotate(324deg);
+  -o-transform: rotate(324deg);
+  transform: rotate(324deg);
+}
+.c100.p91 .bar {
+  -webkit-transform: rotate(327.6deg);
+  -moz-transform: rotate(327.6deg);
+  -ms-transform: rotate(327.6deg);
+  -o-transform: rotate(327.6deg);
+  transform: rotate(327.6deg);
+}
+.c100.p92 .bar {
+  -webkit-transform: rotate(331.2deg);
+  -moz-transform: rotate(331.2deg);
+  -ms-transform: rotate(331.2deg);
+  -o-transform: rotate(331.2deg);
+  transform: rotate(331.2deg);
+}
+.c100.p93 .bar {
+  -webkit-transform: rotate(334.8deg);
+  -moz-transform: rotate(334.8deg);
+  -ms-transform: rotate(334.8deg);
+  -o-transform: rotate(334.8deg);
+  transform: rotate(334.8deg);
+}
+.c100.p94 .bar {
+  -webkit-transform: rotate(338.4deg);
+  -moz-transform: rotate(338.4deg);
+  -ms-transform: rotate(338.4deg);
+  -o-transform: rotate(338.4deg);
+  transform: rotate(338.4deg);
+}
+.c100.p95 .bar {
+  -webkit-transform: rotate(342deg);
+  -moz-transform: rotate(342deg);
+  -ms-transform: rotate(342deg);
+  -o-transform: rotate(342deg);
+  transform: rotate(342deg);
+}
+.c100.p96 .bar {
+  -webkit-transform: rotate(345.6deg);
+  -moz-transform: rotate(345.6deg);
+  -ms-transform: rotate(345.6deg);
+  -o-transform: rotate(345.6deg);
+  transform: rotate(345.6deg);
+}
+.c100.p97 .bar {
+  -webkit-transform: rotate(349.2deg);
+  -moz-transform: rotate(349.2deg);
+  -ms-transform: rotate(349.2deg);
+  -o-transform: rotate(349.2deg);
+  transform: rotate(349.2deg);
+}
+.c100.p98 .bar {
+  -webkit-transform: rotate(352.8deg);
+  -moz-transform: rotate(352.8deg);
+  -ms-transform: rotate(352.8deg);
+  -o-transform: rotate(352.8deg);
+  transform: rotate(352.8deg);
+}
+.c100.p99 .bar {
+  -webkit-transform: rotate(356.4deg);
+  -moz-transform: rotate(356.4deg);
+  -ms-transform: rotate(356.4deg);
+  -o-transform: rotate(356.4deg);
+  transform: rotate(356.4deg);
+}
+.c100.p100 .bar {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.c100:hover {
+  cursor: default;
+}
+/*.c100:hover > span {
+  width: 3.33em;
+  line-height: 3.33em;
+  font-size: 0.3em;
+  color: #307bbb;
+}
+.c100:hover:after {
+  top: 0.04em;
+  left: 0.04em;
+  width: 0.92em;
+  height: 0.92em;
+}*/
+.c100.dark {
+  background-color: #777777;
+}
+.c100.dark .bar,
+.c100.dark .fill {
+  border-color: #c6ff00 !important;
+}
+.c100.dark > span {
+  color: #777777;
+}
+.c100.dark:after {
+  background-color: #666666;
+}
+.c100.dark:hover > span {
+  color: #c6ff00;
+}
+.c100.green .bar, .c100.green .fill {
+  border-color: #4db53c !important;
+}
+.c100.green:hover > span {
+  color: #4db53c;
+}
+.c100.green.dark .bar, .c100.green.dark .fill {
+  border-color: #5fd400 !important;
+}
+.c100.green.dark:hover > span {
+  color: #5fd400;
+}
+.c100.orange .bar, .c100.orange .fill {
+  border-color: #dd9d22 !important;
+}
+.c100.orange:hover > span {
+  color: #dd9d22;
+}
+.c100.orange.dark .bar, .c100.orange.dark .fill {
+  border-color: #e08833 !important;
+}
+.c100.orange.dark:hover > span {
+  color: #e08833;
+}
+/**** Página error ****/
+.paginaError{
+	background-image: url('../imagenes/bg1-error.jpg');
+	height: 836px;
+	background-position: top center;
+	background-size: cover;
+}
+.paginaError h1{
+	text-align: center;
+	padding-top: 40px;
+    margin-bottom: 20px;
+	line-height: normal;
+}
+.paginaError p {
+	text-align: center;
+	font-size: 21px;
+	margin-bottom: 40px;
+	line-height: normal;
+}
+.paginaError li:nth-of-type(2){
+	margin: 20px 0 20px 0;
+}
+.bloqueError a{
+	background: #fff;
+    display: flex;
+	border-radius: 4px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+	padding: 20px 20px 20px 20px;
+	color: #50535a;
+	align-items: center;
+}
+.bloqueError a img{
+	height: 60px;
+}
+.bloqueError a span{
+	line-height: 1.33;
+	margin-left: 12px;
+	margin-bottom: 0;
+	flex-grow: 1;
+    text-align: center;
+}
+/**** Página error ****/
+/***** Footer ******/
+#footerContrata {
+	background: #f4f4f3;
+	padding: 60px 0;
+}
+#footerContrata h2 {
+	margin-bottom: 40px;
+}
+.txtpieservicios{
+	color:#50535a;
+	font-size: 18px;
+	font-family: TelefonicaBold;	
+}
+#footerContacta {
+	background-color: #00a9e0;
+	padding: 20px 0;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+#footerContacta p {
+	margin-bottom: 0;
+	display: inline-block;
+}
+.btnSolicitarLlamada {
+	background-color: #954b97;
+    background-image: url(../imagenes/call-center-copy.png);
+    background-repeat: no-repeat;
+    background-position: left 28px center;
+    padding-left: 43px;
+    width: 200px;
+}
+.btnSolicitarLlamada:hover {
+	background-color: #7f3f81; 
+}
+#footerMarcaTelefonica {
+	padding: 30px 0;
+}
+#footermapasitio{
+	border-top:1px solid #b7b7b7;
+	border-bottom:1px solid #b7b7b7;
+	padding: 40px 0;
+}
+.footer-large__title {
+    font-family: TelefonicaBold;
+    position: relative;
+    font-size: 21px;
+}
+.footer-large-links-block {
+    border-bottom: solid 1px #b7b7b7;;
+}
+.footer-large-links-block .collapsible-header {
+    border-bottom: 0;
+}
+.footer-large__title i {
+    color: #b6b7b7;
+    position: absolute;
+    padding-top: 5px;
+    right: 0;
+}
+.footer-large-links-block.active .collapsible-body {
+	display: none;
+}
+.collapsible-body {
+	padding: 20px 15px 0 0;
+}
+.collapsible-body li {
+	line-height: 20px;
+}
+.collapsible-body li:not(:last-of-type){
+	margin-bottom: 20px;
+}
+.collapsible-body li span {
+	font-family: TelefonicaBold;
+	display: block;
+}
+#rrss ul {
+	display: inline-block;
+	width: 100%;
+}
+#rrss li {
+	display: inline-block;
+}
+#rrss li a {
+	display: block;
+}
+#rrss li a:hover, .bloqueContacto .datosContacto ul li a:hover {
+	opacity: 0.7;
+}
+#copyright {
+	font-size: 14px;
+	color: #86888c;
+}
+/***** Footer ******/
+.inputformmodal{
+	background-color:#e9eae8;;
+	text-align:center;
+	font-style:italic;
+}
+.btnmodal{
+	border-radius:20px;
+}
+
+.txtpiecontacta{
+	font-size:24px;
+	color:#fff;
+	font-family: TelefonicaRegular;
+}
+.teltxtpiecontacta{
+	font-size:24px;
+    font-family: TelefonicaBold;
+    color: #fff;
+}
+.teltxtpiecontacta:hover {
+	color: #fff;
+}
+.barracontacto{
+	padding-bottom: 10px;
+    padding-top: 10px;
+  	background-color: #00a9e0;
+}
+
+.titfooterenlaces, .titfooterenlaces a, .titfooterenlaces2{
+	color:#50535a;
+	font-family: TelefonicaBold;
+}
+
+.titfooterenlaces a {
+    display: block;
+}
+
+.titfooterenlaces a i {
+    float: right;
+}
+/*---------------MEDIA QUERIeS---------------*/
+@media (min-width: 450px) {
+	.apps.slider .tabsApps {
+		justify-content: space-around;
+		overflow-x: hidden;
+	}
+}
+@media (min-width: 576px) {
+	.contraerBody {
+		left: -75%;
+	}
+	#navegacionN2 {
+		width: 75%;
+		right: -75%;
+	}
+	#cerrarMenu {
+	    width: 25%;
+	    margin-left: -25%;
+	}
+	.subNavHeader {
+		margin: 20px;
+	}
+	.paginaPrimerN {
+		margin-left:20px;
+		margin-right:20px;
+	}
+	.subNavFooter {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#navegacionN2 nav {
+		padding-left: 20px;
+		padding-right: 15px;
+	}
+	.tabsApps li {
+		width: 192px;
+		padding: 10px 20px;
+	}
+	.fichaSector {
+    	padding-left: 0;
+    	padding-right: 0;
+	}
+	.cabecera .servicios {
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+	}
+	.destacadoVerde .tituloSeccion {
+	    margin: 0 -15px 40px -15px;
+	}
+	.bloqueDestacado:first-of-type {
+		order: 1;
+	}
+	.bloqueDestacado:nth-of-type(2) {
+		order: 3;
+	}
+	.bloqueDestacado:nth-of-type(3) {
+		order: 5;
+	}
+	.bloqueDestacado:nth-of-type(4) {
+		order: 2;
+	}
+	.bloqueDestacado:nth-of-type(5) {
+		order: 4;
+	}
+	.bloqueDestacado:nth-of-type(6) {
+		order: 6;
+	}
+	.textoCabeceraFamilia .servicio-item {
+    	width: 33.33%;
+    }
+    #acordeonProducto iframe {
+    	height: 304px;
+	}
+	#pestanaPlan .tabsApps li {
+		width: 182px;
+	}
+	#acordeonProducto div[id*="faq"] button {
+    	padding: 22px 0;
+	}
+	.textoSector p {
+		margin-bottom: 30px;
+	}
+	.situacionesSector .descripcionProducto {
+		margin-top: 20px;
+	}
+	.cabSector .textoCabecera p {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	.pestanaSector .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.imagenSector {
+		float: left;
+		width: 43%;
+	}
+	.listaImagen ul {
+		width: 57%;
+		padding-left: 20px;
+		float: left;
+		margin-top: 0;
+		margin-bottom: 35px;
+	}
+	.pestanaSector div[class*="caracteristicaSector"] .botonVerde {
+		clear: both;
+	}
+	.caracteristicaSectorDos .descripcionCaracSector {
+		width: 52%;
+		float: left;
+		padding-right: 20px;
+	}
+	.caracteristicaSectorDos img {
+	    width: 48%;
+	    float: right;
+	    margin-bottom: 30px;
+	}
+	.caracteristicaSectorDos ul {
+		clear: both;
+	}
+	.contenidoContacto .cabSector h1 {
+		margin-bottom: 40px;
+	}
+	.bloqueContacto .container {
+		max-width: 100%;
+	}
+	.bloqueContacto .formulario p, .bloqueContacto .datosContacto p {
+		margin-bottom: 30px;
+	}
+	.contenidoRecomendador .cabecera.cabSector .textoCabecera {
+		padding-top: 40px;
+	}
+	.formRecomendador .titpreguncuestionario {
+		margin-top: 40px;
+	}
+	.paginaError{
+		height: 846px;
+	}
+	.paginaError h1{
+		margin-bottom: 40px;
+	}
+	.bloqueError a{
+		width: 353px;
+		margin: 0 auto;
+	}
+	.titdato {
+		margin-bottom: 15px;
+	}
+	.titfonazul {
+		margin-bottom: 30px;
+	}
+	.titsugerencias {
+		margin-bottom: 10px;
+	}
+	.pestanaSector .tabsApps {
+		justify-content: space-around;
+    	overflow-x: hidden;
+	}
+	.bqRecomendador .container {
+		max-width: 100%;
+	}
+}
+@media (min-width: 768px) {
+	#navegacion {
+		height: 90px;
+	}
+	#navegacion .logo {
+		margin-right: 45px;
+	    width: 205px;
+	    height: 40px;
+	    align-self: center;
+	    display: flex; 
+	}
+	#serviciosiconos > div img {
+		margin-bottom: 20px;
+	}
+	#serviciosiconos > div .txtpieservicios {
+		margin-bottom: 0;
+	}
+	.modal-dialog {
+		width: 407px;
+	}
+	.modal-body {
+		padding: 30px;
+	}
+	.contraerBody {
+		left: -48.5%;
+	}
+	#navegacionN2 {
+		width: 48.5%;
+		right: -48.5%;
+	}
+	#cerrarMenu {
+	    width: 51.5%;
+	    margin-left: -51.5%;
+	}
+	.subNavHeader {
+		margin: 30px 20px;
+	}
+	.paginaPrimerN {
+		margin: 20px;
+	}
+	.tituloCabecera {
+		font-size: 56px;
+	}
+	.subNavFooter, #navegacionN2 nav {
+		padding-left: 30px !important;
+	}
+	.tabsApps li {
+	    width: 230px;
+	    padding: 20px;
+	    /*border: none;*/
+	}
+	.tabsApps li:not(:last-of-type) {
+		margin-right: 10px;
+	}
+	.owl-dots {
+		display: unset;
+		padding-top: 30px;
+	}
+	.apps .owl-theme .owl-dots .owl-dot span {
+		width: 79px;
+	}
+	.owl-stage-outer.duo {
+		display: flex;
+	    justify-content: center;
+	}
+	.owl-stage-outer.duo + .owl-nav, .owl-stage-outer.duo + .owl-nav + .owl-dots {
+		display: none;
+	}
+	.descripcionSector {
+	    padding-right: 125px;
+	}
+	.destacadoVerde .tituloSeccion {
+	    margin: 0 0 40px 0;
+	}
+	.textoCabeceraFamilia .servicios {
+		width: 430px;
+		margin: 0 auto;
+	}
+	.textoCabeceraFamilia .servicio-item p {
+		width: 130px;
+	}
+	#acordeonProducto div[id*="heading"] button {
+		padding: 22px 25px;
+	}
+	#acordeonProducto div[id*="heading"] + div .container-fluid {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	#pestanaSectores div[id*="heading"] + div .container-fluid, #pestanaFaq div[id*="heading"] + div .container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#acordeonProducto iframe {
+    	height: 405px;
+	}
+	#pestanaQue .descripcionProducto .tituloSeccion {
+		margin-bottom: 20px;
+	}
+	#pestanaPlan .tabsApps li{
+		width: 192px;
+	}
+	#pestanaPlan .tabsApps li:nth-of-type(2) {
+    	margin: 0 30px;
+	}
+	.bloqueCaso div {
+   		width: 61.5%;
+    	margin: 40px auto 0 auto;
+	}
+	.recomendaciones > div {
+		flex-direction: row;
+		justify-content: center;
+	}
+	.recomendaciones .card-item:first-of-type{
+		margin-bottom: 0;
+		margin-right: 30px;
+	}
+	.recomendaciones .card-item {
+    	margin: unset;
+	}
+	.cabSector .textoCabecera p {
+		margin-top: 20px;
+	}
+	.descubrirSector {
+		padding-left: 0;
+		padding-right: 0;
+		/*margin-top: -250px;*/
+	}
+	.imgDescubre, .textoDescubre {
+		width: 50%;
+		float: left;
+	}
+	.imgDescubre .tituloSeccion {
+		font-size: 32px;
+		line-height: 1.2;
+	}
+	.bloqueDatos {
+		display: flex;
+	    justify-content: center;
+	}
+	.datosSector .dato {
+		width: 225px;
+	}
+	.datosSector .dato:not(:first-of-type) {
+		margin-top: 0;
+		margin-left: 40px;
+	}
+	.dato p:nth-of-type(2) {
+		padding: 0 20px;
+	}
+	.situacionesSector .descripcionProducto {
+		order: 0;
+		margin-top: 0;
+	}
+	.situacionesSector .caracteristicaProducto:nth-of-type(even) .descripcionProducto {
+    	order: 1;
+	}
+	.situacionesSector .descripcionProducto h3 {
+		text-align: left;
+		margin-bottom: 20px;
+	}
+	.situacionesSector .descripcionProducto > a {
+		margin: 0;
+		width: 213px;
+	}
+	.atras {
+		display: inline-flex;
+	}
+	.atras img {
+		margin-right: 10px;
+	}
+	.pestanaSector div[id*="opcionesSlider"].slide.active {
+	    border-top-left-radius: 4px;
+	    border-top-right-radius: 4px;
+	}
+	.pestanaSector .tabsApps li {
+		width: 230px;
+	}
+	.pestanaSector div[class*='caracteristicaSector']:first-of-type {
+	    padding-top: 20px;
+	}
+	.pestanaSector .numero {
+	    display: flex;
+    	align-items: flex-end;
+	}
+	.caracteristicaSectorTres, .caracteristicaSectorDos {
+		display: flex;
+	}
+	.listaImagen {
+		overflow: hidden;
+	}
+	.contenidoContacto .cabecera.cabSector .textoCabecera {
+		padding-top: 60px;
+	}
+	.bloqueContacto .container {
+		padding-top: 70px;
+		border-radius: 4px;
+    	box-shadow: 0 1px 4px 0 rgba(0,0,0,.3);
+    	max-width: 720px;
+	}
+	.contenidoContacto .cabecera img, .contenidoRecomendador .cabecera img {
+		display: block;
+	}
+	.contenidoContacto .cabSector {
+		color: #fff;
+	}
+	.bloqueContacto .datosContacto a.telefonoContacto {
+		padding-top: 0;
+	}
+	.bloqueContacto {
+	    padding-bottom: 60px;
+	}
+	.paddingFixed {
+		padding-top: 90px
+	}
+	.bqRecomendador .row:first-of-type {
+		display: flex;
+		margin-right: -20px;
+		margin-left: -20px;
+		padding: 30px 0 35px 0;
+		border-bottom: solid 1px #b6b7b7;
+	}
+	.contenidoRecomendador .cabecera.cabSector .textoCabecera {
+		padding-top: 60px;
+		color: #fff;
+		margin-bottom: 40px;
+	}
+	.bqizda {
+		margin-bottom: 0;
+	}
+	.titpreguncuestionario {
+		margin-top: 60px;
+	}
+	.bqRecomendador {
+		padding-bottom: 60px;
+	}
+	.bqRecomendador > div:last-of-type {
+		padding-bottom: 120px
+	}
+	.bqRecomendador .container {
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+		border-radius: 4px;
+		max-width: 720px;
+	}
+	.bqrecomformulario {
+		width: 350px;
+	}
+	.formRecomendador .titpreguncuestionario {
+		margin-top: 60px;
+	}
+	.paginaError{
+		height: 768px;
+	}
+	.paginaError p{
+		margin-bottom: 30px;
+	}
+	.bloqueError a{
+		width: 165px;
+		flex-direction:column;
+		padding: 30px 20px 20px 20px;		
+	}
+	.bloqueError {
+		display:flex;
+		
+	}
+	.paginaError ul{
+		display: flex;
+		justify-content: space-between;
+		width: 595px;
+		margin: 0 auto;
+	}
+	.paginaError li:nth-of-type(2){
+		margin: 0;
+	}
+	.bloqueError a span{
+		margin: 31px 0 0 0;
+	}
+	.bqizda {
+		padding-left: 20px;
+	}
+	.bqRecomendador.informe .container {
+		padding: 60px 0 30px 0;
+	}
+	.titparInformeRecomendador {
+		display: block;
+	}
+	.informe #acordeonProducto div[id*="heading"] {
+		display: none;
+	}
+	.informe #acordeonProducto .card {
+		border-top: none
+	}
+	.bqRecomendador #acordeonProducto div.collapse > div, .bqRecomendador #acordeonProducto div.collapsing > div {
+		margin: 0 auto 30px auto;
+	}
+	.informe div[id*="heading"] + div {
+		display: block;
+	}
+	.parInformeRecomendador p:last-of-type {
+		margin-bottom: 0;
+	}
+	.bqRecomendador #acordeonProducto #pestanaReconectar div.collapse > div, .bqRecomendador #acordeonReconectar #pestanaPlan div.collapsing > div {
+		margin: 0 auto -1px 0;
+	}
+	.titfonazul {
+		margin-bottom: 40px;
+	}
+	.txtbqFonazul {
+		flex-direction: column;
+		height: auto;
+		margin-bottom: 40px;
+		padding: 0;
+	}
+	.txtbqFonazul img {
+		height: 50px;
+    	margin-bottom: 20px;
+    	margin-right: 0;
+	}
+	.fonazul {
+		padding-bottom: 20px;
+	}
+	.fonazul .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.txtbqFonazul p {
+		font-size: 18px;
+	}
+	.detalleServicio {
+		flex-direction: row;
+		align-items: flex-end;
+	}
+	.descsuge {
+		margin-bottom: 0;
+	}
+	.detalleServicio > div:last-of-type {
+		min-width: 215px;
+		margin-left: 20px;
+	}
+	.txtbqFonazul{
+		border: none;
+	}
+
+}
+@media (min-width: 992px) {
+	#navegacion .navDcha img {
+		margin-left: 30px;
+	}
+	.destacadoVerde{
+	    background: #5cc500 url(../imagenes/mDestacadoVerdeLg.svg) no-repeat;
+	    background-position: 100%;
+	    background-size: contain;
+	}
+	.destacadoVerde .tituloSeccion {
+		text-align: left;
+	}
+	.destacadoVerde .bloqueDestacado {
+		margin-bottom: 40px;
+	}
+	.textoCabeceraFamilia .servicios {
+		flex-wrap: nowrap;
+		width: 100%;
+	}
+	.textoCabeceraFamilia .servicio-item {
+		width: 150px;
+	}
+	div[id*="heading"] {
+		display: none;
+	}
+	div[id*="heading"] + div {
+		display: block !important;
+	}
+	.titfooterenlaces, .titfooterenlaces2, #footermapasitio ul li a {
+		font-size: 16px;
+	}
+	.footer-large__title {
+		font-size: 16px;
+	}
+	#footermapasitio ul.footer-large-links {
+		display: flex;
+	}
+	#footermapasitio ul.footer-large-links > li {
+	    display: inline-block;
+	    border-bottom: 0;
+	    width: calc(100%/5);
+	}
+	.footer-large__title i {
+		display: none;
+	}
+	.footer-large-links-block .collapsible-header {
+	    padding: 0;
+    	cursor: text;
+	}
+	.footer-large-links-block .footer-large__icon {
+	    display: none;
+	}
+	.footer-large-links-block .collapsible-body {
+	    display: block;
+	    padding-left: 0;
+	}
+	#footermapasitio ul li a {
+		color: #86888c;
+	}
+    #footermapasitio .collapse:not(.show){
+	    display: block;
+	}
+	.titfooterenlaces{
+		display:none;
+	}
+	#footerRedes {
+		padding: 30px 0 50px 0;
+	}
+	#rrss ul {
+		text-align: right;
+	}
+	#rrss ul li:not(:first-of-type) {
+		margin-left: 20px;
+	}
+	.fichaSector {
+    	padding-left: 15px;
+    	padding-right: 15px;
+	}
+	.descripcionSector {
+	    padding-right: 50px;
+	}
+	#acordeonProducto #pestanaQue.card {
+		border-top: none;
+	}
+	#acordeonProducto div[id*="heading"] + div .container-fluid {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.bloqueCaso {
+		display: flex;
+    	justify-content: space-between;
+	}
+	.bloqueCaso div{
+		width: 28.5%;
+	}
+	#pestanaCasos .collapse img{
+		width: 50px;
+		height: 50px;
+	}
+	.contenidoProducto {
+		padding-top: 149px !important;
+	}
+	.cabeceraProducto {
+	    position: fixed;
+	    top: 90px;
+	    background: #fff;
+	    left: 0;
+	    right: 0;
+	    border-bottom: 1px solid #b6b7b7;
+	    transition: all .2s linear;
+	    z-index: 9;
+	}
+	#fichaProducto #navegacion.cambioPosition, .cabeceraProducto.cambioPosition {
+	    transform: translate(-48.5%);
+	    transition: all .5s linear;
+	}
+	.caracteristicaProducto:nth-of-type(even) .descripcionProducto {
+	    order: 1;
+	}
+	div#pestanaSectores {
+    	padding: 60px 0;
+	}
+	.bloquesSector div:not(:first-of-type) {
+		border-top: 0;
+	}
+	.bloquesSector div {
+	    padding: 20px 10px;
+	    border: 1px solid #b6b7b7;
+	}
+	#pestanaFaq div.collapse > div, #pestanaFaq div.collapsing > div {
+		margin: 60px 0;
+	}
+	#acordeonProducto iframe {
+    	height: 265px;
+	}
+	.breadcrumb{
+		display: flex;
+	}
+	#pestanaQue div.collapse > div, #pestanaQue div.collapsing > div {
+    	margin: 10px auto 60px auto;
+	}
+	.cabSector .textoCabecera p {
+	    margin-left: 10%;
+	    margin-right: 10%;
+	}
+	.descubrirSector {
+		/*margin-top: -140px;*/
+	}
+	.bloqueDescubre, .detalleDescubre, .textoDescubre {
+		flex-grow: 1;
+    	display: flex;
+    	flex-direction: column;
+	}
+	.bloqueDescubre:not(:last-of-type) {
+		margin-bottom: 0;
+	}
+	.imgDescubre, .textoDescubre {
+   		width: 100%;
+    	float: unset;
+	}
+	.imgDescubre .tituloSeccion {
+		position: unset;
+		color: #50535a;
+		line-height: normal;
+		height: 120px;
+	}
+	.detalleDescubre p {
+		flex-grow: 1;
+	}
+	.bloqueDescubre a {
+		width: 188px;
+	}
+	.imgDescubre .tituloSeccion {
+		margin: 0 0 40px 0;
+	}
+	.datosSector .dato {
+		width: 265px;
+	}
+	.dato p:first-of-type {
+		margin-bottom: 20px;
+	}
+	.datosSector .dato:not(:first-of-type) {
+		margin-left: 65px;
+	}
+	.dato p:nth-of-type(2) {
+		padding: 0;
+	}
+	.situacionesSector .descripcionProducto h3 {
+		font-size: 32px;
+		line-height: 1.25;
+	}
+	.situacionesSector .descripcionProducto p {
+		margin-bottom: 30px;
+	}
+	.caracteristicaSectorTres .descripcionCaracSector {
+		width: 47%;
+		float: left;
+		padding-right: 30px;
+	}
+	.listaImagen {
+	    float: left;
+	    width: 53%;
+	    display: flex;
+	}
+	.listaImagen ul {
+		margin-bottom: 0;
+	}
+	.imagenSector .dato p:first-of-type {
+		margin-bottom: 20px;
+	}
+	.descripcionCaracSector a {
+		display: inline-block;
+		margin-top: 0 !important;
+	}
+	.botonMobile {
+		display: none;
+	}
+	.listaImagen ul {
+		padding-left: 30px;
+	}
+	.pestanaSector .caracteristicaSectorTres.invertir .imagenSector	{
+		order: 1;
+	}
+	.pestanaSector .caracteristicaSectorTres.invertir .listaImagen ul {
+		padding-left: 0;
+		padding-right: 30px;
+	}
+	.caracteristicaSectorDos .descripcionCaracSector, .caracteristicaSectorDos ul {
+		width: 47%;
+		padding-right: 30px;
+	}
+	.caracteristicaSectorDos ul {
+		clear: unset;
+	}
+	.caracteristicaSectorDos img {
+		width: 53%;
+	}
+	.caracteristicaSectorDos .bloqueCaracSector > a {
+		width: 180px;
+		clear: none !important;
+	}
+	.bloqueContacto .datosContacto {
+		margin-top: 0;
+	}
+	.bloqueContacto .container {
+    	padding-top: 60px;
+    	max-width: 960px;
+	}
+	.contenidoRecomendador .tituloCabecera {
+		line-height: 1.25;
+	}
+	.bqrecomformulario {
+		width: 307px;
+	}
+	.paginaError{
+		height: 740px;
+	}
+	.paginaError h1{
+		padding-top: 60px;
+		margin-bottom:50px;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.c100 {
+		font-size: 212px;
+	}
+	.titInformeRecomendador {
+		font-size: 40px;
+	}
+	.detalleServicio > div:last-of-type {
+		min-width: 314px;
+	}
+	.titparInformeRecomendador{
+		display:block;
+	}
+	.informe #acordeonProducto .card {
+		border-top: none;
+	}
+	#acordeonProducto > div:last-of-type {
+		border-bottom: none;
+	}
+	.bloqueDescubre {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.bloqueDescubre:first-of-type {
+		padding-left: 20px;
+	}
+	.bloqueDescubre:last-of-type {
+		padding-right: 20px;
+	}
+	.bqRecomendador .container {
+		max-width: 960px;
+	}
+}
+@media (min-width: 1200px) {
+	#bqtopbar {
+		display: block !important;
+	}
+	.btnSolicitarLlamada {
+		margin-left: 18px;
+	}
+	#navegacion nav > ul {
+		max-width: 682px;
+	}
+	#navegacion .navDcha img {
+		display: none;
+	}
+	.tituloCabecera {
+	    font-size: 64px;
+	    line-height: 72px;
+	}
+	.cabecera .servicios + p {
+		margin-bottom: 30px;
+	}
+	.apps > h2 {
+		width: 945px;
+		margin: 0 auto;
+	}
+	#footermapasitio .container-fluid, #footerContrata .container-fluid, #footerRedes .container-fluid {
+		max-width: 1140px;
+	}
+	.owl-stage-outer.trio {
+		display: flex;
+	    justify-content: center;
+	}
+	.owl-stage-outer.trio + .owl-nav, .owl-stage-outer.trio + .owl-nav + .owl-dots {
+		display: none;
+	}
+	.tituloSeccion {
+		font-size: 40px;
+		line-height: 48px;
+	}
+	.descripcionSector {
+	    padding-right: 80px;
+	}
+	.descripcionSector::before {
+	    right: 30px;
+	}
+	.textoCabeceraFamilia .servicios {
+		margin-top: 60px !important;
+	}
+	#acordeonProducto .container-fluid {
+		max-width: 1140px;
+	}
+	.cabeceraProducto {
+		top: 125px;
+	}
+	.contenidoProducto {
+	    padding-top: 184px !important;
+	}
+    .cabeceraProducto{
+		padding: 0;
+	}
+	.cabeceraProducto div {
+		max-width: 1140px;
+    	margin: 0 auto;
+    	padding-left: 15px;
+    	padding-right: 15px;
+	}
+	div[id*="pestana"] span[id*="ancla"] {
+		top: -185px;
+	}
+	#fichaProducto div[class*="subpaginas"] {
+		top: 124px;
+	}
+	#acordeonProducto iframe {
+    	height: 311px;
+	}
+	#pestanaQue .descripcionProducto .tituloSeccion, #pestanaQue .descripcionProducto p:not(:first-of-type) {
+		margin-bottom: 20px;
+		text-align: left;
+    	margin-left: 0;
+    	margin-right: 0;
+	}
+	#acordeonProducto div.collapse > div, #acordeonProducto div.collapsing > div {
+		margin: 60px auto;
+	}
+	#pestanaPlan .apps {
+		padding-top: 60px;
+	}
+	div#pestanaSectores {
+		padding: 0;
+	}
+	.destacadoSector > div {
+		padding-left: 30px;
+	}
+	.destacadoSector h3 {
+		width: 72%;
+	}
+	header .row{
+		padding-left: 15px;
+		padding-right: 15px; 
+	}
+	#pestanaQue div.collapse > div, #pestanaQue div.collapsing > div {
+    	margin: 20px auto 60px auto;
+	}
+	.cabSector .textoCabecera p {
+		margin-left: 17%;
+		margin-right: 17%;
+	}
+	.descubrirSector > .container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.descubrirSector > .container > .row {
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+	.datosSector .dato {
+		width: 300px;
+	}
+	.datosSector .dato:not(:first-of-type) {
+		margin-left: 70px;
+	}
+	.paddingFixed {
+		padding-top: 124px
+	}
+	.contenidoRecomendador .tituloCabecera {
+		margin: 0;
+	}
+	.bqrecomformulario {
+		width: 360px;
+	}
+	.paginaError{
+		height: 890px;
+	}
+	.paginaError h1{
+		font-size: 56px;
+		margin-bottom: 20px;
+		
+	}
+	.detalleServicio > div:last-of-type {
+	    min-width: 276px;
+	    margin-left: 30px;
+	}
+	.atras {
+		padding-left: 30px;
+	}
+	.caracteristicaSectorTres, .caracteristicaSectorDos, .bqRecomendador .container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.bqRecomendador .row:first-of-type {
+		margin-right: -30px;
+    	margin-left: -30px;
+	}
+	.paddlateralinforme {
+		padding: 0 30px;
+	}
+	.bqizda {
+		padding-left: 30px;
+	}
+
+	.bloqueContacto .container {
+	    position: relative;
+	    background: #fff;
+	    border-radius: 4px;
+	    padding-top: 40px;
+	    padding-bottom: 60px;
+	    padding-right: 20px;
+	    padding-left: 20px;
+	    max-width: 1140px;
+	}
+	.bloqueContacto .container > .row {
+		margin-right: -20px;
+		margin-left: -20px;
+	}
+	.bloqueContacto .formulario, .bloqueContacto .datosContacto {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.bloqueDescubre {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.bloqueDescubre:first-of-type {
+		padding-left: 30px;
+	}
+	.bloqueDescubre:last-of-type {
+		padding-right: 30px;
+	}
+	.bqRecomendador .container {
+		max-width: 1140px;
+	}
+}
+@media (min-width: 1380px) {
+	.destacadoVerde{
+	    background: #5cc500 url(../imagenes/mDestacadoVerdeXl.svg) no-repeat;
+	    background-position: 100%;
+	    background-size: contain;
+	}
+}
+@media (min-width: 1600px) {
+	.textoCabeceraFamilia {
+	    position: absolute;
+	    top: 50%;
+	    width: 100%;
+	    transform: translateY(-50%);
+	}
+}
+@media (max-width:1199px) and (min-width:992px) {
+	.btnSolicitarLlamada {
+		margin-left: 8px;
+	}
+	#rrss, #copyright {
+		display: inline-block !important;
+	}
+	#footermapasitio .container-fluid, #footerContrata .container-fluid, #footerRedes .container-fluid {
+		max-width: 960px;
+	}
+	#navegacion nav {
+		display: none !important;
+	}
+}
+
+@media (max-width: 991px) {
+	.btnSolicitarLlamada {
+		display: block;
+		margin: 30px auto 0 auto;
+	}
+	#footerMarcaTelefonica{
+		padding: 20px 0;
+	}
+	.titfooterenlaces2{
+		display:none;
+	}
+	.titfooterenlaces a {
+		font-size: 21px;
+	}
+	#footermapasitio{
+		padding: 0;
+		border-bottom: none;
+	}
+	#footermapasitio .container-fluid .col-12 {
+		padding: 0;
+	}
+	#footermapasitio ul li a {
+		font-size: 18px;
+		color: #50535a;
+	}
+	.footer-large__title.active i {
+		transform: rotate(-180deg);
+    	-webkit-transform: rotate(-180deg);
+	}
+	#footermapasitio .collapsible-body {
+		display: none;
+	}
+	#footermapasitio .collapsible-body.active {
+		display: block;
+	}
+	#footermapasitio .collapsible-body li {
+		margin-left: 15px;
+	}
+	#rrss, #copyright {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	#rrss {
+		border-bottom: 1px solid #b7b7b7;
+	}
+	#rrss ul {
+		padding: 20px 0;
+	}
+	#rrss ul li:not(:first-of-type) {
+		margin-left: 25px;
+	}
+	#copyright {
+		padding: 25px 0;
+	}
+	#navegacion nav {
+		display: none !important;
+	}
+	.cabeceraProducto ul {
+		display: none;
+	}
+}
+@media (max-width:1199px) and (min-width:768px) { 
+	#serviciosiconos > div img {
+		width: 60px;
+		height: 60px;
+	}
+}
+@media (max-width:991px) and (min-width:768px) {
+	#serviciosiconos > div:first-of-type, #serviciosiconos > div:nth-of-type(2) {
+		margin-bottom: 40px;
+	}
+	#serviciosiconos > div .txtpieservicios {
+		padding: 0 15px;
+	}
+	.collapsible-header {
+		padding: 25px;
+	}
+}
+
+@media (max-width:767px) and (min-width:576px) {
+	.collapsible-header {
+		padding: 20px;
+	}
+	#serviciosiconos > div {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.modalbody {
+		padding: 40px 30px;
+	}
+	.titformodal {
+		margin-bottom: 15px;
+		margin-top: 20px;
+		font-size: 32px;
+	}
+}
+@media (max-width: 767px) {
+	#navegacion .logo {
+		margin-right: 0;
+	    width: 69px;
+	    height: 50px;
+	    align-self: center;
+	    display: flex; 
+	}
+	#serviciosiconos > div {
+	    border-bottom: 1px solid #b7b7b7;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    display: flex;
+	}
+	#footerContrata {
+		padding: 60px 0 0 0;
+	}
+	p.txtpieservicios {
+		display: inline-block;
+		margin-bottom: 0;
+		font-size: 21px;
+		margin-left: 20px;
+		line-height: 38px;
+	}
+	.titfooterenlaces, .titfooterenlaces2 {
+		font-size: 21px;
+	}
+	#serviciosiconos > div img {
+		width: 40px;
+		height: 40px;
+	}
+	.modal-dialog-centered {
+	    min-height: 100%;
+	}
+	.modal-dialog {
+	    max-width: 100%;
+	    margin: 0;
+	}
+	.modal-dialog-centered::before {
+	    height: 100%;
+	}
+	.modal-content {
+		align-self: stretch;
+	}
+	#btmanianaCntc, #btmanianaCntr {
+		float: none;
+		margin-right: 10px;
+	}
+	#btardeCntc, #btardeCntr {
+		float: none;
+		margin-left: 10px;
+	}
+}
+@media (max-width: 576px) {
+	#navegacion .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.collapsible-header {
+		padding: 20px 15px;
+	}
+	/*.cabecera .servicios {
+		display: none;
+	}*/
+	#serviciosiconos > div {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	p.txtpieservicios {
+		line-height: 1;
+	}
+	.titformodal {
+		font-size: 36px;
+	}
+	.apps .container {
+		padding-left: 30px;
+	}
+}
+
+@media (max-width: 345px) {
+	#footerMarcaTelefonica img {
+		width: 100%;
+		height: auto;
+	}
+}
+	

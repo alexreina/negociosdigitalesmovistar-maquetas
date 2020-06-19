@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Description" content="Página de inicio Movistar">
+ 	<title>Movistar: Activa tú negocio</title>
+
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="favicon.png">
+     
+ 	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" media="screen">
+    
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/base.css" media="screen"> 
+
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/127862cff8.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+	<header>
+		<!-- Menú navegación -->
+		<div id="navegacion">
+			<div class="container">
+				<div class="row">
+					<div class="logo">
+						<a href="index.html" title="Enlace home Movistar">
+							<picture>
+							  <img src="img/logoMovistar.svg" alt="Logo movistar">
+							</picture>
+						</a>
+					</div>
+					
+					<div class="navDcha">
+						<span id="usuario">Hola Javier</span>
+						<button data-toggle="modal" data-target="#modalContacto">Contacto</button>
+					</div>					
+				</div>	
+			</div>
+		</div>
+	</header>
+	<!-- Modal Formulario contacto -->
+	<div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="modalContacto" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body text-center">
+	      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <i class="fas fa-times" aria-hidden="true"></i>
+	        </button>
+	      	<h5 class="modal-title titformodal">Solicita una llamada</h5>
+			<p>Déjanos tus datos para ponernos en contacto contigo o si lo prefieres llámanos al <a title="Contacta con nosotros" href="tel:0992765812" class="teltxtpiecontacta">0992765812</a></p>			      	 
+	      	<form>
+				<div id="recibirLlamadaCntc">
+					<div id="btmanianaCntc">
+						<input class="btn text-center activo" type="button" value="Por la mañana">
+					</div>
+					<div id="btardeCntc">
+						<input class="btn text-center" type="button" value="Por la tarde">
+					</div>
+				</div>
+				<div class="form-group" id="nombreUsuarioCntc">
+					<label class="d-none" for="nombreCntc">Indícanos tu nombre</label>
+					<input class="form-control inputformmodal" id="nombreCntc" placeholder="Indícanos tu nombre" type="text">
+				</div>
+				<div class="form-group" id="telefonoUsuarioCntc">
+					<label class="d-none" for="numeroCntc">Introduce tu número de teléfono</label>
+					<input class="form-control inputformmodal" id="numeroCntc" placeholder="Introduce tu número de teléfono" type="text">
+				</div>
+				<div class="custom-control custom-checkbox" id="aceptarPrivacidadCntc">
+					<input class="custom-control-input" id="checkCntc" type="checkbox">
+					<label class="custom-control-label" for="checkCntc">Acepto la <a href="#" class="enlace" title="política de privacidad"><span>política de privacidad</span></a></label>
+				</div>
+				<button id="programarLlamadaCntc" type="submit">Programar llamada</button>
+			</form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal Formulario contacto -->
+	<div class="contenidoRecomendador">
+		<!-- Cabecera -->
+		<div class="cabecera cabSector">
+			<div class="imagenCabecera">
+				<picture>
+					<img src="img/cabecera-xl.png" alt="Fondo cabecera Recomendador" title="Fondo cabecera Recomendador">
+				</picture>
+			</div>
+			<div class="textoCabecera">
+				<h1 class="tituloCabecera">Movistar Cloud</h1>
+				<p>El espacio que necesitan los smartphones de tus empleados </p>
+			</div>
+		</div>
+		<!-- Cabecera -->
+		<!-- Contenedor blanco -->
+		<div class="bqRecomendador">
+			<div class="container">
+				<!-- Bloque licencias disponibles -->
+				<div class="planes">
+					<h2 class="tituloSeccion">Licencias disponibles</h2>
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="planBox">
+								<div class="nombrePlan">
+									<p>Plan</p>
+									<p>30 GB</p>
+								</div>
+								<ul>
+									<li>
+										<p class="numero">10</p>
+										<p>Licencias</p>
+									</li>
+									<li>
+										<p class="numero">0</p>
+										<p>Asignadas</p>
+									</li>
+									<li>
+										<p class="numero naranja">10</p>
+										<p>Libres</p>
+									</li>
+									<li>
+										<a href="">
+											<img src="img/carrito.svg" alt="">
+											<p>Comprar</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="planBox">
+								<div class="nombrePlan">
+									<p>Plan</p>
+									<p>100 Gb</p>
+								</div>
+								<ul>
+									<li>
+										<p class="numero">14</p>
+										<p>Licencias</p>
+									</li>
+									<li>
+										<p class="numero">0</p>
+										<p>Asignadas</p>
+									</li>
+									<li>
+										<p class="numero naranja">14</p>
+										<p>Libres</p>
+									</li>
+									<li>
+										<a href="">
+											<img src="img/carrito.svg" alt="">
+											<p>Comprar</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="planBox">
+								<div class="nombrePlan">
+									<p>Plan</p>
+									<p>1 Tb</p>
+								</div>
+								<ul>
+									<li>
+										<p class="numero">1</p>
+										<p>Licencias</p>
+									</li>
+									<li>
+										<p class="numero">0</p>
+										<p>Asignadas</p>
+									</li>
+									<li>
+										<p class="numero naranja">1</p>
+										<p>Libres</p>
+									</li>
+									<li>
+										<a href="" title="Pincha aquí para comprar más licencias">
+											<img src="img/carrito.svg" alt="Carrito de la compra" title="Carrito de la compra">
+											<p>Comprar</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Bloque licencias disponibles -->
+				<!-- Bloque asignar licencias -->
+				<div class="asignarLicencias">
+					<h2 class="tituloSeccion">Asignación de licencias</h2>
+					<!-- Pantalla inicial -->
+					<div class="inicioLicencias mostrarBloque">
+						<img src="img/movilEspera.svg" alt="Aún no hay usuario con licencias">
+						<p>Aún no hay nada aquí...</p>
+						<p>Crea usuarios <strong>asignando licencias</strong> a números de teléfonos y comenzarán a disfrutar de Movistar Cloud. Puedes añadir muchos registros a la vez o de uno en uno, tú eliges.</p>
+						<div class="enlaceAsignaciones">
+							<div class="boton botonVerde multiple">Asignación multiple</div>
+							<div class="boton botonVerde individual">Asignación individual</div>
+						</div>
+						
+					</div>
+					<!-- Pantalla inicial -->
+					<!-- Pantalla asignación multiple -->
+					<div class="asignacionMultiple">
+						<i class="cerrar"><img src="img/cerrar.svg" alt="Cerrar esta ventana"></i>
+						<img src="img/blocDeNotas.svg" alt="Asignación múltiple" title="Asignación múltiple">
+						<p>Asignación múltiple</p>
+						<p>Introduce los registros en el formato del ejemplo, selecciona el plan que necesitas (para todos el mismo) , guarda y recibirán un SMS de confirmación.</p>
+						<div class="formMultiple">
+							<span>Formato:  telefono <i>(espacio)</i> nombre <i>(salto de línea)</i></span>
+							<form id="asignacionMultipleForm" action="">
+								<div class="listadoLicencias">
+									<textarea name="registrosLicencias" id="registrosLicencias" placeholder="635005444 Eritz Hurtado&#10;635005444 Eritz Hurtado"></textarea>
+									<div class="textoInformativo">
+										<div class="textoError">
+											<p>Has introducido 14 registros.</p>
+											<p>No tienes licencias suficientes del tipo seleccionado.</p>
+											<p>Solo se asignarán licencias a los 10 primeros.</p>
+										</div>
+										<div class="textoCorrecto">
+											<p>Has introducido 14 registros.</p>
+											<p>Se asignarán todos.</p> 
+										</div>
+									</div>
+									<!-- Dudo si debería ser un enlace o botón. Quitando la clase o atributo disabled estado normal -->
+									<a href="" class="boton botonVerde disabled">Guardar</a>
+									<button disabled class="boton botonVerde" type="submit">Guardar</button>
+								</div>
+								<div class="selectorLicencias">
+									<div class="custom-control custom-radio">
+									  <input type="radio" id="selectorLicenciasUno" name="licencia" class="custom-control-input">
+									  <label class="custom-control-label" for="selectorLicenciasUno">30 gb</label>
+									  <p><span class="naranja">10</span> licencias disponibles</p>
+									</div>
+									<div class="custom-control custom-radio">
+									  <input type="radio" id="selectorLicenciasDos" name="licencia" class="custom-control-input">
+									  <label class="custom-control-label" for="selectorLicenciasDos">100 gb</label>
+									  <p><span class="rojo">14</span> licencias disponibles</p>
+									</div>
+									<div class="custom-control custom-radio">
+									  <input type="radio" id="selectorLicenciasTres" name="licencia" class="custom-control-input">
+									  <label class="custom-control-label" for="selectorLicenciasTres">1 tb</label>
+									  <p><span class="">1</span> licencias disponibles</p>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- Pantalla asignación multiple -->
+					<!-- Pantalla asignación individual (Tabla) -->
+					<div class="asignacionIndividual">
+						<span>Puede asignar licencias a un grupo de usuarios o hacerlo individualmente desde la tabla.</span>
+						<div class="boton botonVerde multiple">Asignación multiple</div>
+						<table>
+							<thead>
+								<tr class="filtrarTabla">
+									<th colspan="4">
+										<span>Mostrando de <span id="minEntradas">1</span> a <span id="maxEntradas">5</span> de <span id="totalEntradas">450</span> entradas,</span>
+										<select id="selectorPáginas">
+											<option value="100">100</option>
+											<option value="50">50</option>
+											<option value="25">25</option>
+											<option value="10">10</option>
+										</select>
+										<span>por página</span>
+									</th>
+									<th colspan="3">
+										<div class="buscadorTabla">
+											<input type="search" class="form-control ds-input" id="search-input" placeholder="Buscar… por ejemplo: 30 GB" aria-label="Buscar por..." autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false">
+											<img src="img/lupa.svg" alt="Icono lupa para el buscador">
+										</div>
+									</th>
+								</tr>
+								<tr class="opcionesGenerales">
+									<th>
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input checkTodos" id="checkBoxGeneral">
+										  <label class="custom-control-label" for="checkBoxGeneral">
+										  	<span class="tooltiptextSup">Seleciona usuarios</span>
+										  </label>
+										</div>
+									</th>
+									<th colspan="2">
+										<i class="nuevoUsuario">
+											<button disabled id="nuevoUsuario" class="btn btn-link deshabilitado">
+												<span><img src="img/addUsuario.svg" alt="Icono para añadir nuevo usuario">Añadir usuario</span>
+											</button>
+										</i>
+										<i class="editarUsuario">
+											<button disabled id="editarUsuario" class="btn btn-link deshabilitado">
+												<img src="img/lapiz.svg" alt="Icono para editar usuarios">
+											</button>
+										</i>	
+										<i class="eliminarUsuario">
+											<button disabled id="eliminarUsuario" data-toggle="modal" data-target="#modalEliminarCascada" class="btn btn-link deshabilitado">
+												<img src="img/papelera.svg" alt="Icono para eliminar usuarios">
+											</button>
+										</i>
+										<!--
+										<span class="deshabilitado" id="nuevoUsuario"><img src="img/telefono.svg" alt="Icono para añadir nuevo usuario">Nuevo usuario</span>
+										<img class="deshabilitado" id="editarUsuario" src="img/lapiz.svg" alt="Icono para editar usuarios">
+										<img class="deshabilitado" id="eliminarUsuario" src="img/papelera.svg" alt="Icono para eliminar usuarios" data-toggle="modal" data-target="#modalEliminarCascada">
+										 -->
+									</th>
+									
+									<th>
+										<div class="libres">
+											<span class="naranja">5</span>
+											<span>libres</span>
+											<span>de 30Gb</span>
+										</div>
+									</th>
+									<th>
+										<div class="libres">
+											<span class="naranja">13</span>
+											<span>libres</span>
+											<span>de 100Gb</span>
+										</div>
+									</th>
+									<th>
+										<div class="libres">
+											<span>0</span>
+											<span>libres</span>
+											<span>de 1Tb</span>
+										</div>
+									</th>
+									<th></th>
+								</tr>
+								<tr class="anadirUsuario editandoFila">
+									<td>
+										<span class="tooltiptextIzq">Editando...</span>
+									</td>
+									<td>
+										<input id="nombreUsuarioNuevo" type="text" placeholder="Nombre">
+									</td>
+									<td>
+										<input id="tfnoUsuarioNuevo" type="text" placeholder="Teléfono">
+									</td>
+									<td>
+										<div class="custom-control custom-radio">
+										  <input type="radio" id="licencia30Nuevo" name="licenciaNuevo" class="custom-control-input" value="licencia30Nuevo">
+										  <label class="custom-control-label" for="licencia30Nuevo"></label>
+										</div>
+									</td>
+									<td>
+										<div class="custom-control custom-radio">
+										  <input type="radio" id="licencia100Nuevo" name="licenciaNuevo" class="custom-control-input" value="licencia100Nuevo">
+										  <label class="custom-control-label" for="licencia100Nuevo"></label>
+										</div>
+									</td>
+									<td>
+										<div class="custom-control custom-radio">
+										  <input type="radio" id="licenciaTeraNuevo" name="licenciaNuevo" class="custom-control-input" value="licenciaTeraNuevo">
+										  <label class="custom-control-label" for="licenciaTeraNuevo"></label>
+										</div>
+									</td>
+									<td>
+										<a href="" class="boton botonVerde disabled">Guardar</a>
+										<button disabled class="boton botonVerde" type="submit">Guardar</button>
+										<img class="cerrarEdicion" src="img/cerrarEdicion.svg" alt="Icono para ocultar la fila de añadir usuario">
+									</td>
+								</tr>
+								<tr class="editarUsuarioCascada">
+									<td>
+										<span class="tooltiptextIzq">Editando...</span>
+										<img class="infoNaranja" src="img/infoNaranja.svg" alt="Icono informativo de color naranja" title="Icono informativo de color naranja">
+									</td>
+									<td colspan="2">
+										<span class="informativo">Elija un plan común para todos los registros seleccionados. Utilice el filtro para ajustar criterios.</span>
+									</td>
+									<td>
+										<div class="custom-control custom-radio">
+										  <input type="radio" id="licencia30Cascada" name="licenciaEditarCascada" class="custom-control-input" value="licencia30Cascada">
+										  <label class="custom-control-label" for="licencia30Cascada"></label>
+										</div>
+									</td>
+									<td>
+										<div class="custom-control custom-radio">
+										  <input type="radio" id="licencia100Cascada" name="licenciaEditarCascada" class="custom-control-input" value="licencia100Cascada">
+										  <label class="custom-control-label" for="licencia100Cascada"></label>
+										</div>
+									</td>
+									<td>
+										<div class="custom-control custom-radio">
+										  <input type="radio" id="licenciaTeraCascada" name="licenciaEditarCascada" class="custom-control-input" value="licenciaTeraCascada">
+										  <label class="custom-control-label" for="licenciaTeraCascada"></label>
+										</div>
+									</td>
+									<td>
+										<a href="" class="boton botonVerde disabled" data-toggle="modal" data-target="#modalEditarCascada">Guardar</a>
+										<button disabled class="boton botonVerde" type="submit" data-toggle="modal" data-target="#modalEditarCascada">Guardar</button>
+										<img class="cerrarEdicion" src="img/cerrarEdicion.svg" alt="Icono para ocultar la fila de añadir usuario">
+									</td>
+								</tr>
+								<tr class="cabeceraTabla">
+									<th>
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="checkInvisible">
+										  <label class="custom-control-label" for="checkInvisible"></label>
+										</div>
+									</th>
+									<th><img class="orden" src="img/orden.svg" alt="Icono que representa la ordenación" title="Icono que representa la ordenación"></th>
+									<th><img class="orden" src="img/orden.svg" alt="Icono que representa la ordenación" title="Icono que representa la ordenación"></th>
+									<th><img class="orden" src="img/orden.svg" alt="Icono que representa la ordenación" title="Icono que representa la ordenación"></th>
+									<th><img class="orden" src="img/orden.svg" alt="Icono que representa la ordenación" title="Icono que representa la ordenación"></th>
+									<th><img class="orden" src="img/orden.svg" alt="Icono que representa la ordenación" title="Icono que representa la ordenación"></th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<span class="tooltiptextIzq">Editando...</span>
+										<div class="custom-control custom-checkbox primeraCapa">
+										  <input type="checkbox" class="custom-control-input checkIndividual" id="checkBoxUno">
+										  <label class="custom-control-label" for="checkBoxUno"></label>
+										</div>
+									</td>
+									<td>
+										<span class="primeraCapa">Oscar Pérez López</span>
+										<input id="nombreUsuarioUno" type="text" placeholder="Nombre" class="segundaCapa">
+									</td>
+									<td>
+										<span class="primeraCapa">+34 657 897 654</span>
+										<input id="tfnoUsuarioUno" type="text" placeholder="Teléfono" class="segundaCapa">
+									</td>
+									<td>
+										<span class="primeraCapa">-</span>
+										<div class="custom-control custom-radio segundaCapa">
+										  <input type="radio" id="licencia30Dos" name="licenciaDos" class="custom-control-input" value="licencia30Dos">
+										  <label class="custom-control-label" for="licencia30Dos"></label>
+										</div>
+									</td>
+									<td>
+										<span class="primeraCapa gigasActivos">100 GB</span>
+										<div class="custom-control custom-radio segundaCapa">
+										  <input type="radio" id="licencia100Dos" name="licenciaDos" class="custom-control-input" value="licencia100Dos">
+										  <label class="custom-control-label" for="licencia100Dos"></label>
+										</div>
+									</td>
+									<td>
+										<span class="primeraCapa">-</span>
+										<div class="custom-control custom-radio segundaCapa">
+										  <input type="radio" id="licenciaTeraDos" name="licenciaDos" class="custom-control-input" value="licenciaTeraDos">
+										  <label class="custom-control-label" for="licenciaTeraDos"></label>
+										</div>
+									</td>
+									<td>
+										<div class="editandoUsuario segundaCapa">
+											<a href="" class="boton botonVerde">Guardar</a>
+											<button class="boton botonVerde" type="submit">Guardar</button>
+											<img class="cerrarEdicion" src="img/cerrarEdicion.svg" alt="Icono para ocultar la fila de añadir usuario">
+										</div>
+										<span class="activando">El usuario recibe un SMS para activar el servicio</span>
+										<div class="opcionesUsuario">
+											<img class="editarUsuarioUnico" src="img/lapiz.svg" alt="Icono para editar usuarios">
+											<img data-toggle="modal" data-target="#modalEliminarUsuarioUnico" id="eliminarUsuarioUnico" src="img/papelera.svg" alt="Icono para eliminar usuarios">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="tooltiptextIzq">Editando...</span>
+										<div class="custom-control custom-checkbox primeraCapa">
+										  <input type="checkbox" class="custom-control-input checkIndividual" id="checkBoxDos">
+										  <label class="custom-control-label" for="checkBoxDos"></label>
+										</div>
+									</td>
+									<td>
+										<span class="primeraCapa">Eritz Hurtado Quevedo</span>
+										<input id="nombreUsuarioDos" type="text" placeholder="Nombre" class="segundaCapa">
+									</td>
+									<td>
+										<span class="primeraCapa">+34 635 005 446</span>
+										<input id="tfnoUsuarioDos" type="text" placeholder="Teléfono" class="segundaCapa">
+									</td>
+									<td>
+										<span class="primeraCapa gigasActivos">30 gb</span>
+										<div class="custom-control custom-radio segundaCapa">
+										  <input type="radio" id="licencia30Tres" name="licenciaTres" class="custom-control-input" value="licencia30Tres">
+										  <label class="custom-control-label" for="licencia30Tres"></label>
+										</div>
+									</td>
+									<td>
+										<span class="primeraCapa">-</span>
+										<div class="custom-control custom-radio segundaCapa">
+										  <input type="radio" id="licencia100Tres" name="licenciaTres" class="custom-control-input" value="licencia100Tres">
+										  <label class="custom-control-label" for="licencia100Tres"></label>
+										</div>
+									</td>
+									<td>
+										<span class="primeraCapa">-</span>
+										<div class="custom-control custom-radio segundaCapa">
+										  <input type="radio" id="licenciaTeraTres" name="licenciaTres" class="custom-control-input" value="licenciaTeraTres">
+										  <label class="custom-control-label" for="licenciaTeraTres"></label>
+										</div>
+									</td>
+									<td>
+										<div class="editandoUsuario segundaCapa">
+											<a href="" class="boton botonVerde">Guardar</a>
+											<button class="boton botonVerde" type="submit">Guardar</button>
+											<img class="cerrarEdicion" src="img/cerrarEdicion.svg" alt="Icono para ocultar la fila de añadir usuario">
+										</div>
+										<span class="activando">El usuario recibe un SMS para activar el servicio</span>
+										<div class="opcionesUsuario">
+											<img class="editarUsuarioUnico" src="img/lapiz.svg" alt="Icono para editar usuarios">
+											<img data-toggle="modal" data-target="#modalEliminarUsuarioUnico" id="eliminarUsuarioUnico" src="img/papelera.svg" alt="Icono para eliminar usuarios">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="tooltiptextIzq">Editando...</span>
+										<div class="custom-control custom-checkbox primeraCapa">
+										  <input type="checkbox" class="custom-control-input checkIndividual" id="checkBoxTres">
+										  <label class="custom-control-label" for="checkBoxTres"></label>
+										</div>
+									</td>
+									<td>
+										<span class="primeraCapa">Julián Hurtado Quevedo</span>
+										<input id="nombreUsuarioTres" type="text" placeholder="Nombre" class="segundaCapa">
+									</td>
+									<td>
+										<span class="primeraCapa">+34 635 005 446</span>
+										<input id="tfnoUsuarioTres" type="text" placeholder="Teléfono" class="segundaCapa">
+									</td>
+									<td>
+										<span class="primeraCapa gigasActivos">30 gb</span>
+										<div class="custom-control custom-radio segundaCapa">
+										  <input type="radio" id="licencia30Cuatro" name="licenciaCuatro" class="custom-control-input" value="licencia30Cuatro">
+										  <label class="custom-control-label" for="licencia30Cuatro"></label>
+										</div>
+									</td>
+									<td>
+										<span class="primeraCapa">-</span>
+										<div class="custom-control custom-radio segundaCapa">
+										  <input type="radio" id="licencia100Cuatro" name="licenciaCuatro" class="custom-control-input" value="licencia100Cuatro">
+										  <label class="custom-control-label" for="licencia100Cuatro"></label>
+										</div>
+									</td>
+									<td>
+										<span class="primeraCapa">-</span>
+										<div class="custom-control custom-radio segundaCapa">
+										  <input type="radio" id="licenciaTeraCuatro" name="licenciaCuatro" class="custom-control-input" value="licenciaTeraCuatro">
+										  <label class="custom-control-label" for="licenciaTeraCuatro"></label>
+										</div>
+									</td>
+									<td>
+										<div class="editandoUsuario segundaCapa">
+											<a href="" class="boton botonVerde">Guardar</a>
+											<button class="boton botonVerde" type="submit">Guardar</button>
+											<img class="cerrarEdicion" src="img/cerrarEdicion.svg" alt="Icono para ocultar la fila de añadir usuario">
+										</div>
+										<span class="activando">El usuario recibe un SMS para activar el servicio</span>
+										<div class="opcionesUsuario">
+											<img class="editarUsuarioUnico" src="img/lapiz.svg" alt="Icono para editar usuarios">
+											<img data-toggle="modal" data-target="#modalEliminarUsuarioUnico" id="eliminarUsuarioUnico" src="img/papelera.svg" alt="Icono para eliminar usuarios">
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- Paginación -->
+						<div class="paginacion entradasPag">Mostrando de <span id="minEntradas">1</span> a <span id="maxEntradas">5</span> de <span id="totalEntradas">450</span> entradas</div>
+						<div class="paginacion numPag">
+							<!-- <a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="-1" id="example_previous">Previous</a> -->
+							<span>
+								<a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a>
+								<a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">2</a>
+								<a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">3</a>
+							</span>
+							<!-- <a class="paginate_button next" aria-controls="example" data-dt-idx="7" tabindex="0" id="example_next">Next</a> -->
+						</div>
+						<!-- Paginación -->
+						<div class="infoSinUsuarios">
+							<img src="img/blocDeNotas.svg" alt="Asignación múltiple" title="Asignación múltiple">
+							<p>Asignación múltiple</p>
+							<p>Introduce el <strong>teléfono</strong>, un <strong>nombre</strong> identificativo y <strong>elige el plan</strong> que quieras asociar a tu usuario. El teléfono asignado recibirá un SMS de confirmación de activación del servicio.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Bloque asignar licencias -->
+			</div>	
+		</div>
+		<!-- Modal eliminar usuario único -->
+		<div class="modal fade" id="modalEliminarUsuarioUnico" tabindex="-1" role="dialog" aria-labelledby="modalEliminarUsuarioUnico" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <i class="fas fa-times" aria-hidden="true"></i>
+		        </button>
+		      	<h5 class="modal-title titformodal">Eliminar registro</h5>
+				<p><strong>El registro</strong> que vas a eliminar dejará <strong>disponible</strong> su licencia para asignarla a otro teléfono.</p>
+				<p>Esta operación no se puede deshacer, ¿quieres eliminar este registro?</p>
+				<a id="botonEliminarUnico" class="boton" data-dismiss="modal">Eliminar</a>
+				<button id="botonEliminarUnico" type="submit" data-dismiss="modal">Eliminar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal eliminar usuario único -->
+		<!-- Modal modificar usuario en cascada -->
+		<div class="modal fade" id="modalEditarCascada" tabindex="-1" role="dialog" aria-labelledby="modalEditarCascada" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <i class="fas fa-times" aria-hidden="true"></i>
+		        </button>
+		      	<h5 class="modal-title titformodal">Modificar registros</h5>
+				<p>Va a realizar una modificación múltiple, las licencias que deje <strong>disponibles</strong> se podrán asignar a otros usuarios.</p>
+				<p>Esta operación no se puede deshacer, ¿quieres eliminar este registro?</p>
+				<a id="botonModificar" class="boton" data-dismiss="modal">Modificar registros </a>
+				<button id="botonModificar" type="submit" data-dismiss="modal">Modificar registros </button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal modificar usuario en cascada -->
+		<!-- Modal eliminar usuario en cascada -->
+		<div class="modal fade" id="modalEliminarCascada" tabindex="-1" role="dialog" aria-labelledby="modalEliminarCascada" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <i class="fas fa-times" aria-hidden="true"></i>
+		        </button>
+		      	<h5 class="modal-title titformodal">Eliminar registro</h5> 
+				<p>Los <strong>14 registros</strong> que vas a eliminar dejarán <strong>disponibles</strong> sus licencias para asignarlas a otros teléfonos.</p>
+				<p>Esta operación no se puede deshacer, ¿quieres eliminar estos registros?</p>
+				<a id="botonEliminarCascada" class="boton" data-dismiss="modal">Eliminar</a>
+				<button id="botonEliminarCascada" type="submit" data-dismiss="modal">Eliminar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal eliminar usuario en cascada -->
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="telefonica">
+					<span>Una marca de</span>
+					<img src="img/telefonica.svg" alt="logo Telefónica" title="logo Telefónica"/>
+				</div>
+				<div class="derechos">
+					<a href="" title="Aviso legal">Aviso Legal</a>
+					<span>&copy; 2020 Movistar. Todos los derechos reservados.</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+     <!-- jQuery.JS -->
+	<script src="jquery/jquery-3.4.1.min.js"></script>
+	<script src="jquery/scripts.js"></script>
+
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" defer></script>
+    <!-- Bootstrap JS -->
+    <script src="dist/js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>

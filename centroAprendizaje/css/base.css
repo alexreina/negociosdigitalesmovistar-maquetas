@@ -1,0 +1,2282 @@
+/*@import "scss/_rootp";
+@import "scss/custom";*/
+
+@font-face {
+	font-family: TelefonicaBold;
+	src: url(../webfonts/Bold/TelefonicaWeb-Bold.eot);
+	src: url(../webfonts/Bold/TelefonicaWeb-Bold.eot?#iefix) format('embedded-opentype'), url(../webfonts/Bold/TelefonicaWeb-Bold.woff2) format('woff2'), url(../webfonts/Bold/TelefonicaWeb-Bold.woff) format('woff'), url(../webfonts/Bold/Telefonica-Bold.ttf) format('truetype'), url(../webfonts/Bold/TelefonicaWeb-Bold.svg#telefonicabold) format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaExtralight;
+	src: url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.eot);
+	src: url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.eot?#iefix) format('embedded-opentype'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.woff2) format('woff2'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.woff) format('woff'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.ttf) format('truetype'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.svg#telefonicaextralight) format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaLight;
+	src: url(../webfonts/Light/TelefonicaWeb-Light.eot);
+	src: url(../webfonts/Light/TelefonicaWeb-Light.eot?#iefix) format('embedded-opentype'), url(../webfonts/Light/TelefonicaWeb-Light.woff2) format('woff2'), url(../webfonts/Light/TelefonicaWeb-Light.woff) format('woff'), url(../webfonts/Light/TelefonicaWeb-Light.ttf) format('truetype'), url(../webfonts/Light/TelefonicaWeb-Light.svg#telefonicalight) format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaText;
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot);
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot?#iefix) format('embedded-opentype'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff2) format('woff2'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff) format('woff'), url(../webfonts/Regular/TelefonicaWeb-Regular.ttf) format('truetype'), url(../webfonts/Regular/TelefonicaWeb-Regular.svg#telefonicaregular) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaHand;
+	src: url(../webfonts/Hand/TelefonicaWeb-Hand.eot);
+	src: url(../webfonts/Hand/TelefonicaWeb-Hand.eot?#iefix) format('embedded-opentype'), url(../webfonts/Hand/TelefonicaWeb-Hand.woff2) format('woff2'), url(../webfonts/Hand/TelefonicaWeb-Hand.woff) format('woff'), url(../webfonts/Hand/TelefonicaWeb-Hand.ttf) format('truetype'), url(../webfonts/Hand/TelefonicaWeb-Hand.svg#telefonicaregular) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaRegularitalic;
+	src: url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.eot);
+	src: url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.eot?#iefix) format('embedded-opentype'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.woff2) format('woff2'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.woff) format('woff'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.ttf) format('truetype'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic#telefonicaitalic) format('svg');
+	font-weight: 400;
+	font-style: italic;
+	}
+
+@font-face {
+	font-family: TelefonicaRegular;
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot);
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot?#iefix) format('embedded-opentype'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff2) format('woff2'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff) format('woff'), url(../webfonts/Regular/TelefonicaWeb-Regular.ttf) format('truetype'), url(../webfonts/RegularItalic/TelefonicaWeb-Regular#telefonica) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaCap;
+	src: url(../webfonts/Cap/TelefonicaCapWeb-Regular.eot) format('embedded-opentype'), url(../webfonts/Cap/TelefonicaCapWeb-Regular.woff) format('woff'), url(../webfonts/Cap/TelefonicaCapWeb-Regular.otf) format('opentype'), url(../webfonts/Cap/TelefonicaCapWeb-Regular.svg#TelefonicaCapWeb-Regular) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+html, body{	
+	font-family:TelefonicaRegular;
+	color: #50535a;
+	font-size: 18px;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	position: relative;
+	left: 0;
+	transition: all .5s linear;
+}
+footer {
+    position: relative;
+}
+#terminoBusqueda {
+	font-family: TelefonicaRegularitalic;
+}
+span#terminoBusqueda::after {
+    content: '"';
+}
+span#terminoBusqueda::before {
+    content: '"';
+}
+.marginZero {
+	margin-left: 0;
+	margin-right: 0;
+}
+.prefooter{
+    background: transparent;
+    background-image: url(../imagenes/m-logo-blanco-md.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: contain;
+    border-bottom: solid 1px #b6b7b7;
+    border-top: solid 1px #b6b7b7;
+}
+.bqformulariohome{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+#bqmarca{
+	height:99px;
+}
+#copyright{
+    border-top: 1px solid #b6b7b7;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.bqmarcatel {
+	border-top: 1px solid #b6b7b7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bqmenpie {
+	border-top: 1px solid #b6b7b7;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+.aniocopy{
+	font-size: 14px;
+	line-height: 1.43;
+	color: #86888c;
+}
+.menpiejuntomarca li:not(:first-of-type) {
+	margin-top: 20px;
+}
+.menpiejuntomarca li a{
+	  font-size: 16px;
+	  color: #50535a;
+	  display: block;
+	  line-height: normal;
+}
+.menpiejuntomarca li:not(:last-child) a:after{
+	display: none;
+}
+br {
+	display: block;
+    content: '';
+    margin-bottom: 15px;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+button{
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 16px;
+	padding: 15px 0;
+	border: none;
+	line-height: 16px;
+	color: #fff;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.boton {
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 15px 0;
+    border: none;
+    line-height: 16px;
+    color: #fff !important;
+    cursor: pointer;
+}
+.botonAzul {
+	background: #00a9e0;
+}
+.botonAzul:hover {
+	background: #0098ca;
+	text-decoration: none;
+}
+.botonVerde {
+	background: #5cc500;
+}
+.botonVerde:hover {
+	background: #50ab00;
+	text-decoration: none;
+
+}
+.botonMorado {
+	background: #954b97;
+}
+.botonMorado:hover {
+	background: #7f3f81;
+	text-decoration: none;
+
+}
+.botonMobile {
+	display: block;
+}
+.paddingFixed {
+	padding-top: 70px
+}
+select::-ms-expand {
+	display: none;
+}
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;      
+}
+option {
+	font-family: TelefonicaRegular;
+}
+/***** Header ******/
+header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1040;
+	width: 100%;
+	transition: all .5s linear;
+}
+#bqtopbar{
+	background-color: #f4f4f3;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	padding: 5px 0;
+	border-bottom: 1px solid #b7b7b7;
+	font-size: 16px;
+	display: none;
+	transition: 0.2s;
+}
+#bqtopbar a {
+	color: #86888c;
+}
+#bqtopbar a.active {
+	font-family: TelefonicaBold;
+}
+#bqtopbar .row .topbarDcha {
+	margin-left: auto;
+	display: flex;
+}
+#bqtopbar .row .topbarDcha > a:first-of-type{
+	margin-left: auto !important;
+	color: #50535a;
+}
+#bqtopbar a:not(:first-of-type) {
+	margin-left: 30px;
+}
+.selectPaises {
+	margin-left: 30px;
+}
+.selectPaises label {
+	margin-bottom: 0;
+    padding-right: 10px;
+}
+.selectPaises select {
+	font-family: TelefonicaBold;
+	border: none;
+    background: transparent;
+    background-image: url('../imagenes/dropdownSelectPais.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 85px;
+}
+#navegacion {
+	border-bottom: solid 1px #b6b7b7;
+	height: 70px;
+	background: #fff;
+}
+#navegacion .container, #navegacion .row {
+	height: 100%;
+	flex-wrap: nowrap;
+}
+#navegacion .row {
+	justify-content: space-between;
+}
+#navegacion nav {
+	display: flex;
+	align-items: stretch;
+}
+#navegacion nav > ul {
+    display: flex;
+    align-items: center;
+}
+#navegacion nav li {
+    margin-right: 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+#navegacion nav li a {
+	font-size: 16px;
+    color: #50535a;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#navegacion nav li a:hover {
+	color: #00a9e0;
+	text-decoration: none;
+}
+#navegacion nav li a i {
+	margin-left: 5px;
+}
+#navegacion nav li a:hover i {
+	transform: rotate(180deg);
+}
+#navegacion .navDcha {
+	display: flex;
+}
+#navegacion .navDcha img {
+    display: inline-block;
+    margin-left: 20px;
+}
+#navegacion .navDcha button{
+	background-color: #00a9e0;
+    padding: 0 30px;
+    align-self: center;
+}
+#navegacion .navDcha button:hover {
+	background-color: #0098ca;
+}
+div[class*="subpaginas"] {
+	padding-top: 40px;
+    min-height: 220px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background: #fff;
+    right: 0;
+    left: 0;
+    top: 124px;
+    visibility: hidden;
+    border-top: solid 1px #b6b7b7;
+    z-index: 99999;
+    padding-bottom: 15px;
+    box-shadow: rgba(0,0,0,.14) 0 2px 2px 0;
+}
+li[class*="primerNivel"] a:hover + div {
+    visibility: visible;
+}
+li[class*="primerNivel"] a + div:hover {
+	visibility: visible;
+}
+div[class*="subpaginas"] > div {
+	width: 263px;
+	display: inline-block;
+}
+div[class*="subpaginas"] > div:not(:first-of-type) {
+	margin-left: 30px;
+}
+div[class*="subpaginas"] > div span {
+	font-size: 15px;
+	font-family: TelefonicaBold;
+	text-transform: uppercase;
+}
+div[class*="subpaginas"] > div li {
+	margin-top: 20px;
+	display: block !important;
+}
+div[class*="subpaginas"] > div li a {
+	font-size: 18px;
+	color: #50535a;
+}
+#navegacionN2 {
+	background: #00a9e0;
+	width: 83.5%;
+	position: fixed;
+	height: 100%;
+	top: 0;
+	right: -83.5%;
+	z-index: 999;
+	transition: all .5s linear;
+	overflow-y: auto;
+}
+#navegacionN2 li, .paginasHijas li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+#navegacionN2 li a, #navegacionN2 li span, .paginasHijas li a  {
+	width: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: TelefonicaLight;
+}
+#navegacionN2 a, #navegacionN2 span {
+	color: #fff;
+	cursor: pointer;
+}
+#navegacionN2 a i {
+	float: right;
+}
+.contraerBody {
+	left: -83.45%;
+	transition: all .5s linear;
+}
+.expanderNav {
+	width: 83.5%;
+	right: 0 !important;
+	transition: all .5s linear;
+}
+.subNavHeader  {
+	margin: 10px;
+	position: relative;
+}
+.subNavHeader select {
+	width: 280px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-size: 14px;
+    color: #86888c;
+    padding-left: 20px;
+    background-color: #fff;
+}
+.subNavHeader .select_location {
+    background-image: url(../imagenes/flechaAcordeonV.svg);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+.select-label {
+	display: block;
+	width: 280px;
+	height: 50px;
+	border-radius: 25px;
+	border: none;
+	font-size: 14px;
+	color: #86888c;
+	padding-left: 20px;
+	background: #fff;
+	margin-bottom: 0;
+	line-height: 50px;
+}
+.select-label i {
+	color: #00a9e0 !important;
+	margin-left: 25px;
+}
+.select-wrap {
+	position: absolute;
+	width: 100%;
+	background: #fff;
+    display: none;
+    font-size: 14px;
+    top: 0;
+    z-index:9999;
+}
+.select-wrap.active{
+	display: block;
+}
+.select-checkbox:checked ~ .select-wrap {
+  	display: block;
+}
+.select {
+	list-style: none;
+	padding: 0 10px;
+	margin: 0;
+}
+.select li {
+	height: unset;
+    padding: 8px 0;
+}
+.select a {
+	display: block;
+	text-decoration: none;
+	color: #86888c !important;
+}
+#navegacionN2 nav {
+	padding: 0 10px; 
+}
+div[class*="subNivel"], .primerNivelN2.inactivo {
+	display: none;
+}
+div[class*="subNivel"].activo {
+	display: block !important;
+}
+.subNavFooter {
+	position: absolute;
+    bottom: 0;
+    background: #fff;
+    left: 0;
+    right: 0;
+}
+.subNavFooter a {
+	padding: 30px 10px 30px 10px;
+	color: #50535a !important;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.subNavFooter .selectPaises {
+	padding: 30px 10px 30px 10px;
+	border-bottom: 1px solid #00a9e0;
+	margin-left: 0;
+}
+.paginaPrimerN {
+	margin: 10px;
+}
+.paginaPrimerN span {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.paginasHijas {
+	padding: 0 10px;
+}
+#cerrarMenu {
+	display: none;
+	position: fixed;
+    height: 100%;
+    width: 16.5%;
+    margin-left: -16.5%;
+    top: 0;
+}
+#navegacionN2.expanderNav #cerrarMenu {
+	display: block;
+}
+/***** Header ******/
+/***** Modal: Formulario de contacto *****/
+body.modal-open, .modal.show {
+	padding-right: 0 !important;
+}
+.modal{
+	background: rgba(255, 255, 255, .3);
+	z-index: 9999;
+}
+.modal-content {
+	border: none;
+} 
+.modal .enlace {
+	color: #00a9e0;
+}
+.close {
+	float: none;
+	text-align: right;
+	width: 100%;
+}
+.modal button {
+	height: unset;
+}
+.modal button i {
+    font-size: 20px;
+    color: #b7b7b7;
+}
+.titformodal{
+	font-family: TelefonicaLight;
+	font-size:40px;
+	text-align:center;
+	line-height:48px;
+	color: #50535a;
+	width:100%;
+	margin-bottom: 5px;
+}
+.titforsuscripcion{
+	font-family: TelefonicaLight;
+	font-size: 40px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	text-align:left;
+	line-height: normal;
+}
+.suscrbete-a-la-list {
+  font-size: 21px;
+  line-height: 1.43;
+  color: #50535a;
+}
+.modal p {
+	margin-bottom: 40px;
+}
+.modal p a {
+    font-family: TelefonicaBold;
+    color: #50535a;
+    font-size: 18px;
+}
+.modal p a:hover {
+	text-decoration: underline;
+	color: #50535a; 
+}
+#seleccionrModalPais, #nombreUsuarioCntc, #telefonoUsuarioCntc,  #correoUsuarioCntc, #nombreUsuarioPie, #correoUsuarioPie {
+	margin-bottom: 20px;
+}
+#textAreaCntc {
+	margin-bottom: 20px;
+}
+input#nombreCntc, input#nombrePie, input#nombreCorreo, input#numeroCntc,input#correoCntc, input#nombreCntr , input#numeroCntr, #modalSeleccionarPais, textarea#consultaContacto {
+	border: none;
+    font-size: 18px;
+}
+#aceptarPrivacidadCntc, #aceptarPrivacidadCntr, #aceptarPrivacidadReco, #aceptarPrivacidadPie {
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+}
+.custom-checkbox .custom-control-label::before {
+	border-radius: 50% !important;
+}
+#programarLlamadaCntc, #programarLlamadaCntr, #programarLlamadaReco, #programarLlamadaPie {
+	margin-top: 20px;
+    width: 100%;
+    background: #5cc500;
+    font-size: 16px;
+}
+#programarLlamadaCntc:hover, #programarLlamadaCntr:hover {
+	background: #50ab00;
+	text-decoration: none;
+}
+.inputformmodal, #modalSeleccionarPais, textarea#consultaContacto{
+	background-color:#e9eae8;
+	text-align:center;
+	font-style:italic;
+	text-align-last: center;
+	height: 50px;
+}
+form #modalSeleccionarPais {
+	color: #6c757d;
+    background-image: url(../imagenes/dropdownSelectPais.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 95%;
+}
+/***** Modal: Formulario de contacto *****/
+/*********HOME**************/
+ .contenidoHome {
+	background: #f9f9f9;					
+}
+.input-text {
+  
+  height: 50px;
+  border-radius: 4px;
+  border: solid 1px #86888c;
+  background-color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
+  display:flex;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  
+ 
+}
+.En-qu-podemos-ayud {
+	font-size: 18px;
+	font-style: italic;
+	line-height: 1.11;
+	border: none;
+	width: 100%;
+	background: url(../imagenes/shape.svg) no-repeat right 10px center;
+}
+.En-qu-podemos-ayud::placeholder {
+	color: #b6b7b7;
+}
+.Ejemplos-primeros_p {
+  font-size: 16px;
+  font-weight: normal;
+  text-align:center;
+  color: #ffffff;
+}
+/***** Cabecera inicio ****/
+.cabecera {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    background: #f9f9f9;
+}
+.cabecera img {
+	width: 100%;
+}
+.cabecera .textoCabecera {
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.cabecera .servicios {
+	display: none;
+}
+.servicio-item {
+	width: 190px;
+	position: relative;
+}
+.textoCabecera .servicio-item:not(:first-of-type)::before {
+    content: '+';
+    position: absolute;
+    left: -10px;
+    bottom: -21px;
+    font-size: 48px;
+}
+.servicio-item img{
+	width: 40px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+.servicio-item p {
+	font-size: 14px;
+	font-family: TelefonicaBold;
+	margin-bottom: 0;
+}
+.textoCabecera .servicio-item p {
+	text-transform: uppercase;
+}
+.tituloCabecera{
+	font-size: 48px;
+    font-family: TelefonicaLight;
+    line-height: normal;
+    margin-bottom: 0;
+}
+.tituloCabecera span {
+	font-family: TelefonicaHand;
+}
+.cabecera p:first-of-type {
+    font-size: 21px;
+    margin: 10px 0 30px 0;
+    line-height: normal;
+}
+.cabecera button {
+    min-width: 189px;
+    background: #5cc500;
+}
+/***** Cabecera producto ****/
+.cabecera.cabProducto .imagenCabecera {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.cabecera.cabProducto .textoCabecera{
+	position: relative;
+    top: unset;
+    left: unset;
+    transform: none;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+/***** Slider ****/
+.apps {
+    background: #f4f4f3;
+    padding: 60px 0;
+   
+}
+.apps .container {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+.apps > p, .tituloSeccion{
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    font-family: TelefonicaLight;
+    margin: 0 15px;
+}
+.tituloSeccion {
+    font-size: 32px;
+    line-height: 1.25;
+    text-align: center;
+    color: #50535a;
+}
+.tabsApps {
+    display: flex;
+    overflow-x: scroll;
+}
+.tabsApps ul {
+    display: flex;
+    justify-content: left;
+    padding-left: 15px;
+}
+.tabsApps li {
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	padding:13px 15px;
+	white-space: pre;
+	background: transparent;
+}
+.tabsApps li:nth-of-type(2){
+	margin:0px 20px;
+}
+.tabsApps li:hover {
+    text-decoration: underline;
+}
+.tabsApps li.active {
+	background: #00a9e0;
+	border-radius:25px;
+	transition: background .5s ease;
+	color:#fff;
+}
+div[id*="opcionesSlider"] {
+	display: none;
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+div[id*="opcionesSlider"].active {
+	display: block;
+}
+.apps .container {
+	position: relative;
+}
+.apps .container > a {
+    text-align: center;
+    font-size: 16px;
+    color: #00a9e0;
+    display: block;
+    margin-top: 80px;
+}
+.owl-stage {
+	display: flex;
+}
+.owl-item {
+    display: flex;
+}
+.owl-carousel .owl-stage-outer {
+	padding-left: 1px;
+}
+.owl-carousel button.owl-prev, button.owl-next, .owl-carousel .owl-dot {
+	height: unset;
+	outline: 0;
+}
+.owl-theme .owl-nav {
+	margin-top: 0;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+	background-color:#00a9e0;
+}
+button.owl-prev, button.owl-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 !important;
+}
+button.owl-prev:hover, button.owl-next:hover {
+	background: none !important;
+	color: #50535a !important;
+} 
+button.owl-prev {
+    left: -30px;
+}
+button.owl-next {
+    right: -30px;
+}
+.owl-theme .owl-nav span {
+	vertical-align: text-top;
+	line-height: 0;
+	font-size: 80px;
+	color: transparent;
+}
+.owl-nav .owl-prev span {
+    background: url(../imagenes/flechaSliderIzq.svg) no-repeat 0;
+}
+.owl-nav .owl-next span {
+    background: url(../imagenes/flechaSliderDcha.svg) no-repeat 0;
+}
+.owl-dots {
+    position: absolute;
+    padding-top: 35px;
+    padding-right: 15px;
+    width: 100%;
+    display: flex;
+}
+button.owl-dot {
+    flex: 1;
+    margin: 0 5px;
+}
+.apps .owl-theme .owl-dots .owl-dot span {
+	width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    margin: 0;
+}
+.cards {
+	overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    padding-bottom: 5px
+}
+.cards .row {
+	flex-wrap: nowrap;
+	margin: 0;
+}
+.card-item {
+	width: 263px;
+	flex-shrink: 0;
+  	margin-bottom: 10px; /** originalmente 45px **/
+  	margin-right: 30px;
+  	display: flex;
+  	flex-direction: column;
+}
+.card-item:not(:last-of-type) {
+	margin-right: 20px;
+}
+.card-item > p {
+    background: #00a9e0;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 0;
+    height: 156px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgexpertos img{
+	max-height:150px;
+}
+.detalleCard {
+	padding: 10px 0 20px 0;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.descripcion-item {
+  font-size: 28px;
+  line-height: normal;
+  font-family: TelefonicaLight;
+  margin-bottom: 0;
+}
+.descripcion-item a {
+	color: #50535a;
+}
+.descripcion-item a:hover {
+	text-decoration: none;
+	color: #00a9e0;
+}
+.bqclasificaexpertos{
+	margin:10px 0;
+}
+.bqclasificaexpertos li{
+	border-radius: 12.5px;
+	background-color: #e9eae8;
+	padding: 2px 10px;
+	display: flex;
+}
+.bqclasificaexpertos li:not(:last-of-type) {
+	margin-right: 5px;
+}
+.bqclasificaexpertos li a {
+    font-size: 14px;
+    height: auto;
+    color: #86888c;
+}
+.bqclasificaexpertos li:hover{
+	background: #00a9e0;
+}
+.bqclasificaexpertos li:hover a{
+	text-decoration: none;
+	color: #fff;
+}
+.pdetalleexpertos{
+	font-size: 18px;
+	line-height: 1.33;
+	margin-bottom: 0;
+}
+p.precio-item {
+    margin: 30px 0;
+}
+.detalleCard button {
+	width: 260px;
+	border-radius: 4px;
+	background-color: #00a9e0;
+}
+/*.detalleCard a {
+	height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #00a9e0;
+}*/
+.owl-stage-outer.solitario {
+	display: flex;
+    justify-content: center;
+}
+.owl-stage-outer.solitario + .owl-nav, .owl-stage-outer.solitario + .owl-nav + .owl-dots {
+	display: none;
+}
+/**************TODAS LAS SOLUCIONES*********/
+.todasSoluciones {
+	background: #fff;
+	padding: 60px 0 30px 0;
+}
+.todasSoluciones .bloqueSolucion {
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	color: #50535a;
+}
+.todasSoluciones .bloqueSolucion:hover {
+	text-decoration: none;
+}
+.todasSoluciones .bloqueSolucion .solucion:hover .iconoimg, .bqelementosayuda .bloqueSolucion a:hover .iconoimg {
+	filter:  brightness(0) invert(1);
+}
+.todasSoluciones h2 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-family: TelefonicaLight;
+    font-size: 32px;
+    line-height: 1.25;
+    text-align: center;
+    color: #50535a;
+}
+.todasSoluciones .solucion {
+	display: flex;
+    flex-direction: column;
+    background: #fff;
+    flex-grow: 1;
+    padding: 20px 15px;
+    box-shadow: 0 1px 4px 0 rgba(80, 83, 90, 0.3);
+}
+
+.todasSoluciones .bloqueSolucion:nth-child(1) .solucion,
+.todasSoluciones .bloqueSolucion:nth-child(7) .solucion{
+	border-top: 6px solid #f59c02;
+}
+.todasSoluciones .bloqueSolucion:nth-child(2) .solucion,
+.todasSoluciones .bloqueSolucion:nth-child(8) .solucion{
+	border-top: 6px solid #ec6839;
+}
+.todasSoluciones .bloqueSolucion:nth-child(3) .solucion{
+	border-top: 6px solid #e9426d;
+}
+.todasSoluciones .bloqueSolucion:nth-child(4) .solucion{
+	border-top: 6px solid #954b97;
+}
+.todasSoluciones .bloqueSolucion:nth-child(5) .solucion{
+	border-top: 6px solid #00a9e0;
+}
+.todasSoluciones .bloqueSolucion:nth-child(6) .solucion{
+	border-top: 6px solid #5cc500;
+}
+.todasSoluciones .bloqueSolucion:nth-child(1) .solucion:hover,
+.todasSoluciones .bloqueSolucion:nth-child(7) .solucion:hover{
+	background-color: #f59c02;
+}
+.todasSoluciones .bloqueSolucion:nth-child(2) .solucion:hover,
+.todasSoluciones .bloqueSolucion:nth-child(8) .solucion:hover{
+	background-color: #ec6839;
+}
+.todasSoluciones .bloqueSolucion:nth-child(3) .solucion:hover{
+	background-color: #e9426d;
+}
+.todasSoluciones .bloqueSolucion:nth-child(4) .solucion:hover{
+	background-color: #954b97;
+}
+.todasSoluciones .bloqueSolucion:nth-child(5) .solucion:hover{
+	background-color: #00a9e0;
+}
+.todasSoluciones .bloqueSolucion:nth-child(6) .solucion:hover{
+	background-color: #5cc500;
+}
+.todasSoluciones .bloqueSolucion .solucion:hover {
+    border-color: rgba(255,255,255,0.5);
+    color:#fff;
+}
+/*
+.todasSoluciones .bloqueSolucion:nth-child(2) .solucion:hover,
+.todasSoluciones .bloqueSolucion:nth-child(8) .solucion:hover{
+	background-color: #ec6839;
+} */
+
+
+
+
+.todasSoluciones .solucion img {
+	align-self: flex-start;
+}
+.todasSoluciones .solucion p:first-of-type {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-family: TelefonicaRegular;
+}
+.todasSoluciones .solucion p:first-of-type {
+	line-height: normal;
+	margin-top: 10px;
+}
+.todasSoluciones .solucion p:last-of-type {
+	line-height: 1.5;
+}
+/***** HOME ****/
+/*********************LANDING PRODUCTO***********/
+.tituloCabeceraLanding{
+	font-size: 48px;
+    font-family: TelefonicaLight;
+ 	line-height: normal;
+    color:#50535a;
+    margin-bottom: 0;
+}
+.Ejemplos-primeros_p_landing {
+  font-family: TelefonicaLight;
+  font-size: 16px;
+  text-align: center;
+  color: #86888c
+}
+.bqelementosayuda {
+    text-align: left;
+    margin-top: 40px;
+    
+}
+.bqserviciosprodlanding{
+	padding-top: 20px;
+}
+.bqserviciosprodlanding .apps.slider {
+    background-color: transparent;
+}
+.bqserviciosprodlanding .container {
+    position: relative;
+}
+.bqelementosayuda a.bloqueSolucion {
+    background-color: #fff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+.bqelementosayuda img.iconoimg {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.bqelementosayuda a {
+	text-decoration:none;
+  	color: #50535a;
+}
+.bqelementosayuda .bloqueSolucion {
+	display: flex;
+}
+.bqelementosayuda .bloqueSolucion > a {
+    margin-bottom: 40px;
+    padding: 40px 15px 20px 15px;
+    display: block;
+    background: #fff;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 8px 0 rgba(80, 83, 90, 0.3);
+}
+.bqelementosayuda .bloqueSolucion a:hover {
+    color: #fff;
+    border-top: 5px solid rgba(255,255,255,0.5) !important;
+}
+.bqelementosayuda .bloqueSolucion:nth-child(1) a:hover{
+	background-color: #e9426d;
+}
+.bqelementosayuda .bloqueSolucion:nth-child(2) a:hover{
+	background-color: #ec6839;
+}
+.bqelementosayuda .bloqueSolucion:nth-child(3) a:hover{
+	background-color: #954b97;
+}
+.bqelementosayuda .bloqueSolucion:nth-child(1) a{
+	border-top:5px solid #e9426d;
+}
+.bqelementosayuda .bloqueSolucion:nth-child(2) a{
+	border-top:5px solid #ec6839;
+}
+.bqelementosayuda .bloqueSolucion:nth-child(3) a{
+	border-top:5px solid #954b97;
+}
+
+.bqelementosayuda .solucion .parrafo1{
+	font-size: 21px;
+	margin-bottom: 5px;
+	line-height: 1.43;
+
+}
+.bqelementosayuda .solucion .parrafo2{
+	font-size: 16px;
+  	line-height: 1.5;
+  	margin-bottom: 0;
+}
+/***** GUÍAS PRODUCTOS ****/
+.menuGuia {
+	border-bottom: solid 1px #b6b7b7;
+}
+.menuGuia h1 {
+	font-size: 28px;
+    line-height: 1.14;
+    color: #50535a;
+    height: 60px;
+    border-bottom: 1px solid #b6b7b7;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 0 15px;
+    font-family: TelefonicaLight;
+}
+.listadoPaginasMenu {
+	display: flex;
+	width: 100%;
+	padding: 0 30px;
+	height: 60px;
+    align-items: center;
+}
+.listadoPaginasMenu select {
+    border: none;
+    background-color: transparent;
+    background-image: url(../imagenes/dropdownSelectPais.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    filter: grayscale(100%);
+    width: fit-content;
+    font-size: 16px;
+}
+.listadoPaginasMenu .submenuGuiasProducto {
+	margin-left: auto;
+	display: flex;
+}
+.listadoPaginasMenu .submenuGuiasProducto li:last-of-type {
+	font-family: TelefonicaBold;
+}
+.listadoPaginasMenu .submenuGuiasProducto li a {
+	font-size: 16px;
+    line-height: 1.5;
+    color: #50535a;
+    display: flex;
+}
+.listadoPaginasMenu .submenuGuiasProducto li:not(:last-of-type) a{
+	padding: 0 15px;
+}
+.listadoPaginasMenu .submenuGuiasProducto li:not(:last-of-type) a:hover {
+	text-decoration: none;
+}
+.listadoPaginasMenu .submenuGuiasProducto li a img {
+	margin-right: 10px;
+}
+.submenuGuiasProducto .active {
+    border-bottom: 3px solid #00a9e0;
+}
+.preparrafoguias {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.buscadorguiasproducto {
+	margin-bottom: 30px;
+	height: 50px;
+}
+.buscadorguiasproducto input[type="text"] {
+	width: 100%;
+	text-align: center;
+	border-radius: 4px;
+	border: solid 1px #86888c;
+	background: url(../imagenes/shape.svg) no-repeat right 20px center;
+}
+.buscadorguiasproducto input[type="text"]::placeholder {
+	color: #b6b7b7;
+	font-size: 18px;
+	line-height: 1.11;
+}
+.preparrafoguias h2 {
+   font-size: 40px;
+   font-family: TelefonicaLight;
+   line-height: normal;
+   margin-bottom: 0;
+}
+.bqelemeparrafoguias {
+    margin-bottom: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+.textointroguiasprod {
+	font-size: 21px;
+	line-height: 1.43;
+}
+.textointroguiasprod p {
+	margin-bottom: 12px;
+}
+.textointroguiasprod.resultadosBusqueda p{
+	margin-bottom: 40px;
+}
+.listaordenguiaprod {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.listaordenguiaprod li:not(:last-of-type) {
+    margin-right: 10px;
+}
+.listaordenguiaprod li.active {
+    background-color: #00a9e0;
+    border-radius: 16px;
+    color: #fff;
+}
+.listaordenguiaprod li a {
+    color: #50535a;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.listaordenguiaprod li.active a {
+    color: #fff;
+    line-height: 18px;
+}
+.bqguia {
+    margin-bottom: 40px;
+}
+.titguia a, .titguia {
+    font-size: 28px;
+    line-height: normal;
+	font-family: TelefonicaLight;
+    margin: 10px 0;
+    color: #50535a;
+}
+.titguia a:hover {
+	text-decoration: none;
+	color: #00a9e0;
+}
+.parrafoguia {
+    font-size: 18px;
+    line-height: 1.33;
+    margin-bottom: 20px;
+}
+.listacatguia {
+    display: flex;
+}
+.listacatguia li:not(:last-of-type) {
+   margin-right: 10px;
+}
+.listacatguia li a {
+    border-radius: 12.5px;
+    background-color: #e9eae8;
+    color: #86888c;
+    padding: 0 10px;
+    line-height: 25px;
+    font-size: 14px;
+    height: 25px;
+    display: inline-block;
+}
+.listacatguia li a:hover {
+	text-decoration: none;
+	background: #00a9e0;
+	color: #fff;
+}
+a.bqcargarmas {
+    border: solid 1px #b6b7b7;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: normal;
+    color: #50535a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.listafaqsproducto{
+	margin-top: 29px;
+    margin-bottom: 53px;
+}
+.listafaqsproducto li {
+    padding: 13px 15px;
+    margin-right: 20px;
+    white-space: pre;
+}
+.listafaqsproducto li.active{
+  background-color: #00a9e0;
+  border-radius: 25px;
+  color:#fff;
+}
+.listafaqsproducto li a{
+	color:#50535a;
+	text-align: center;
+    display: block;
+}
+.listafaqsproducto li.active a{
+	color:#fff;
+}
+
+#acordeonProducto .card:first-of-type{
+	border:none;
+}
+#acordeonProducto. .card:first-of-type{
+	border:none;
+}
+#acordeonProducto.postpasos .card:first-of-type{
+	border:inherit;
+}
+#acordeonProducto .card{
+	border-top: 1px solid #b6b7b7;
+	border-radius: 0px;
+}
+.cardconborde {
+	border-top: 1px solid #b6b7b7 !important;
+	
+}
+#acordeonProducto > div:last-of-type {
+	border-bottom: 1px solid #b6b7b7; 
+}
+#acordeonProducto div[id*="heading"] button, 
+#acordeonProducto div[id*="faq"] button,
+#acordeonProducto div[id*="heading"] h3, 
+#acordeonProducto div[id*="faq"] h3 {
+	width: 100%;
+    text-align: left;
+    padding: 20px 10px 20px 20px;
+    height: unset;
+    border-radius: 0;
+    line-height: 1.3;
+    font-size: 24px;
+    color: #50535a;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+.faqsacordeon #acordeonProducto div[id*="heading"] button, .faqsacordeon #acordeonProducto div[id*="faq"] button, .faqsacordeon #acordeonProducto div[id*="heading"] h3, .faqsacordeon #acordeonProducto div[id*="faq"] h3 {
+	padding: 0 10px 0 15px;
+}
+#acordeonProducto div[id*="heading"] button:focus,
+ #acordeonProducto div[id*="faq"] button:focus,
+#acordeonProducto div[id*="heading"] h3:focus,
+ #acordeonProducto div[id*="faq"] h3:focus{
+	box-shadow: none;
+}
+#acordeonProducto h3{
+	margin-bottom:0px;
+}
+#acordeonProducto button img,
+#acordeonProducto h3 img{
+    margin-left: auto;
+}
+#acordeonProducto button.collapsed img,
+#acordeonProducto h3.collapsed img {
+	transform: rotate(180deg);
+	padding-right: 10px;
+}
+#acordeonProducto button img, 
+#acordeonProducto h3:not(.collapsed) img {
+ margin-left: auto;
+ padding-left: 10px;
+}
+#acordeonProducto div.collapse > div, #acordeonProducto div.collapsing > div {
+    margin: 30px auto 65px auto;
+}
+.faqsacordeon #acordeonProducto div.collapse > div, 
+.faqsacordeon #acordeonProducto div.collapsing > div {
+    margin: 0 25px 40px 25px;
+}
+
+#accordionFaq .card .collapse div, #accordionFaq .card .collapsing div {
+    margin: 10px 15px 60px 15px;
+}
+#acordeonProducto{
+	margin-bottom:60px;
+	margin-left:-15px;
+	margin-right:-15px;
+} 
+.faqsacordeon #acordeonProducto {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.accordion .card{
+	border:none;
+}
+.accordion p{
+	font-family: TelefonicaRegular;
+  font-size: 21px;
+  line-height: 1.43;
+  color: #50535a;
+}
+.sinmargin15{
+	margin-right:-15px;
+	margin-left:-15px;
+}
+.listaparrafopost{
+	margin-left:40px;
+}
+.listaparrafopost li {
+    list-style: outside;
+}
+div[id^='faq'] {
+    height: 110px;
+    display: flex;
+}
+/*******************************INICIO POST_PASOS***********************/
+.precontpostpasos{
+	margin-top: 40px;
+	margin-bottom: 140px;
+}
+.fonimagen {
+    position: relative;
+    margin-bottom: 30px;
+}
+.fonimagen h2 {
+    font-size: 32px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: TelefonicaLight;
+    top: 13px;
+    margin-bottom: 0;
+}
+.bqcompartirpost {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.bqcompartirpost li:first-of-type {
+    margin-right: 20px !important;
+}
+.bqcompartirpost li:not(:last-of-type) {
+    margin-right: 15px;
+}
+.bqcompartirpost li img {
+    max-width: 30px;
+}
+.bqcompartirpost li a:hover img {
+    opacity: .7;
+}
+.bqintrdoparrafopost {
+    font-size: 21px;
+    line-height: 30px;
+    color: #50535a;
+    margin-bottom: 60px;
+}
+.bqintrdoparrafopost p:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+.bqintrdoparrafopost p:last-of-type {
+    margin-bottom: 0;
+}
+.acordeonPostPasos div[id^='faq'] {
+	height: 70px;
+}
+#acordeonProducto.acordeonPostPasos div[id*="faq"] h3 {
+	padding: 0 10px 0 10px;
+	font-family: TelefonicaLight;
+}
+.acordeonPostPasos #accordionFaq .card .collapse div, .acordeonPostPasos #accordionFaq .card .collapsing div {
+    margin: 10px 10px 60px 10px;
+}
+.acordeonPostPasos #accordionFaq .card .collapse div * , .acordeonPostPasos #accordionFaq .card .collapsing div * {
+	margin-bottom: 30px;
+}
+.bqcategpostpasos {
+    display: flex;
+    padding-bottom: 45px;
+    border-bottom: solid 1px #b6b7b7;
+    margin-left:-15px;
+    margin-right:-15px;
+}
+.bqcategpostpasos li:first-child{
+	padding-left: 15px;
+	margin-right: 10px;
+}
+.bqcategpostpasos li a{
+  font-size: 14px;
+  line-height: 25px;
+  color: #86888c;
+  padding: 5px;
+  border-radius: 12.5px;
+  background-color: #f4f4f3;
+}
+.bqcategpostpasos li a:hover {
+	background: #00a9e0;
+	text-decoration: none;
+    color: #fff;
+}
+.enlaceAnt, .enlaceSig {
+    display: flex;
+}
+.enlaceAnt:hover, .enlaceSig:hover {
+	color: #86888c;
+	text-decoration: none;
+}
+.enlaceAnt {
+	text-align: right;
+    margin-right: 15px;
+	margin-bottom: 30px;
+}
+.enlaceSig{
+	margin-left: 15px;
+}
+.enlaceAnt img {
+    align-self: center;
+    margin-right: auto;
+    padding-right: 10px;
+}
+.enlaceSig img {
+    align-self: center;
+    margin-left: auto;
+}
+.enlaceSig div {
+	padding-right: 10px;
+}
+.enlaceAnt div p:first-of-type, .enlaceSig div p:first-of-type {
+	font-family: TelefonicaBold;
+	font-size: 16px;
+	color: #b6b7b7;
+	text-transform: uppercase;
+	margin-bottom: 6px;
+}
+.enlaceAnt div p:last-of-type, .enlaceSig div p:last-of-type {
+	font-family: TelefonicaLight;
+	font-size: 18px;
+	line-height:normal;
+	color: #86888c;
+	margin-bottom: 12px;
+}
+.enlaceAnt:hover div p:last-of-type, .enlaceSig:hover div p:last-of-type {
+	text-decoration: underline;
+}
+.imgrotate180{
+	transform: rotate(180deg);	
+}
+.navegacion p{
+	margin:0px;
+	padding:0px;
+}
+.navegacion{
+	margin-top:20px;
+	margin-bottom:40px;
+}
+.bqtitparrafopost{
+ font-family: TelefonicaRegular;
+  font-size: 28px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #50535a;
+  text-transform:uppercase;
+  margin-top:40px;
+  margin-bottom:30px;
+}
+.titbusrelacionados {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #50535a;
+    font-family: TelefonicaRegular;
+    margin-bottom: 10px;
+}
+.parrafobusquedarelacio {
+    border-bottom: solid 1px #b6b7b7;
+    padding: 20px 0px;
+    font-family: TelefonicaLight;
+    margin-bottom: 0;
+    line-height: normal;
+}
+.parrafobusquedarelacio a {
+    color: #50535a;
+}
+/*******************************FIN POST_PASOS***********************/
+/*******************************INICIO POST_SIN**********************/
+.bqintrdoparrafopost.postSinPasos h3 {
+	font-family: TelefonicaLight;
+	font-size: 28px;
+	line-height: normal;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.bqintrdoparrafopost.postSinPasos ul {
+	margin-bottom: 30px;
+	margin-left: 15px;
+}
+.bqintrdoparrafopost.postSinPasos ul li {
+	margin-bottom: 25px;
+	position: relative;
+    margin-left: 25px;
+    list-style: none;
+}
+.bqintrdoparrafopost.postSinPasos ul li::before {
+    content: '•';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -25px;
+}
+/*******************************INICIO FILTRADO CAT**********************/
+.bqresultadosfilcat {
+    display: flex;
+    margin-bottom: 40px;
+}
+.parbqresultadosfilcat {
+    font-size: 21px;
+    line-height: 30px;
+    color: #50535a;
+    margin: 0px 15px 0px 0px;
+}
+#selectbqresultadosfilcat {
+    border: none;
+    background-color: transparent;
+    background-image: url('../imagenes/dropdownSelectPais.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    filter: grayscale(100%);
+    max-width: fit-content;
+    padding-right: 10px;
+    font-size: 21px;
+    line-height: 24px;
+    text-align: right;
+    color: #86888c;
+    text-decoration: underline;
+}
+/*******************************INICIO ARTICULOS SECTOR**********************/
+.listadoPaginasSector {
+	border-bottom: 1px solid #b6b7b7;
+	text-align: center;
+	display: none;
+}
+.submenuArticulossector {
+	height: 60px;
+}
+.submenuArticulossector li {
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+    max-width: 210px;
+}
+.submenuArticulossector .active {
+    border-bottom: 3px solid #00a9e0;
+}
+.submenuArticulossector li a {
+	padding: 0 20px;
+	text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #50535a;
+    display: flex;
+}
+.submenuArticulossector li a:hover {
+	text-decoration: none;
+}
+@media (min-width: 450px) {
+	.tabsApps ul{
+		width:100%;
+	}
+}
+@media (min-width: 576px) {
+	.contraerBody {
+		left: -75%;
+	}
+	#navegacionN2 {
+		width: 75%;
+		right: -75%;
+	}
+	#cerrarMenu {
+	    width: 25%;
+	    margin-left: -25%;
+	}
+	.subNavHeader {
+		margin: 20px;
+	}
+	.paginaPrimerN {
+		margin-left:20px;
+		margin-right:20px;
+	}
+	.subNavFooter a, .subNavFooter .selectPaises {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#navegacionN2 nav {
+		padding-left: 20px;
+		padding-right: 15px;
+	}
+	.bqmenpie {
+		padding-bottom: 25px;
+	}
+	.menpiejuntomarca li:not(:first-of-type) {
+		margin-top: 0;
+	}
+	.menpiejuntomarca li:not(:last-child) a:after{
+		content:"|";
+		margin-left: 10px;
+		margin-right: 10px;
+		display: inline-block;
+	}
+	.suscrbete-a-la-list {
+		margin-bottom: 32px;
+	}
+	.cabecera {
+		background: #fff;
+	}
+	.cabecera p:first-of-type {
+		margin: 20px 0 30px 0;
+	}
+	.input-text {
+	  	width: 538px;
+	}
+	.buscadorguiasproducto input[type="text"] {
+		width: 291px;
+		padding-left: 30px;
+		text-align: left;
+	}
+	.bqguia .col-12.col-sm-6.col-lg-4 {
+		padding-right: 10px;
+	}
+	.bqguia .col-12.col-sm-6.col-lg-8 {
+		padding-left: 10px;
+	}
+	.titguia a, .titguia {
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	.faqsacordeon #acordeonProducto div.collapse > div, .faqsacordeon #acordeonProducto div.collapsing > div {
+	   margin: 0 35px 36px 35px;
+	}
+	.textointroguiasprod p {
+	    margin-bottom: 34px;
+	}
+	.buscadorguiasproducto.busrelacionados {
+		margin-bottom: 40px;
+	}
+	.buscadorguiasproducto.busrelacionados input[type="text"] {
+	    width: 354px;
+    	padding-left: 0;
+	}
+	.fonimagen h2 {
+	    top: unset;
+	}
+	.fonimagen h2 {
+		font-size: 40px;
+		line-height: 48px;
+		padding-left: 20px;
+		padding-right: 80px;
+	}
+	#acordeonProducto.acordeonPostPasos div[id*="faq"] h3 {
+		padding: 0 15px 0 15px;
+	}
+	.acordeonPostPasos #accordionFaq .card .collapse div, .acordeonPostPasos #accordionFaq .card .collapsing div {
+		margin: 10px 15px 60px 15px;
+	}
+	div#acordeonProducto.acordeonPostPasos {
+		margin-bottom: 65px;
+	}
+	.precontpostpasos {
+		margin-bottom: 100px;
+	}
+	.navegacion {
+		margin-top: 40px;
+		margin-bottom: 60px;
+	    justify-content: space-between;
+	}
+	.enlaceAnt {
+		margin-bottom: 0;
+	}
+	.enlaceAnt div, .enlaceSig div {
+		min-width: 150px;
+		min-height: 80px;
+	}
+	.enlaceAnt img, .enlaceSig img {
+		align-self: center;
+	}
+	.enlaceAnt div p:last-of-type, .enlaceSig div p:last-of-type {
+		margin-bottom: 0;
+	}
+}
+@media (min-width: 620px) {
+	.tabsApps ul {
+	    justify-content: center;
+	}
+	.tabsApps {
+		overflow-x: hidden;
+	}
+}
+@media (min-width: 768px) {
+	#navegacion {
+		height: 90px;
+	}
+	#navegacion .logo {
+		margin-right: 45px;
+	    width: 205px;
+	    height: 40px;
+	    align-self: center;
+	    display: flex; 
+	}
+	.modal-dialog {
+		width: 407px;
+	}
+	.modal-body {
+		padding: 30px;
+	}
+	.contraerBody {
+		left: -48.5%;
+	}
+	#navegacionN2 {
+		width: 48.5%;
+		right: -48.5%;
+	}
+	#cerrarMenu {
+	    width: 51.5%;
+	    margin-left: -51.5%;
+	}
+	.subNavHeader {
+		margin: 30px 20px;
+	}
+	.paginaPrimerN {
+		margin: 20px;
+	}
+	#navegacionN2 nav {
+		padding-left: 30px !important;
+	}
+	#bqmarca .container-fluid {
+	    width: 720px;
+	}
+	.bqmenpie, .bqmarcatel  {
+		border-top: none;
+		padding-top: 0;
+		padding-bottom: 0;
+		align-self: center;
+
+	}
+	.titforsuscripcion{
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+    .paddingFixed {
+		padding-top: 90px
+	}
+    .tituloCabecera{
+		font-size: 64px;
+		line-height: 72px;
+	}
+	.input-text {
+	  	width: 360px;
+	}
+	.cabecera p:first-of-type {
+		margin: 10px 0 30px 0;
+	}
+	.todasSoluciones h2, .tituloSeccion {
+		font-size: 40px;
+		line-height: 44px;
+	}
+	.owl-dots {
+	    display: unset;
+	    padding-top: 30px;
+	}
+	.apps .owl-theme .owl-dots .owl-dot span {
+	    width: 79px;
+	}
+	.cabecera.cabProducto .textoCabecera {
+		padding-top: 60px;
+	}
+	.tituloCabeceraLanding {
+		font-size: 56px;
+	}
+	.bqelementosayuda .bloqueSolucion > a {
+		width: 473px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.menuGuia .container-fluid {
+	    max-width: 720px;
+	}
+	.menuGuia h1 {
+		padding: 0 0 0 15px;
+		border-bottom: none;
+		width: auto;
+	}
+	.listadoPaginasMenu {
+		width: auto;
+	    padding: 0 30px 0 0;
+	    margin-left: auto;
+	}
+	.listadoPaginasMenu .submenuGuiasProducto {
+	    margin-left: 35px;
+	}
+	.preparrafoguias {
+	    margin-top: 70px;
+	}
+	.buscadorguiasproducto {
+		margin-bottom: 0;
+		margin-top: 10px;
+	}
+	.bqelemeparrafoguias {
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 40px;
+	}
+	.bqelemeparrafoguias .order-1.order-md-0 {
+		width: 50%;
+	}
+	a.bqcargarmas {
+		margin-left: auto;
+		margin-right: auto;
+		width: 227px;
+	}
+	.faqsacordeon #acordeonProducto div.collapse > div, .faqsacordeon #acordeonProducto div.collapsing > div {
+	    margin:0 55px 36px 44px;
+	}
+	.textointroguiasprod p {
+	    margin-bottom: 28px;
+	}
+	.faqsacordeon #acordeonProducto div[id*="heading"] button, .faqsacordeon #acordeonProducto div[id*="faq"] button, .faqsacordeon #acordeonProducto div[id*="heading"] h3, .faqsacordeon #acordeonProducto div[id*="faq"] h3 {
+		padding: 0 25px;
+	}
+	.precontpostpasos .container-fluid {
+		max-width: 720px;
+	}
+	.fonimagen h2 {
+		font-size: 48px;
+		line-height: normal;
+		padding-right: 40px;
+	}
+	.buscadorguiasproducto.busrelacionados input[type="text"] {
+		width: 291px;
+	}
+	#acordeonProducto.acordeonPostPasos {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.buscadorguiasproducto.busrelacionados {
+		margin-top: 0;
+	}
+	.acordeonPostPasos #accordionFaq .card .collapse div, .acordeonPostPasos #accordionFaq .card .collapsing div {
+		margin: 10px 0 60px 0;
+	}
+	.navegacion {
+		margin-bottom: 40px;
+	}
+	.precontpostpasos {
+    	margin-bottom: 110px;
+	}
+	.listadoPaginasSector{
+		display: block;
+	}
+	.submenuArticulossector {
+		display: flex;
+    	overflow-x: scroll;
+    	white-space: nowrap;
+	}
+}
+@media (min-width: 880px) {
+	.submenuArticulossector {
+    	justify-content: center;
+    	overflow-x: hidden;
+	}
+}
+@media (min-width: 992px) {
+	#navegacion .navDcha img {
+		margin-left: 30px;
+	}
+	#bqmarca .container-fluid {
+	    width: 960px;
+	}
+	#copyright {
+		padding-bottom: 70px;
+	}
+	.prefooter{
+	    background-image: url(../imagenes/m-logo-blanco-lg.svg);
+	}
+	.prefooter form {
+		width: 380px;
+	}
+	.bqelementosayuda .bloqueSolucion > a {
+		width: 100%;
+	}
+	.menuGuia .container-fluid {
+	    max-width: 960px;
+	}
+	.listadoPaginasMenu select {
+		display: none;
+	}
+	.listadoPaginasMenu .submenuGuiasProducto {
+	    display: flex;
+	    height: 100%;
+	    align-items: center;
+	}
+	ul.submenuGuiasProducto li {
+	    height: 100%;
+	    display: flex !important;
+	    align-items: center;
+	}
+	.listadoPaginasMenu .submenuGuiasProducto li:last-of-type a{
+		margin-left: 15px;
+	}
+	.preparrafoguias {
+	    margin-top: 65px;
+	}
+	.preparrafoguias h2 {
+		font-size: 48px;
+	}
+	.bqelemeparrafoguias .order-1.order-md-0 {
+    	width: 60%;
+	}
+	a.bqcargarmas {
+		width: 360px;
+	}
+	.titguia a, .titguia {
+		font-size: 38px;
+		line-height: 40px;
+	}
+	.faqsacordeon .container-fluid {
+	    width: 960px;
+	}
+	.faqsacordeon #acordeonProducto div[id*="heading"] button, .faqsacordeon #acordeonProducto div[id*="faq"] button, .faqsacordeon #acordeonProducto div[id*="heading"] h3, .faqsacordeon #acordeonProducto div[id*="faq"] h3 {
+		padding: 0 20px;
+	}
+	.faqsacordeon #acordeonProducto div.collapse > div, .faqsacordeon #acordeonProducto div.collapsing > div {
+	    margin: 0 44px 40px 44px;
+	}
+	.precontpostpasos .container-fluid {
+		max-width: 960px;
+	}
+	.enlaceAnt {
+	    margin-right: 0;
+	    padding-left: 0;
+	    padding-right: 30px;
+	}
+	.enlaceAnt img {
+	    padding-right: 3px;
+	}
+	.enlaceSig {
+	    margin-left: 0;
+	    padding-right: 0;
+	    padding-left: 30px;
+	}
+	.enlaceSig div {
+	    padding-right: 3px;
+	}
+	.postRelacionados {
+		padding-left: 0;
+	}
+	.buscadorguiasproducto.busrelacionados input[type="text"] {
+		padding-left: 20px;
+		width: 100%;
+	}
+	.titbusrelacionados {
+		margin-bottom: 0;
+	}
+	.precontpostpasos {
+		margin-top: 60px;
+		margin-bottom: 100px;
+	}
+	.navegacion {
+		margin-bottom: 0;
+	}
+	.bqintrdoparrafopost.postSinPasos {
+		margin-bottom: 40px;
+	}
+	.bqintrdoparrafopost.postSinPasos ul {
+	    margin-left: 10px;
+	}
+}
+@media (min-width: 1200px) {
+	#bqtopbar {
+		display: block !important;
+	}
+	#navegacion nav > ul {
+		max-width: 682px;
+	}
+	#navegacion .navDcha img {
+		display: none;
+	}
+	#navegacion .navDcha {
+	    margin-left: 0;
+	    width: 205px;
+	    justify-content: flex-end;
+	}
+	#bqmarca .container-fluid {
+	    width: 1140px;
+	}
+	.prefooter{
+	    background-image: url(../imagenes/m-logo-blanco-xl.svg);
+	}
+	.prefooter form {
+		width: 430px;
+	}
+	.paddingFixed {
+		padding-top: 124px
+	}
+	.menuGuia .container-fluid {
+	    max-width: 1140px;
+	}
+	.listadoPaginasMenu .submenuGuiasProducto li:not(:last-of-type) a {
+		padding: 0 20px;
+	}
+	.listadoPaginasMenu .submenuGuiasProducto li:last-of-type a {
+		margin-left: 20px;
+	}
+	.buscadorguiasproducto input[type="text"] {
+		width: 360px;
+	}
+	.preparrafoguias .container-fluid {
+		max-width: 1140px;
+	}
+	.bqelemeparrafoguias {
+		margin-bottom: 30px;
+	}
+	.textointroguiasprod p {
+	    margin-bottom: 32px;
+	}
+	.faqsacordeon #acordeonProducto div[id*="heading"] button, .faqsacordeon #acordeonProducto div[id*="faq"] button, .faqsacordeon #acordeonProducto div[id*="heading"] h3, .faqsacordeon #acordeonProducto div[id*="faq"] h3 {
+		padding: 0 20px 0 30px;
+	}
+	.precontpostpasos .container-fluid {
+		max-width: 1140px;
+	}
+	.postRelacionados {
+	    padding-left: 15px;
+	}
+	.acordeonPostPasos #accordionFaq .card .collapse div, .acordeonPostPasos #accordionFaq .card .collapsing div {
+		margin: 10px 0 45px 0;
+	}
+}
+@media (max-width:767px) and (min-width:576px) {
+	.titformodal {
+		margin-bottom: 15px;
+		margin-top: 20px;
+		font-size: 32px;
+	}
+}
+@media (max-width: 1199px) {
+	#navegacion nav {
+		display: none !important;
+	}
+}
+@media (max-width: 992px) {
+/* 	.preparrafoguias .container {
+	    max-width: 100%;
+	   padding:0px;
+	} */
+}
+@media (max-width: 767px) {
+	.prefooter{
+		background-image:none;
+	}
+	#navegacion .logo {
+		margin-right: 0;
+	    width: 69px;
+	    height: 50px;
+	    align-self: center;
+	    display: flex; 
+	}
+	.modal-dialog-centered {
+	    min-height: 100%;
+	}
+	.modal-dialog {
+	    max-width: 100%;
+	    margin: 0;
+	}
+	.modal-dialog-centered::before {
+	    height: 100%;
+	}
+	.modal-content {
+		align-self: stretch;
+	}
+	#bqmarca,
+	.prefooter{
+		border-bottom:none;
+	}
+	#bqmarca,
+	.prefooter {
+    	height: auto;
+    }
+    #programarLlamadaCntc{
+    	margin-bottom:20px;
+    }
+}
+
+@media (max-width: 576px) {
+	#navegacion .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	ul.menpiejuntomarca{
+		width:100%;
+	}	
+}
+/*# sourceMappingURL=base.css.map */

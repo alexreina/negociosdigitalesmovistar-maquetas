@@ -1,0 +1,656 @@
+/*@import "scss/_rootp";
+@import "scss/custom";*/
+
+@font-face {
+	font-family: TelefonicaBold;
+	src: url(../webfonts/Bold/TelefonicaWeb-Bold.eot);
+	src: url(../webfonts/Bold/TelefonicaWeb-Bold.eot?#iefix) format('embedded-opentype'), url(../webfonts/Bold/TelefonicaWeb-Bold.woff2) format('woff2'), url(../webfonts/Bold/TelefonicaWeb-Bold.woff) format('woff'), url(../webfonts/Bold/Telefonica-Bold.ttf) format('truetype'), url(../webfonts/Bold/TelefonicaWeb-Bold.svg#telefonicabold) format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaExtralight;
+	src: url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.eot);
+	src: url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.eot?#iefix) format('embedded-opentype'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.woff2) format('woff2'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.woff) format('woff'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.ttf) format('truetype'), url(../webfonts/ExtraLight/TelefonicaWeb-ExtraLight.svg#telefonicaextralight) format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaLight;
+	src: url(../webfonts/Light/TelefonicaWeb-Light.eot);
+	src: url(../webfonts/Light/TelefonicaWeb-Light.eot?#iefix) format('embedded-opentype'), url(../webfonts/Light/TelefonicaWeb-Light.woff2) format('woff2'), url(../webfonts/Light/TelefonicaWeb-Light.woff) format('woff'), url(../webfonts/Light/TelefonicaWeb-Light.ttf) format('truetype'), url(../webfonts/Light/TelefonicaWeb-Light.svg#telefonicalight) format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaText;
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot);
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot?#iefix) format('embedded-opentype'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff2) format('woff2'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff) format('woff'), url(../webfonts/Regular/TelefonicaWeb-Regular.ttf) format('truetype'), url(../webfonts/Regular/TelefonicaWeb-Regular.svg#telefonicaregular) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaHand;
+	src: url(../webfonts/Hand/TelefonicaWeb-Hand.eot);
+	src: url(../webfonts/Hand/TelefonicaWeb-Hand.eot?#iefix) format('embedded-opentype'), url(../webfonts/Hand/TelefonicaWeb-Hand.woff2) format('woff2'), url(../webfonts/Hand/TelefonicaWeb-Hand.woff) format('woff'), url(../webfonts/Hand/TelefonicaWeb-Hand.ttf) format('truetype'), url(../webfonts/Hand/TelefonicaWeb-Hand.svg#telefonicaregular) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaRegularitalic;
+	src: url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.eot);
+	src: url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.eot?#iefix) format('embedded-opentype'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.woff2) format('woff2'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.woff) format('woff'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic.ttf) format('truetype'), url(../webfonts/RegularItalic/TelefonicaWeb-RegularItalic#telefonicaitalic) format('svg');
+	font-weight: 400;
+	font-style: italic;
+	}
+
+@font-face {
+	font-family: TelefonicaRegular;
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot);
+	src: url(../webfonts/Regular/TelefonicaWeb-Regular.eot?#iefix) format('embedded-opentype'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff2) format('woff2'), url(../webfonts/Regular/TelefonicaWeb-Regular.woff) format('woff'), url(../webfonts/Regular/TelefonicaWeb-Regular.ttf) format('truetype'), url(../webfonts/RegularItalic/TelefonicaWeb-Regular#telefonica) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TelefonicaCap;
+	src: url(../webfonts/Cap/TelefonicaCapWeb-Regular.eot) format('embedded-opentype'), url(../webfonts/Cap/TelefonicaCapWeb-Regular.woff) format('woff'), url(../webfonts/Cap/TelefonicaCapWeb-Regular.otf) format('opentype'), url(../webfonts/Cap/TelefonicaCapWeb-Regular.svg#TelefonicaCapWeb-Regular) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+html, body{	
+	font-family:TelefonicaRegular;
+	color: #50535a;
+	font-size: 18px;
+}
+body {
+	position: relative;
+	left: 0;
+	transition: all .5s linear;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+button{
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 16px;
+	padding: 15px 0;
+	border: none;
+	line-height: 16px;
+	color: #fff;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.boton {
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 15px 0;
+    border: none;
+    line-height: 16px;
+    color: #fff !important;
+    cursor: pointer;
+}
+.botonVerde {
+	background: #5cc500;
+}
+.botonVerde:hover {
+	background: #50ab00;
+	text-decoration: none;
+
+}
+.botonMobile {
+	display: block;
+}
+/***** Header ******/
+header {
+	height: 100px;
+	background: #fff;
+	display: flex;
+}
+header .container-fluid {
+	display: flex;
+	align-items: center;
+}
+header .container-fluid span {
+	margin-left: auto
+}
+header span {
+	color: #00a9e0;
+}
+header span a {
+	font-size: 32px;
+	color: #00a9e0;
+	display: block;
+}
+header span a:hover {
+	color: #00a9e0;
+}
+/***** Header ******/
+/***** Contenido landing *****/
+/*------------------------------------------MARIA------------------------------------------*/
+
+.cabeceraLanding .container-fluid {
+    width: 100%;
+    min-height: 556px;
+    padding-bottom: 60px;
+}    
+.cabeceraLanding form {
+    width: 100%;
+    padding: 60px 15px;
+}  
+.containerCabecera {
+    width: 100%;
+    overflow: hidden;
+    float: none;
+    margin: 0 auto;
+}
+
+/*------------------------------------------MARIA------------------------------------------*/
+/*------------------------------------------MARIA------------------------------------------*/
+.cabeceraLanding {
+	background-image: url(../img/bg-landing-xs.jpg);
+    height: auto;
+    background-position: top center;
+    background-size: auto;
+    color: #fff;
+}
+.antetitulo {
+	font-size: 21px;
+	font-family: TelefonicaBold;
+	line-height: normal;
+	padding-top: 60px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.cabeceraLanding h1 {
+	font-size: 48px;
+	font-family: TelefonicaLight;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+.oferta {
+	display: flex;
+}
+.precioOferta {
+	line-height: normal;
+	border-right: 1px solid #fff;
+	padding-right: 30px;
+}
+.precioOferta span:first-of-type {
+	font-size: 48px;
+	color: #5cc500;
+	display: block;
+}
+.precioOferta span:last-of-type {
+	font-size: 18px;
+	color: #5cc500;
+}
+.descrOferta {
+	padding-left: 20px;
+	font-size: 16px;
+	line-height: normal;
+}
+.descrOferta p {
+	margin-bottom: 0;
+}
+.descrOferta p:nth-of-type(2) {
+	margin: 10px 0;
+}
+.tiempoOferta {
+	font-family: TelefonicaHand;
+	font-size: 28px;
+	line-height: normal;
+	margin-bottom: 0;
+}
+.beneficioOferta span {
+	font-family: TelefonicaBold;
+}
+.plazoOferta {
+	text-transform: uppercase;
+	color: #ec6839;
+	line-height: 1.5;
+}
+.cabeceraLanding ul {
+	margin-top: 30px;
+}
+.cabeceraLanding ul li {
+	margin-bottom: 8px;
+    position: relative;
+    margin-left: 20px;
+    line-height: normal;
+}
+.cabeceraLanding ul li:last-of-type {
+	margin-bottom: 0;
+}
+.cabeceraLanding ul li::before {
+    content: "•";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: -20px;
+}
+.formularioLanding {
+	background: #fff;
+}
+form {
+	background: #fff;
+	padding: 60px 15px;
+	text-align: center;
+	color: #50535c;
+}
+form p {
+	line-height: 1.33;
+	margin-bottom: 30px;
+	text-align: left;
+}
+form input.form-control {
+	background-color: #e9eae8;
+	border: none;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	padding: 12px 0;
+	text-align: center;
+	height: auto;
+	font-style: italic;
+	font-size: 18px;
+}
+form .form-group {
+	margin-bottom: 20px;
+}
+form .custom-control.custom-checkbox {
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 30px;
+}
+form .custom-control.custom-checkbox a {
+	color: #00a9e0;
+}
+.custom-control-label::after, .custom-control-label::before {
+	top: 4px;
+}
+form button {
+	width: 100%;
+	margin-top: 30px;
+}
+.bannerAzul {
+	background: #00a9e0;
+	color: #fff;
+	text-align: center;
+	padding: 15px 0;
+}
+.bannerAzul p {
+	font-size: 21px;
+	margin-bottom: 0;
+	line-height: normal;
+}
+.bannerAzul span {
+	font-family: TelefonicaBold;
+}
+.bannerGris {
+	background: #e9eae8;
+	padding: 60px 0 40px 0;
+}
+.bannerGris .bloqueBanner img {
+	height: 50px;
+	margin-bottom: 30px;
+}
+.txtpieservicios {
+	font-size: 21px;
+	line-height: normal;
+	margin-bottom: 40px;
+}
+.socio {
+	padding: 60px 0
+}
+.socio img {
+	display: block;
+	margin: 0 auto;
+}
+.socio p {
+	margin: 30px 0 10px 0;
+	line-height: 1.33;
+}
+.socio li {
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 20px;
+    line-height: normal;
+}
+.socio li::before {
+    content: "•";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: -20px;
+}
+/***** Contenido landing *****/
+/***** Footer *****/
+footer {
+	border-top: 1px solid #b6b7b7;
+}
+footer .container-fluid {
+	padding: 0;
+}
+#footerMarcaTelefonica img {
+	padding: 20px 15px;
+}
+footer ul {
+	border-top: 1px solid #b6b7b7;
+	padding: 25px 15px 5px 15px;
+	text-align: center;
+}
+footer ul li {
+	margin-bottom: 20px;
+}
+footer ul a {
+	font-size: 16px;
+	line-height: normal;
+	color: #50535a;
+}
+footer ul a:hover {
+	color: #50535a;
+}
+@media(min-width: 576px) {
+	.cabeceraLanding {
+		background-image: url(../img/bg-landing-xl.jpg);
+	}
+	.cabeceraLanding .container-fluid {
+		min-height: 459px;
+	}
+	.cabeceraLanding h1 {
+		margin-bottom: 30px;
+	}
+	.precioOferta span:first-of-type {
+		font-size: 60px;
+	}
+	.descrOferta {
+		font-size: 18px;
+	}
+	.descrOferta p:nth-of-type(2) {
+		margin-right: 30px;
+	}
+	.tiempoOferta {
+		font-size: 36px;
+	}
+	.plazoOferta {
+		line-height: 1.33;
+	}
+	.bannerAzul p {
+		font-size: 24px;
+	}
+	.socio p {
+		margin-bottom: 35px;
+	}
+	footer ul li {
+		display: inline-block;
+	}
+	footer ul li:not(:last-of-type) a {
+		border-right: 1px solid #50535e;
+		padding-right: 5px;
+	}
+}
+@media(min-width: 768px) {
+	.cabeceraLanding h1 {
+		margin-bottom: 25px;
+	}
+	header span {
+		font-size: 21px;
+		line-height: 1.76;
+	}
+	header span a {
+		display: inline-block;
+		font-size: 36px;
+	}
+	.beneficioOferta {
+		font-size: 21px;
+	}
+	.cabeceraLanding .container-fluid {
+		min-height: 487px;
+	}
+	.cabeceraLanding form {
+		width: 463px;
+    	margin: 0 auto;
+	}
+	footer .container-fluid {
+		display: flex;
+	}
+	footer ul {
+		border-top: none;
+		display: inline-block;
+		margin-left: auto;
+	}
+}
+@media(min-width: 992px) {
+	header .container-fluid, .bannerGris .container-fluid, .socio .container-fluid, footer .container-fluid, .cabeceraLanding .container-fluid {
+		width: 960px;
+	}
+	.cabeceraLanding {
+		background-size: cover; 
+	}
+	.cabeceraLanding h1 {
+		margin-bottom: 20px;
+		font-size: 64px;
+	}
+	.contenidoLanding {
+		position: relative;
+	}
+	.socio .container-fluid {
+		display: flex;
+		align-items: flex-start;
+	}
+	.socio img {
+		min-width: 15%;
+	}
+	.socio p {
+		min-width: 32%;
+		margin: 0;
+		padding: 0 20px;
+	}
+	.socio ul {
+		min-width: 50%;
+	}
+	.cabeceraLanding .container-fluid {
+		min-height: 595px;
+	}
+	.cabeceraLanding .container-fluid {
+		width: 66% !important;
+	    padding: 0 0 60px 0;
+	    margin: 0;
+	    float: left;
+	    margin-right: 1%;
+	}
+	.formularioLanding {
+		width: 33% !important;
+		padding: 0;
+		margin: 60px 0 60px 0;
+		float: left;
+		position: initial;
+		border-radius: 4px;
+    	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+    	background: transparent;
+	}
+	.cabeceraLanding form {
+		width: 100%;
+		padding: 30px 20px;
+		border-radius: 4px;
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+	}
+	.containerCabecera {
+		width: 960px;
+	}
+}
+
+@media(min-width: 1200px) {
+	header .container-fluid, .bannerGris .container-fluid, .socio .container-fluid, footer .container-fluid, .cabeceraLanding .container-fluid {
+		width: 1140px;
+	}
+	.containerCabecera {
+		width: 1140px;
+	}
+	.socio p {
+		padding: 0 30px;
+	}
+	.cabeceraLanding .container-fluid {
+	    margin-right: 2%;
+	    min-height: 661px
+	}
+	.formularioLanding {
+		width: 32% !important;
+	}
+	.cabeceraLanding form {
+		padding: 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** Modal: Formulario de contacto *****/
+body.modal-open, .modal.show {
+	padding-right: 0 !important;
+}
+.modal{
+	background: rgba(255, 255, 255, .3);
+	z-index: 9999;
+} 
+.modal .enlace {
+	color: #00a9e0;
+}
+.close {
+	float: none;
+	text-align: right;
+	width: 100%;
+}
+.modal button {
+	height: unset;
+}
+.modal button i {
+    font-size: 20px;
+    color: #b7b7b7;
+}
+.titformodal{
+	font-family: TelefonicaLight;
+	font-size:40px;
+	text-align:center;
+	line-height:48px;
+	color: #50535a;
+	width:100%;
+	margin-bottom: 5px;
+}
+.modal p {
+	margin-bottom: 40px;
+}
+.modal p a {
+    font-family: TelefonicaBold;
+    color: #50535a;
+    font-size: 18px;
+}
+.modal p a:hover {
+	text-decoration: underline;
+	color: #50535a; 
+}
+#nombreUsuarioCntc, #nombreUsuarioCntr {
+	margin-bottom: 10px;
+}
+#telefonoUsuarioCntc, #telefonoUsuarioCntr {
+	margin-bottom: 20px;
+}
+input#nombreCntc , input#numeroCntc, input#nombreCntr , input#numeroCntr {
+	border: none;
+    font-size: 18px;
+}
+#recibirLlamadaCntc, #recibirLlamadaCntr {
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+#recibirLlamadaCntc .btn.focus, #recibirLlamadaCntc .btn:focus, #recibirLlamadaCntr .btn.focus, #recibirLlamadaCntr .btn:focus {
+	box-shadow: unset;
+}
+#btmanianaCntc, #btardeCntc, #btmanianaCntr, #btardeCntr {
+	display: inline-block;
+}
+#btmanianaCntc input, #btardeCntc input, #btmanianaCntr input, #btardeCntr input {
+	width: 156px;
+}
+#btmanianaCntc input:hover, #btardeCntc input:hover, #btmanianaCntr input:hover, #btardeCntr input:hover {
+	text-decoration: underline;
+}
+#btmanianaCntc .activo, #btardeCntc .activo, #btmanianaCntr .activo, #btardeCntr .activo {
+	background: #00a9e0;
+	color: #fff;
+	border-radius: 20px;
+}
+#btmanianaCntc, #btmanianaCntr {
+	float: left;
+}
+#btardeCntc, #btardeCntr {
+	float: right;
+}
+#aceptarPrivacidadCntc, #aceptarPrivacidadCntr, #aceptarPrivacidadReco {
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+}
+.custom-checkbox .custom-control-label::before {
+	border-radius: 50% !important;
+}
+#programarLlamadaCntc, #programarLlamadaCntr, #programarLlamadaReco {
+	margin-top: 20px;
+    width: 100%;
+    background: #5cc500;
+    font-size: 16px;
+}
+#programarLlamadaCntc:hover, #programarLlamadaCntr:hover {
+	background: #50ab00;
+	text-decoration: none;
+}
+/***** Modal: Formulario de contacto *****/
+/***** Modal: Formulario de contratacion *****/
+#modalContratacion .modal-body > p {
+	margin-bottom: 10px;
+}
+.detalleModalProducto {
+	background: #f4f4f3;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+.detalleModalProducto span {
+	font-size: 18px;
+	color: #00a9e0;
+	margin-bottom: 10px;
+}
+.detalleModalProducto p {
+	margin-bottom: 0;
+	font-size: 16px;
+	width: 55%;
+}
+
